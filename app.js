@@ -627,3 +627,74 @@ function renderFamilyRecipes() {
   });
 }
 
+// Strava API Live Integration
+async function syncStravaActivities() {
+  const tokenInput = document.getElementById('strava-token');
+  const outputBox = document.getElementById('strava-sync-output');
+  if (!tokenInput || !outputBox) return;
+
+  const token = tokenInput.value.trim() || localStorage.getItem('dadrunner_strava_token');
+
+  if (!token) {
+    alert("Please enter your Strava Access Token! Click 'Help' to see how to get it in 30 seconds.");
+    return;
+  }
+
+  localStorage.setItem('dadrunner_strava_token', token);
+  outputBox.classList.remove('hidden');
+  outputBox.innerHTML = `<span><i class="fa-solid fa-spinner fa-spin"></i> Connecting to Strava API...</span>`;
+
+  try {
+    const response = await fetch('https://www.strava.com/api/v3/athlete/activities?per_page=5', {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Strava API Error: ${response.status} (Invalid or expired token)`);
+    }
+
+    const activities = await response.json();
+
+    if (!activities || activities.length === 0) {
+      outputBox.innerHTML = `<span>No recent activities found on Strava.</span>`;
+      return;
+    }
+
+    let html = `<strong><i class="fa-brands fa-strava"></i> Latest Synced Runs:</strong>`;
+    activities.forEach(act => {
+      if (act.type === 'Run' || act.type === 'Hike') {
+        const distKm = (act.distance / 1000).toFixed(2);
+        const timeMin = Math.floor(act.moving_time / 60);
+        const sec = act.moving_time % 60;
+        const paceSecPerKm = act.moving_time / (act.distance / 1000);
+        const paceStr = formatPace(paceSecPerKm);
+
+        html += `
+          <div class="pace-row" style="padding: 6px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+            <div>
+              <strong>${act.name}</strong><br>
+              <small style="color: var(--text-muted);">${new Date(act.start_date_local).toLocaleDateString()}</small>
+            </div>
+            <div style="text-align: right;">
+              <strong style="color: var(--accent-cyan);">${distKm} km</strong> in ${timeMin}m ${sec}s<br>
+              <small>Pace: ${paceStr}/km</small>
+            </div>
+          </div>
+        `;
+      }
+    });
+
+    outputBox.innerHTML = html;
+
+  } catch (err) {
+    outputBox.innerHTML = `<span style="color: #f87171;"><i class="fa-solid fa-circle-exclamation"></i> ${err.message}</span>`;
+  }
+}
+
+function openStravaTokenGuide() {
+  alert("How to get your Strava Access Token:\n\n1. Log into Strava on your computer or phone browser.\n2. Go to: strava.com/settings/api\n3. Copy your 'Your Access Token'.\n4. Paste it into your web app and click Sync!");
+}
+
+

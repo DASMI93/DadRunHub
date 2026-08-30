@@ -393,6 +393,32 @@
         </div>
         <div class="card-body">
           
+          <!-- Strava Live Sync Widget -->
+          <div class="tool-box" style="border-left: 3px solid #fc5200;">
+            <h3><i class="fa-brands fa-strava" style="color: #fc5200;"></i> Live Strava API Sync</h3>
+            <p>Connect your Strava account (Athlete ID: 49391939) to fetch your runs automatically into your dashboard!</p>
+            
+            <div class="input-group">
+              <label for="strava-token">Strava Access Token / API Key:</label>
+              <input type="password" id="strava-token" placeholder="Paste your Strava Access Token" class="form-input">
+            </div>
+
+            <div style="display: flex; gap: 8px;">
+              <button class="btn btn-primary btn-block" style="background: #fc5200; border: none;" onclick="syncStravaActivities()">
+                <i class="fa-solid fa-arrows-rotate"></i> Sync Recent Runs
+              </button>
+              <button class="btn btn-secondary" onclick="openStravaTokenGuide()" title="How to get token">
+                <i class="fa-solid fa-circle-question"></i> Help
+              </button>
+            </div>
+
+            <div id="strava-sync-output" class="pace-results hidden" style="margin-top: 14px;">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+
+          <hr class="divider">
+
           <div class="tool-box">
             <h3><i class="fa-solid fa-quote-left"></i> Strava Title Generator</h3>
             <p>Need a funny dramatic title for your next run? Click below!</p>
