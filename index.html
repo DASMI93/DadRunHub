@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dad & Runner Hub | Personalized Fitness & Meal Plan</title>
+  <meta name="description" content="Personalized nutrition daily guide, 8-week smart running plan, and dad-schedule routine visualizer optimized for mobile & GitHub Pages.">
+  
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Mobile Header / Top Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-person-running"></i>
+        </div>
+        <div class="brand-text">
+          <h1>DadRunner <span>Hub</span></h1>
+          <p class="subtitle">33Y | 5'7" | 11.81 st | 3mo Dad</p>
+        </div>
+      </div>
+      <button id="gh-help-btn" class="icon-btn" title="GitHub Pages Deployment Guide">
+        <i class="fa-brands fa-github"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs" id="nav-tabs">
+    <button class="nav-btn active" data-tab="tab-overview">
+      <i class="fa-solid fa-gauge-high"></i>
+      <span>Overview</span>
+    </button>
+    <button class="nav-btn" data-tab="tab-running">
+      <i class="fa-solid fa-route"></i>
+      <span>Running Plan</span>
+    </button>
+    <button class="nav-btn" data-tab="tab-nutrition">
+      <i class="fa-solid fa-utensils"></i>
+      <span>Diet & Macros</span>
+    </button>
+    <button class="nav-btn" data-tab="tab-schedule">
+      <i class="fa-solid fa-clock"></i>
+      <span>Daily Routine</span>
+    </button>
+    <button class="nav-btn" data-tab="tab-tools">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <span>Strava Tools</span>
+    </button>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="app-content">
+
+    <!-- TAB 1: OVERVIEW & FITNESS BASELINE -->
+    <section id="tab-overview" class="tab-pane active">
+      <div class="welcome-card">
+        <div class="badge badge-success"><i class="fa-solid fa-circle-check"></i> Solid Aerobic Base (10.1 km Unlocked!)</div>
+        <h2>Welcome Back, Dan!</h2>
+        <p>Your recent 10.10 km run proves you have strong baseline endurance. Here is your daily dashboard tailored for fatherhood, 07:00/19:00 dog walks, and sustainable health.</p>
+        
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <span class="metric-label">Current Weight</span>
+            <span class="metric-value">11.81 <small>st</small></span>
+            <span class="metric-sub">~75.0 kg / 165 lbs</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">BMI Category</span>
+            <span class="metric-value">26.0</span>
+            <span class="metric-sub">Slightly Overweight (Goal ~70kg)</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Daily Calories</span>
+            <span class="metric-value">1,950 <small>kcal</small></span>
+            <span class="metric-sub">~2,150 on long run days</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Recent Benchmark</span>
+            <span class="metric-value">10.1 <small>km</small></span>
+            <span class="metric-sub">1:13:34 (7:17/km pace)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Cards -->
+      <div class="section-title">
+        <h3><i class="fa-solid fa-bolt"></i> Today's Focus</h3>
+      </div>
+      
+      <div class="quick-status-grid">
+        <div class="status-card">
+          <div class="status-icon icon-blue"><i class="fa-solid fa-dog"></i></div>
+          <div class="status-info">
+            <h4>Daily Dog Walks</h4>
+            <p>07:00 AM & 19:00 PM • ~4.5 km active walking baseline</p>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-icon icon-orange"><i class="fa-solid fa-fire"></i></div>
+          <div class="status-info">
+            <h4>Target Protein Goal</h4>
+            <p>145g Protein • Essential for muscle retention & repair</p>
+          </div>
+        </div>
+
+        <div class="status-card">
+          <div class="status-icon icon-purple"><i class="fa-solid fa-baby"></i></div>
+          <div class="status-info">
+            <h4>Newborn Energy Strategy</h4>
+            <p>Hydration + Fast 15-min prep meals + 21:15 magnesium sleep window</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Next Workout Preview -->
+      <div class="card card-accent">
+        <div class="card-header">
+          <h3><i class="fa-solid fa-calendar-day"></i> Recommended Next Run</h3>
+          <span class="badge badge-primary">Week 1 • Run 1</span>
+        </div>
+        <div class="card-body">
+          <h4>Tuesday Easy Pace Consolidation (5.0 km)</h4>
+          <p>Focus on relaxed Zone 2 breathing (~7:30 - 8:00/km pace). Save the speed work for Thursday!</p>
+          <button class="btn btn-primary btn-block" onclick="switchToTab('tab-running')">View Full 8-Week Plan</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: RUNNING PLAN -->
+    <section id="tab-running" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2>8-Week Smart Running Plan</h2>
+            <p class="subtitle">3 runs per week designed around dog walks and work hours</p>
+          </div>
+          <div class="progress-badge">
+            <span id="plan-completion-text">0% Complete</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="alert alert-info">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span><strong>Pro Tip:</strong> Tap any workout card below when completed to check it off! Progress automatically saves on your phone.</span>
+          </div>
+
+          <div class="weekly-accordion" id="workout-list">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: NUTRITION & DIET PLAN -->
+    <section id="tab-nutrition" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2>Daily Macro & Meal Blueprint</h2>
+          <span class="badge badge-success">Target: 1,950 kcal</span>
+        </div>
+        <div class="card-body">
+          
+          <!-- Macro Visualizer -->
+          <div class="macro-bar-container">
+            <div class="macro-item">
+              <div class="macro-header">
+                <span>Protein (145g)</span>
+                <span>30%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-protein" style="width: 30%;"></div></div>
+            </div>
+            <div class="macro-item">
+              <div class="macro-header">
+                <span>Carbs (195g)</span>
+                <span>40%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-carbs" style="width: 40%;"></div></div>
+            </div>
+            <div class="macro-item">
+              <div class="macro-header">
+                <span>Healthy Fats (65g)</span>
+                <span>30%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-fats" style="width: 30%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Dad Meal Plan Cards -->
+          <div class="meal-plan-grid">
+            
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-sun"></i> 06:45 AM • Pre-Dog Walk</div>
+              <h4>Hydration & Energy Kickstart</h4>
+              <p>500ml water + 1 Banana OR 1 Rice cake with peanut butter</p>
+              <span class="meal-macros">~120 kcal | 2g P | 25g C | 3g F</span>
+            </div>
+
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-mug-hot"></i> 07:45 AM • Post-Walk Breakfast</div>
+              <h4>High-Protein Dad Oats or Eggs</h4>
+              <p><strong>Option A:</strong> 50g Rolled oats + 1 scoop Whey Protein + 100g Berries + Water/Almond milk.<br><strong>Option B:</strong> 3 Scrambled eggs on 2 slices wholewheat toast + spinach.</p>
+              <span class="meal-macros">~420 kcal | 35g P | 45g C | 10g F</span>
+            </div>
+
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-briefcase"></i> 12:30 PM • Work Lunch</div>
+              <h4>Quick Meal-Prep Bowl</h4>
+              <p>150g Grilled chicken breast / lean turkey + 150g Cooked rice/quinoa + Steamed broccoli + 1 tbsp light dressing.</p>
+              <span class="meal-macros">~520 kcal | 42g P | 50g C | 14g F</span>
+            </div>
+
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-apple-whole"></i> 16:30 PM • Pre-Run / Afternoon Snack</div>
+              <h4>Fuel & Stamina Booster</h4>
+              <p>1 Apple + Handful of almonds (20g) OR 1 Protein Bar.</p>
+              <span class="meal-macros">~220 kcal | 15g P | 22g C | 8g F</span>
+            </div>
+
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-utensils"></i> 19:45 PM • Dinner</div>
+              <h4>Family Recovery Dinner</h4>
+              <p>180g Baked Salmon or Extra-Lean Mince (5%) + 200g Baked Sweet Potato wedges + Large mixed salad with olive oil dressing.</p>
+              <span class="meal-macros">~550 kcal | 45g P | 48g C | 20g F</span>
+            </div>
+
+            <div class="meal-card">
+              <div class="meal-time"><i class="fa-solid fa-moon"></i> 21:15 PM • Evening Sleep Aid</div>
+              <h4>Newborn Recovery Snack</h4>
+              <p>150g 0% Greek Yogurt + 1 tsp Honey + Chamomile Tea + Magnesium Glycinate supplement (improves sleep efficiency!).</p>
+              <span class="meal-macros">~120 kcal | 15g P | 12g C | 0g F</span>
+            </div>
+
+          </div>
+
+          <!-- Hydration Tracker -->
+          <div class="hydration-card">
+            <div class="hydration-header">
+              <h3><i class="fa-solid fa-droplet"></i> Daily Water Goal (3.0 Litres)</h3>
+              <span id="water-count">0 / 6 Glasses</span>
+            </div>
+            <div class="water-buttons" id="water-tracker">
+              <!-- Rendered by JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: DAILY ROUTINE -->
+    <section id="tab-schedule" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2>Mon-Fri Dad & Runner Timeblock</h2>
+          <p class="subtitle">Designed around work, 3mo baby duty, and dog walking</p>
+        </div>
+        <div class="card-body">
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-time">06:40 AM</div>
+              <div class="timeline-content">
+                <h4>Wake & Hydrate</h4>
+                <p>Drink 500ml water, quick banana/snack, put on walking/running kit.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item anchor-item">
+              <div class="timeline-time">07:00 AM</div>
+              <div class="timeline-content">
+                <h4><i class="fa-solid fa-dog"></i> Morning Dog Walk 1 (Anchor #1)</h4>
+                <p>30 mins walking. Great light exposure for circadian rhythm. Acts as natural warm-up on run days!</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-time">07:45 AM</div>
+              <div class="timeline-content">
+                <h4>Breakfast & Baby Handover</h4>
+                <p>High protein breakfast, shower, help with baby morning routine.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item work-item">
+              <div class="timeline-time">08:30 AM - 17:00 PM</div>
+              <div class="timeline-content">
+                <h4><i class="fa-solid fa-laptop"></i> Work Window (Mon-Fri)</h4>
+                <p>Desk work. Stay hydrated (drink 1.5L water during work). 12:30 Lunch break walk/prep.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item run-item">
+              <div class="timeline-time">17:30 PM</div>
+              <div class="timeline-content">
+                <h4><i class="fa-solid fa-person-running"></i> Run Window (Tue / Thu)</h4>
+                <p>30-40 min run window right after work before dinner prep.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item anchor-item">
+              <div class="timeline-time">19:00 PM</div>
+              <div class="timeline-content">
+                <h4><i class="fa-solid fa-dog"></i> Evening Dog Walk 2 (Anchor #2)</h4>
+                <p>30 mins family/dog walk. Decompress from work day, active recovery leg flush.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-time">19:45 PM</div>
+              <div class="timeline-content">
+                <h4>Dinner & Family Time</h4>
+                <p>High protein dinner, baby bedtime routine.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item sleep-item">
+              <div class="timeline-time">21:30 PM</div>
+              <div class="timeline-content">
+                <h4>Wind-down & Sleep Priority</h4>
+                <p>Screens off, magnesium supplement, maximize sleep quality for night feeds.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: STRAVA TOOLS & GENERATOR -->
+    <section id="tab-tools" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <h2>Strava Title Generator & Pace Calc</h2>
+          <p class="subtitle">Keep your Strava feed funny & check target paces</p>
+        </div>
+        <div class="card-body">
+          
+          <div class="tool-box">
+            <h3><i class="fa-solid fa-quote-left"></i> Strava Title Generator</h3>
+            <p>Need a funny dramatic title for your next run? Click below!</p>
+            
+            <div class="title-display" id="strava-title-output">"Dans Fatyard Ultra Part II"</div>
+            
+            <button class="btn btn-secondary btn-block" onclick="generateStravaTitle()">
+              <i class="fa-solid fa-dice"></i> Generate Funny Title
+            </button>
+          </div>
+
+          <hr class="divider">
+
+          <div class="tool-box">
+            <h3><i class="fa-solid fa-calculator"></i> Zone 2 Easy Pace Calculator</h3>
+            <p>Enter your target 5k time to get your optimal Easy/Recovery Run pace:</p>
+            
+            <div class="input-group">
+              <label for="target-5k">Current/Target 5k Time (minutes):</label>
+              <input type="number" id="target-5k" value="33" min="15" max="60" class="form-input">
+            </div>
+
+            <button class="btn btn-primary btn-block" onclick="calculatePaces()">Calculate Paces</button>
+
+            <div id="pace-results" class="pace-results hidden">
+              <div class="pace-row">
+                <span>Zone 2 Easy / Recovery Pace:</span>
+                <strong id="pace-easy">7:45 - 8:15 /km</strong>
+              </div>
+              <div class="pace-row">
+                <span>Tempo / Threshold Pace:</span>
+                <strong id="pace-tempo">6:15 - 6:35 /km</strong>
+              </div>
+              <div class="pace-row">
+                <span>Sub-30 5k Goal Pace:</span>
+                <strong>5:59 /km</strong>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- GitHub Pages Modal Guide -->
+  <div id="gh-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="fa-brands fa-github"></i> Host on GitHub Pages (Free)</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ol class="setup-steps">
+          <li>Create a new repository on <a href="https://github.com" target="_blank" rel="noopener">GitHub.com</a> named <code>dad-runner-hub</code>.</li>
+          <li>Upload the 3 files from this project: <code>index.html</code>, <code>styles.css</code>, and <code>app.js</code>.</li>
+          <li>Go to Repository <strong>Settings &rarr; Pages</strong>.</li>
+          <li>Under <strong>Build and deployment</strong>, set Source to <code>Deploy from a branch</code> and select <code>main</code> branch / <code>/root</code> folder.</li>
+          <li>Click <strong>Save</strong>! In ~60 seconds your site will be live at <code>https://yourusername.github.io/dad-runner-hub</code>!</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
