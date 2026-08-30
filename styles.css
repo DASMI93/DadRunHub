@@ -132,11 +132,17 @@ body {
   backdrop-filter: blur(16px);
   border-top: 1px solid var(--border-color);
   display: flex;
-  justify-content: space-around;
-  padding: 8px 4px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 8px;
   z-index: 1000;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.nav-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-btn {
@@ -153,7 +159,8 @@ body {
   padding: 6px 12px;
   border-radius: 10px;
   transition: all 0.2s ease;
-  flex: 1;
+  flex: 0 0 auto;
+  min-width: 70px;
 }
 
 .nav-btn i {
