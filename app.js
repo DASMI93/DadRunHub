@@ -97,15 +97,147 @@ const stravaTitles = [
   "Post-work sweat session"
 ];
 
+// Fussy-Partner Approved Family Recipes Data
+const familyRecipesData = [
+  {
+    id: "r1",
+    category: "fakeaway",
+    title: "Smash-Style Lean Burgers & Sweet Potato Wedges",
+    prepTime: "15 mins",
+    cookTime: "15 mins",
+    hack: "Serve sauces, gherkins, and salad on separate side plates. Your partner gets a classic cheese burger while you load yours with extra salad!",
+    macros: "~540 kcal | 42g Protein | 55g Carbs | 16g Fats",
+    ingredients: [
+      "250g 5% fat beef mince (split into 2 thin patties)",
+      "2 Brioche or wholemeal burger buns",
+      "2 Slices light cheddar cheese",
+      "200g Sweet potato (sliced into chips, tossed with 1 tsp olive oil & smoked paprika)",
+      "Side salad, pickles, light ketchup / burger sauce"
+    ],
+    steps: [
+      "Oven bake or air-fry sweet potato wedges @ 200°C for 20 mins.",
+      "Heat a hot non-stick pan. Press mince patties flat with a spatula for 2 mins per side until charred. Top with cheese.",
+      "Lightly toast buns, assemble burgers, and serve with sweet potato wedges."
+    ]
+  },
+  {
+    id: "r2",
+    category: "fakeaway",
+    title: "Crispy 'KFC' Chicken Wraps",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Coating chicken in crushed cornflakes gives an epic crunch without deep frying! Serve with plain mayo for fussy partners.",
+    macros: "~460 kcal | 40g Protein | 49g Carbs | 10g Fats",
+    ingredients: [
+      "250g Chicken breast (cut into thick strips)",
+      "30g Cornflakes (crushed)",
+      "1 Egg (beaten)",
+      "2 Tortilla wraps",
+      "Light mayo / Perinaise & shredded lettuce"
+    ],
+    steps: [
+      "Dip chicken strips into beaten egg, then roll in crushed cornflakes.",
+      "Air-fry @ 190°C or bake for 12-14 mins until golden & crispy.",
+      "Warm tortillas, spread mayo, add crispy chicken and wrap tightly."
+    ]
+  },
+  {
+    id: "r3",
+    category: "quick",
+    title: "Mild Mexican Taco / Burrito Bowls",
+    prepTime: "10 mins",
+    cookTime: "10 mins",
+    hack: "Deconstructed taco bar! Serve chicken, cheese, sweetcorn, rice, and salsa in separate bowls so fussy partners build plain chicken-and-cheese tacos.",
+    macros: "~510 kcal | 44g Protein | 58g Carbs | 12g Fats",
+    ingredients: [
+      "300g Cooked shredded chicken breast (seasoned with mild taco spice)",
+      "150g Microwave basmati or Mexican rice",
+      "100g Sweetcorn & black beans (optional for partner)",
+      "40g Grated light cheddar",
+      "Mild salsa & light sour cream / Greek yogurt"
+    ],
+    steps: [
+      "Pan warm shredded chicken with 1 tbsp water & 1 tsp mild taco seasoning.",
+      "Heat microwave rice.",
+      "Assemble into bowls or warm tortilla wraps with desired toppings."
+    ]
+  },
+  {
+    id: "r4",
+    category: "quick",
+    title: "Creamy Garlic & Herb Chicken Pasta",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Swaps heavy double cream for Garlic & Herb Light Cream Cheese (e.g. Philadelphia Light). Smooth, rich, and 100% fuss-free!",
+    macros: "~520 kcal | 46g Protein | 56g Carbs | 11g Fats",
+    ingredients: [
+      "250g Chicken breast (diced)",
+      "140g Penne or fusilli pasta",
+      "80g Light Garlic & Herb cream cheese",
+      "50ml Pasta cooking water",
+      "Handful of baby spinach (optional to stir into your portion!)"
+    ],
+    steps: [
+      "Boil pasta in salted water until al dente (reserve 50ml pasta water).",
+      "Sear diced chicken in a pan with olive oil spray until cooked through.",
+      "Stir light cream cheese and reserved pasta water into the chicken to create a silky sauce, then toss with cooked pasta."
+    ]
+  },
+  {
+    id: "r5",
+    category: "comfort",
+    title: "Rich Lean Beef Cottage Pie with Sweet Potato Mash",
+    prepTime: "15 mins",
+    cookTime: "25 mins",
+    hack: "Grate onions and carrots finely into the beef gravy so they melt into the sauce—zero visible veggie chunks for fussy partners!",
+    macros: "~480 kcal | 42g Protein | 48g Carbs | 13g Fats",
+    ingredients: [
+      "300g 5% Lean beef mince",
+      "1 Onion & 1 carrot (finely grated)",
+      "1 Beef stock cube + 200ml boiling water + 1 tbsp Worcestershire sauce",
+      "300g Sweet potatoes (boiled & mashed with a splash of milk)",
+      "50g Frozen garden peas"
+    ],
+    steps: [
+      "Brown mince with grated onion & carrot for 5 mins.",
+      "Add stock and Worcestershire sauce, simmer for 10 mins until thick sauce forms.",
+      "Transfer to a dish, top with sweet potato mash, and grill for 8 mins until golden."
+    ]
+  },
+  {
+    id: "r6",
+    category: "fakeaway",
+    title: "Mild Tikka 'Butter Chicken' & Rice",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Blends passata + 0% Greek yogurt for a restaurant-style creamy butter chicken texture without heavy cream or burning heat.",
+    macros: "~490 kcal | 45g Protein | 52g Carbs | 9g Fats",
+    ingredients: [
+      "300g Chicken breast (cubed)",
+      "2 tbsp Mild tikka masala curry paste",
+      "150g Tomato passata",
+      "100g 0% Greek yogurt",
+      "150g Cooked basmati rice"
+    ],
+    steps: [
+      "Fry cubed chicken with curry paste for 4 mins.",
+      "Pour in passata, simmer for 8 mins until chicken is tender.",
+      "Remove from heat, stir in Greek yogurt until creamy, and serve over hot basmati rice."
+    ]
+  }
+];
+
 // Application State
 let completedRuns = JSON.parse(localStorage.getItem('dadrunner_runs')) || {};
 let waterCount = parseInt(localStorage.getItem('dadrunner_water')) || 0;
+let currentRecipeCategory = 'all';
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   renderWorkoutPlan();
   initHydrationTracker();
+  renderFamilyRecipes();
   initModal();
 });
 
@@ -275,3 +407,61 @@ function initModal() {
     });
   }
 }
+
+// Family Recipe Renderer & Filter
+function filterRecipes(category) {
+  currentRecipeCategory = category;
+  document.querySelectorAll('.filter-chip').forEach(chip => {
+    chip.classList.toggle('active', chip.getAttribute('onclick').includes(`'${category}'`));
+  });
+  renderFamilyRecipes();
+}
+
+function renderFamilyRecipes() {
+  const container = document.getElementById('recipes-container');
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const filtered = currentRecipeCategory === 'all' 
+    ? familyRecipesData 
+    : familyRecipesData.filter(r => r.category === currentRecipeCategory);
+
+  filtered.forEach(recipe => {
+    const card = document.createElement('div');
+    card.className = 'recipe-card';
+
+    const ingredientsList = recipe.ingredients.map(i => `<li>${i}</li>`).join('');
+    const stepsList = recipe.steps.map(s => `<li>${s}</li>`).join('');
+
+    card.innerHTML = `
+      <div class="recipe-header">
+        <h3>${recipe.title}</h3>
+      </div>
+      <div class="recipe-meta">
+        <span><i class="fa-solid fa-clock"></i> Prep: ${recipe.prepTime}</span>
+        <span><i class="fa-solid fa-fire"></i> Cook: ${recipe.cookTime}</span>
+      </div>
+      <div class="fussy-hack">
+        <div class="fussy-hack-title"><i class="fa-solid fa-shield-heart"></i> Fussy Partner Hack</div>
+        <div class="fussy-hack-text">${recipe.hack}</div>
+      </div>
+      <div class="recipe-details">
+        <div>
+          <div class="recipe-section-title">Ingredients (Serves 2-3)</div>
+          <ul class="recipe-ingredients-list">${ingredientsList}</ul>
+        </div>
+        <div>
+          <div class="recipe-section-title">Quick Steps</div>
+          <ol class="recipe-steps-list">${stepsList}</ol>
+        </div>
+      </div>
+      <div class="recipe-footer">
+        <span class="recipe-macro-badge">${recipe.macros}</span>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+

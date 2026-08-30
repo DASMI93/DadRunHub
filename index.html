@@ -49,6 +49,10 @@
       <i class="fa-solid fa-utensils"></i>
       <span>Diet & Macros</span>
     </button>
+    <button class="nav-btn" data-tab="tab-family-meals">
+      <i class="fa-solid fa-people-roof"></i>
+      <span>Family Meals</span>
+    </button>
     <button class="nav-btn" data-tab="tab-schedule">
       <i class="fa-solid fa-clock"></i>
       <span>Daily Routine</span>
@@ -253,6 +257,40 @@
             <div class="water-buttons" id="water-tracker">
               <!-- Rendered by JS -->
             </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB: FAMILY MEALS (FUSSY-PARTNER FRIENDLY) -->
+    <section id="tab-family-meals" class="tab-pane">
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <h2>Fussy-Partner Approved Family Dinners</h2>
+            <p class="subtitle">Crowd-pleasing comfort foods disguised as high-protein, runner-healthy meals</p>
+          </div>
+          <span class="badge badge-success"><i class="fa-solid fa-heart"></i> Partner & Dad Approved</span>
+        </div>
+        <div class="card-body">
+          
+          <div class="alert alert-info">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span><strong>Fussy-Eater Strategy:</strong> Every recipe uses familiar comfort ingredients with hidden lean protein and a "Deconstruct Hack" so your partner can customize toppings!</span>
+          </div>
+
+          <!-- Recipe Filter Tabs -->
+          <div class="recipe-filters" id="recipe-filters">
+            <button class="filter-chip active" onclick="filterRecipes('all')">All Meals</button>
+            <button class="filter-chip" onclick="filterRecipes('fakeaway')">🍔 Fakeaways</button>
+            <button class="filter-chip" onclick="filterRecipes('quick')">⚡ 20-Min Quick</button>
+            <button class="filter-chip" onclick="filterRecipes('comfort')">🍲 One-Pan Comfort</button>
+          </div>
+
+          <!-- Recipes Grid -->
+          <div class="family-recipes-grid" id="recipes-container">
+            <!-- Populated dynamically by app.js -->
           </div>
 
         </div>
