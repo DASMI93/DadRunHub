@@ -390,7 +390,8 @@ const familyRecipesData = [
 ];
 
 // Application State
-let completedRuns = JSON.parse(localStorage.getItem('dadrunner_runs')) || {};
+const defaultCompleted = { w1r1: true, w1r2: true, w1r3: true, w2r1: true, w2r2: true, w2r3: true };
+let completedRuns = JSON.parse(localStorage.getItem('dadrunner_runs')) || defaultCompleted;
 let waterCount = parseInt(localStorage.getItem('dadrunner_water')) || 0;
 let currentRecipeCategory = 'all';
 
