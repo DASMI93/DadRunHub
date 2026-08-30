@@ -205,6 +205,185 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.brand-avatar {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--brand-strava), #ff7a00);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 900;
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(252, 82, 0, 0.4);
+}
+
+/* Hero Athlete Banner */
+.hero-card {
+  background: linear-gradient(135deg, rgba(252, 82, 0, 0.12), rgba(17, 25, 40, 0.95));
+  border: 1px solid rgba(252, 82, 0, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 35px -10px rgba(252, 82, 0, 0.2);
+}
+
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand-strava);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brand-strava);
+  box-shadow: 0 0 10px var(--brand-strava);
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0.4; transform: scale(0.9); }
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.hero-desc {
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.hero-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  background: rgba(9, 13, 22, 0.7);
+  border: 1px solid var(--border-subtle);
+  padding: 12px 8px;
+  border-radius: var(--radius-md);
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-val {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.hero-stat-val small {
+  font-size: 11px;
+  color: var(--text-sub);
+}
+
+.hero-stat-lbl {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+/* Highlight & Workout Focus Cards */
+.highlight-card {
+  background: linear-gradient(135deg, rgba(255, 122, 0, 0.15), rgba(17, 25, 40, 0.9)) !important;
+  border: 1px solid rgba(252, 82, 0, 0.4) !important;
+  cursor: pointer;
+}
+
+.pill-tag {
+  background: var(--brand-strava);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 12px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.workout-focus-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(17, 25, 40, 0.9));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-top: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.workout-focus-card:hover {
+  transform: translateY(-2px);
+}
+
+.focus-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.focus-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--accent-emerald);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.focus-week {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-sub);
+}
+
+.workout-focus-card h3 {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.workout-focus-card p {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-bottom: 14px;
+}
+
+.focus-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-emerald);
+}
+
 /* Card Design System */
 .welcome-card, .card {
   background: var(--bg-card);
