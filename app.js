@@ -97,7 +97,7 @@ const stravaTitles = [
   "Post-work sweat session"
 ];
 
-// Fussy-Partner Approved Family Recipes Data
+// Fussy-Partner Approved Family Recipes Data (14+ Options)
 const familyRecipesData = [
   {
     id: "r1",
@@ -105,7 +105,7 @@ const familyRecipesData = [
     title: "Smash-Style Lean Burgers & Sweet Potato Wedges",
     prepTime: "15 mins",
     cookTime: "15 mins",
-    hack: "Serve sauces, gherkins, and salad on separate side plates. Your partner gets a classic cheese burger while you load yours with extra salad!",
+    hack: "Serve sauces, gherkins, and salad on separate side plates. Your partner gets a classic cheeseburger while you load yours with extra salad!",
     macros: "~540 kcal | 42g Protein | 55g Carbs | 16g Fats",
     ingredients: [
       "250g 5% fat beef mince (split into 2 thin patties)",
@@ -143,6 +143,127 @@ const familyRecipesData = [
   },
   {
     id: "r3",
+    category: "fakeaway",
+    title: "Crispy Sweet & Sour Chicken (Chinese Takeaway)",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Air-fry cornstarch-dusted chicken for crunch. Toss sauce separately so partner gets plain crispy chicken nuggets if preferred!",
+    macros: "~500 kcal | 44g Protein | 58g Carbs | 9g Fats",
+    ingredients: [
+      "300g Chicken breast (cubed & tossed in 1 tbsp cornstarch)",
+      "3 tbsp Light sweet & sour sauce (or pineapple juice + ketchup + soy)",
+      "150g Microwave egg fried or basmati rice",
+      "Sliced peppers & pineapple chunks (optional for partner)"
+    ],
+    steps: [
+      "Spray cornstarch-dusted chicken with olive oil and air-fry @ 200°C for 12 mins until super crispy.",
+      "Heat sauce in a pan with peppers/pineapple.",
+      "Toss crispy chicken in sauce right before serving over hot rice."
+    ]
+  },
+  {
+    id: "r4",
+    category: "fakeaway",
+    title: "Homemade Pepperoni & Chicken Flatbread Pizza",
+    prepTime: "10 mins",
+    cookTime: "10 mins",
+    hack: "Use high-protein flatbreads or Greek yogurt dough. Partner builds a classic cheese & pepperoni pizza, you add chicken & veggies!",
+    macros: "~510 kcal | 45g Protein | 48g Carbs | 14g Fats",
+    ingredients: [
+      "2 High-protein flatbreads or naan breads",
+      "4 tbsp Tomato passata + 1 tsp oregano",
+      "60g Light mozzarella (grated)",
+      "100g Cooked chicken breast & 8 slices pepperoni",
+      "Fresh basil or sweetcorn (optional)"
+    ],
+    steps: [
+      "Spread passata evenly over flatbread bases.",
+      "Top with mozzarella, cooked chicken, and pepperoni.",
+      "Bake in a hot oven @ 210°C for 8-10 mins until cheese is bubbling."
+    ]
+  },
+  {
+    id: "r5",
+    category: "fakeaway",
+    title: "Nando's Style Peri-Peri Chicken & Rice",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Marinate partner's chicken in Lemon & Herb (zero heat) and yours in Medium/Hot Peri-Peri sauce!",
+    macros: "~520 kcal | 48g Protein | 52g Carbs | 11g Fats",
+    ingredients: [
+      "300g Chicken breast or thighs",
+      "3 tbsp Nando's Peri-Peri marinade (Lemon & Herb for partner)",
+      "150g Spicy microwave rice or plain basmati",
+      "Corn on the cob & halloumi slices (optional)"
+    ],
+    steps: [
+      "Coat chicken in chosen marinade.",
+      "Grill or oven bake @ 200°C for 15 mins until cooked through.",
+      "Serve with warm spicy rice and grilled corn."
+    ]
+  },
+  {
+    id: "r6",
+    category: "fakeaway",
+    title: "Greek Doner Gyros Flatbread Wraps",
+    prepTime: "10 mins",
+    cookTime: "12 mins",
+    hack: "Seasoned lean beef/lamb mince pressed thin and sliced into gyros strips. Serve chips inside the wrap for authentic takeaway vibes!",
+    macros: "~520 kcal | 42g Protein | 50g Carbs | 15g Fats",
+    ingredients: [
+      "250g 5% Beef mince (seasoned with garlic, oregano, cumin)",
+      "2 Greek pita or flatbreads",
+      "100g Oven chips",
+      "2 tbsp Tzatziki sauce & sliced tomatoes/cucumber"
+    ],
+    steps: [
+      "Press seasoned mince into a flat sheet in a hot pan, cook 4 mins per side, then slice into thin gyros strips.",
+      "Bake oven chips.",
+      "Warm pita, spread tzatziki, fill with gyros meat, chips, and fresh salad."
+    ]
+  },
+  {
+    id: "r7",
+    category: "fakeaway",
+    title: "Chinese Takeaway Salt & Pepper Chicken & Chips",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Toss air-fried chicken strips & chips in Chinese five-spice and garlic salt. Skip raw chillies for fussy partner portions!",
+    macros: "~490 kcal | 42g Protein | 56g Carbs | 10g Fats",
+    ingredients: [
+      "250g Chicken breast strips",
+      "200g Oven chip potatoes",
+      "1 tsp Chinese five-spice + 1/2 tsp garlic salt",
+      "Sliced spring onions & peppers"
+    ],
+    steps: [
+      "Air-fry chips and chicken strips together @ 200°C for 15 mins.",
+      "Flash-fry peppers and spring onions in a wok with five-spice and garlic salt.",
+      "Toss crispy chicken & chips in the wok for 1 min before serving."
+    ]
+  },
+  {
+    id: "r8",
+    category: "fakeaway",
+    title: "Mild Japanese Chicken Katsu Curry & Rice",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Panko breadcrumbed air-fried chicken served with a smooth blended Japanese curry sauce (no bits or chunks for fussy eaters!).",
+    macros: "~510 kcal | 43g Protein | 55g Carbs | 11g Fats",
+    ingredients: [
+      "250g Chicken breast (flattened with rolling pin)",
+      "30g Panko breadcrumbs + 1 egg",
+      "150g Basmati rice",
+      "1/2 Block S&B Golden Curry paste (blended smooth with 200ml water)"
+    ],
+    steps: [
+      "Dip chicken in egg, coat in panko, and air-fry @ 190°C for 14 mins.",
+      "Dissolve curry paste in boiling water to create a silky smooth sauce.",
+      "Slice crispy chicken, serve over rice, and pour curry sauce on top."
+    ]
+  },
+  {
+    id: "r9",
     category: "quick",
     title: "Mild Mexican Taco / Burrito Bowls",
     prepTime: "10 mins",
@@ -163,7 +284,7 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r4",
+    id: "r10",
     category: "quick",
     title: "Creamy Garlic & Herb Chicken Pasta",
     prepTime: "5 mins",
@@ -184,7 +305,48 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r5",
+    id: "r11",
+    category: "quick",
+    title: "Cheesy Chicken & Bacon Quesadillas",
+    prepTime: "5 mins",
+    cookTime: "10 mins",
+    hack: "Golden toasted tortilla triangles filled with shredded chicken, bacon lardons, and melted cheddar. Great for dip-and-eat dinner!",
+    macros: "~470 kcal | 41g Protein | 44g Carbs | 14g Fats",
+    ingredients: [
+      "2 Large tortilla wraps",
+      "200g Cooked shredded chicken breast",
+      "30g Cooked bacon lardons",
+      "50g Grated light cheddar",
+      "Mild salsa for dipping"
+    ],
+    steps: [
+      "Place chicken, bacon, and cheese inside folded wraps.",
+      "Toast in a hot dry pan for 3 mins per side until cheese is melted and wrap is golden.",
+      "Slice into triangles and serve with salsa."
+    ]
+  },
+  {
+    id: "r12",
+    category: "comfort",
+    title: "Loaded Cheeseburger Dirty Fries",
+    prepTime: "10 mins",
+    cookTime: "20 mins",
+    hack: "Takeaway comfort food made lean! Crispy potato wedges topped with seasoned 5% mince, melted light cheese slice, and burger sauce.",
+    macros: "~530 kcal | 44g Protein | 48g Carbs | 16g Fats",
+    ingredients: [
+      "300g Potato wedges (baked crisp)",
+      "250g 5% Beef mince",
+      "2 Slices light cheddar",
+      "2 tbsp Light burger sauce / gherkin relish"
+    ],
+    steps: [
+      "Bake potato wedges in oven or air-fryer @ 200°C for 20 mins.",
+      "Pan brown beef mince with salt & pepper.",
+      "Top wedges with hot beef mince and cheese slice to melt, drizzle with burger sauce."
+    ]
+  },
+  {
+    id: "r13",
     category: "comfort",
     title: "Rich Lean Beef Cottage Pie with Sweet Potato Mash",
     prepTime: "15 mins",
@@ -205,8 +367,8 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r6",
-    category: "fakeaway",
+    id: "r14",
+    category: "comfort",
     title: "Mild Tikka 'Butter Chicken' & Rice",
     prepTime: "10 mins",
     cookTime: "15 mins",
