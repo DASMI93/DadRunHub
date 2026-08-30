@@ -97,10 +97,117 @@ const stravaTitles = [
   "Post-work sweat session"
 ];
 
-// Fussy-Partner Approved Family Recipes Data (14+ Options)
+// Fussy-Partner Approved Family Recipes Data (20 Options: 5 Slowcooker, 5 Fakeaways, 5 One-Pan, 5 Regular)
 const familyRecipesData = [
+  // --- SLOWCOOKER MEALS (5) ---
   {
-    id: "r1",
+    id: "sc1",
+    category: "slowcooker",
+    title: "Slowcooker Beef Chilli Con Carne & Rice",
+    prepTime: "10 mins",
+    cookTime: "4-6 hrs",
+    hack: "Serve guacamole, jalapenos, cheese, sour cream, and tortilla chips on separate side dishes. Partner builds plain beef & rice; you load up the works!",
+    macros: "~510 kcal | 44g Protein | 54g Carbs | 12g Fats",
+    ingredients: [
+      "400g 5% Lean beef mince",
+      "1 Can kidney beans & 1 can chopped tomatoes",
+      "1 tbsp Mild chilli powder & 1 beef stock cube",
+      "Cooked basmati rice",
+      "Toppings: light cheddar, sour cream, guacamole, tortilla chips"
+    ],
+    steps: [
+      "Brown mince in a pan for 4 mins, then transfer to slowcooker with tomatoes, kidney beans, stock & seasoning.",
+      "Cook on LOW for 6 hours (or HIGH for 4 hours).",
+      "Serve over warm rice with customized side toppings."
+    ]
+  },
+  {
+    id: "sc2",
+    category: "slowcooker",
+    title: "Slowcooker BBQ Pulled Chicken Jackets / Sliders",
+    prepTime: "5 mins",
+    cookTime: "4 hrs",
+    hack: "Chicken breasts cooked in low-sugar BBQ sauce until shreddable with two forks. Serve on soft brioche rolls or baked jacket potatoes!",
+    macros: "~480 kcal | 45g Protein | 50g Carbs | 10g Fats",
+    ingredients: [
+      "400g Chicken breasts",
+      "150g Low-sugar BBQ sauce",
+      "1 tbsp Apple cider vinegar & 1 tsp garlic powder",
+      "4 Brioche burger buns or jacket potatoes",
+      "Light coleslaw on the side"
+    ],
+    steps: [
+      "Place chicken breasts in slowcooker, cover with BBQ sauce, vinegar & garlic powder.",
+      "Cook on LOW for 4-5 hours until tender.",
+      "Shred with two forks, toss in sauce, and serve on buns or jacket potatoes."
+    ]
+  },
+  {
+    id: "sc3",
+    category: "slowcooker",
+    title: "Slowcooker Creamy Chicken Tikka Masala",
+    prepTime: "10 mins",
+    cookTime: "4 hrs",
+    hack: "Passata & mild tikka paste simmered with chicken. Stir in 0% Greek yogurt at the end for a silky, non-spicy butter chicken texture partner will love!",
+    macros: "~490 kcal | 45g Protein | 52g Carbs | 9g Fats",
+    ingredients: [
+      "400g Chicken breasts (cubed)",
+      "1 Can passata (400g)",
+      "2 tbsp Mild tikka masala curry paste",
+      "150g 0% Greek yogurt (stirred in at end)",
+      "Basmati rice & naan breads"
+    ],
+    steps: [
+      "Add chicken, passata, and tikka paste to slowcooker. Cook on LOW for 4 hours.",
+      "Turn off heat, let cool slightly for 5 mins, then fold in Greek yogurt.",
+      "Serve over steamed basmati rice with warm naan."
+    ]
+  },
+  {
+    id: "sc4",
+    category: "slowcooker",
+    title: "Slowcooker Rich Beef Bolognese Pasta",
+    prepTime: "10 mins",
+    cookTime: "6 hrs",
+    hack: "Finely grate carrots & onions into the slowcooker—they melt into a sweet, rich tomato sauce with zero visible veggie chunks for fussy partners!",
+    macros: "~520 kcal | 44g Protein | 56g Carbs | 12g Fats",
+    ingredients: [
+      "400g 5% Beef mince",
+      "1 Onion & 1 carrot (finely grated)",
+      "1 Can chopped tomatoes + 2 tbsp tomato puree",
+      "1 Beef stock cube + 1 tsp oregano",
+      "Penne or spaghetti pasta"
+    ],
+    steps: [
+      "Brown mince in a pan, then transfer to slowcooker with grated veggies, tomatoes, puree & herbs.",
+      "Cook on LOW for 6 hours until super rich & thick.",
+      "Toss with freshly boiled pasta and top with light parmesan."
+    ]
+  },
+  {
+    id: "sc5",
+    category: "slowcooker",
+    title: "Slowcooker Sausage & Sweet Potato Casserole",
+    prepTime: "10 mins",
+    cookTime: "5 hrs",
+    hack: "Use 97% lean pork or chicken sausages. Thick sweet onion gravy with smooth mashed potato for partner; add green beans to your plate!",
+    macros: "~470 kcal | 38g Protein | 46g Carbs | 14g Fats",
+    ingredients: [
+      "6 Lean pork or chicken sausages (97% meat)",
+      "300g Sweet potato (cubed)",
+      "1 Can chopped tomatoes + 200ml onion gravy",
+      "1 tsp Smoked paprika & thyme"
+    ],
+    steps: [
+      "Brown sausages in a pan for 4 mins, then place in slowcooker with sweet potatoes, tomatoes & gravy.",
+      "Cook on LOW for 5 hours.",
+      "Serve piping hot with optional green vegetables."
+    ]
+  },
+
+  // --- FAKEAWAYS (5) ---
+  {
+    id: "fk1",
     category: "fakeaway",
     title: "Smash-Style Lean Burgers & Sweet Potato Wedges",
     prepTime: "15 mins",
@@ -121,9 +228,9 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r2",
+    id: "fk2",
     category: "fakeaway",
-    title: "Crispy 'KFC' Chicken Wraps",
+    title: "Crispy 'KFC' Style Chicken Wraps",
     prepTime: "10 mins",
     cookTime: "15 mins",
     hack: "Coating chicken in crushed cornflakes gives an epic crunch without deep frying! Serve with plain mayo for fussy partners.",
@@ -142,9 +249,9 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r3",
+    id: "fk3",
     category: "fakeaway",
-    title: "Crispy Sweet & Sour Chicken (Chinese Takeaway)",
+    title: "Crispy Sweet & Sour Chicken & Rice",
     prepTime: "10 mins",
     cookTime: "15 mins",
     hack: "Air-fry cornstarch-dusted chicken for crunch. Toss sauce separately so partner gets plain crispy chicken nuggets if preferred!",
@@ -162,7 +269,7 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r4",
+    id: "fk4",
     category: "fakeaway",
     title: "Homemade Pepperoni & Chicken Flatbread Pizza",
     prepTime: "10 mins",
@@ -183,29 +290,9 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r5",
+    id: "fk5",
     category: "fakeaway",
-    title: "Nando's Style Peri-Peri Chicken & Rice",
-    prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Marinate partner's chicken in Lemon & Herb (zero heat) and yours in Medium/Hot Peri-Peri sauce!",
-    macros: "~520 kcal | 48g Protein | 52g Carbs | 11g Fats",
-    ingredients: [
-      "300g Chicken breast or thighs",
-      "3 tbsp Nando's Peri-Peri marinade (Lemon & Herb for partner)",
-      "150g Spicy microwave rice or plain basmati",
-      "Corn on the cob & halloumi slices (optional)"
-    ],
-    steps: [
-      "Coat chicken in chosen marinade.",
-      "Grill or oven bake @ 200°C for 15 mins until cooked through.",
-      "Serve with warm spicy rice and grilled corn."
-    ]
-  },
-  {
-    id: "r6",
-    category: "fakeaway",
-    title: "Greek Doner Gyros Flatbread Wraps",
+    title: "Greek Doner Gyros Flatbread Wraps with Chips",
     prepTime: "10 mins",
     cookTime: "12 mins",
     hack: "Seasoned lean beef/lamb mince pressed thin and sliced into gyros strips. Serve chips inside the wrap for authentic takeaway vibes!",
@@ -222,74 +309,15 @@ const familyRecipesData = [
       "Warm pita, spread tzatziki, fill with gyros meat, chips, and fresh salad."
     ]
   },
+
+  // --- ONE-PAN MEALS (5) ---
   {
-    id: "r7",
-    category: "fakeaway",
-    title: "Chinese Takeaway Salt & Pepper Chicken & Chips",
-    prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Toss air-fried chicken strips & chips in Chinese five-spice and garlic salt. Skip raw chillies for fussy partner portions!",
-    macros: "~490 kcal | 42g Protein | 56g Carbs | 10g Fats",
-    ingredients: [
-      "250g Chicken breast strips",
-      "200g Oven chip potatoes",
-      "1 tsp Chinese five-spice + 1/2 tsp garlic salt",
-      "Sliced spring onions & peppers"
-    ],
-    steps: [
-      "Air-fry chips and chicken strips together @ 200°C for 15 mins.",
-      "Flash-fry peppers and spring onions in a wok with five-spice and garlic salt.",
-      "Toss crispy chicken & chips in the wok for 1 min before serving."
-    ]
-  },
-  {
-    id: "r8",
-    category: "fakeaway",
-    title: "Mild Japanese Chicken Katsu Curry & Rice",
-    prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Panko breadcrumbed air-fried chicken served with a smooth blended Japanese curry sauce (no bits or chunks for fussy eaters!).",
-    macros: "~510 kcal | 43g Protein | 55g Carbs | 11g Fats",
-    ingredients: [
-      "250g Chicken breast (flattened with rolling pin)",
-      "30g Panko breadcrumbs + 1 egg",
-      "150g Basmati rice",
-      "1/2 Block S&B Golden Curry paste (blended smooth with 200ml water)"
-    ],
-    steps: [
-      "Dip chicken in egg, coat in panko, and air-fry @ 190°C for 14 mins.",
-      "Dissolve curry paste in boiling water to create a silky smooth sauce.",
-      "Slice crispy chicken, serve over rice, and pour curry sauce on top."
-    ]
-  },
-  {
-    id: "r9",
-    category: "quick",
-    title: "Mild Mexican Taco / Burrito Bowls",
-    prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Deconstructed taco bar! Serve chicken, cheese, sweetcorn, rice, and salsa in separate bowls so fussy partners build plain chicken-and-cheese tacos.",
-    macros: "~510 kcal | 44g Protein | 58g Carbs | 12g Fats",
-    ingredients: [
-      "300g Cooked shredded chicken breast (seasoned with mild taco spice)",
-      "150g Microwave basmati or Mexican rice",
-      "100g Sweetcorn & black beans (optional for partner)",
-      "40g Grated light cheddar",
-      "Mild salsa & light sour cream / Greek yogurt"
-    ],
-    steps: [
-      "Pan warm shredded chicken with 1 tbsp water & 1 tsp mild taco seasoning.",
-      "Heat microwave rice.",
-      "Assemble into bowls or warm tortilla wraps with desired toppings."
-    ]
-  },
-  {
-    id: "r10",
-    category: "quick",
-    title: "Creamy Garlic & Herb Chicken Pasta",
+    id: "op1",
+    category: "onepan",
+    title: "One-Pan Creamy Garlic & Herb Chicken Pasta",
     prepTime: "5 mins",
     cookTime: "12 mins",
-    hack: "Swaps heavy double cream for Garlic & Herb Light Cream Cheese (e.g. Philadelphia Light). Smooth, rich, and 100% fuss-free!",
+    hack: "Swaps heavy double cream for Garlic & Herb Light Cream Cheese (e.g. Philadelphia Light). Smooth, rich, and zero extra pans to wash!",
     macros: "~520 kcal | 46g Protein | 56g Carbs | 11g Fats",
     ingredients: [
       "250g Chicken breast (diced)",
@@ -300,13 +328,116 @@ const familyRecipesData = [
     ],
     steps: [
       "Boil pasta in salted water until al dente (reserve 50ml pasta water).",
-      "Sear diced chicken in a pan with olive oil spray until cooked through.",
-      "Stir light cream cheese and reserved pasta water into the chicken to create a silky sauce, then toss with cooked pasta."
+      "Sear diced chicken in same pan with olive oil spray until cooked through.",
+      "Stir light cream cheese and reserved pasta water into chicken to create a silky sauce, then toss with cooked pasta."
     ]
   },
   {
-    id: "r11",
-    category: "quick",
+    id: "op2",
+    category: "onepan",
+    title: "One-Pan Mexican Chicken Burrito Rice Skillet",
+    prepTime: "10 mins",
+    cookTime: "12 mins",
+    hack: "Chicken, rice, mild salsa & cheddar cooked directly in one skillet. Partner can spoon it into warm plain tortillas!",
+    macros: "~510 kcal | 44g Protein | 58g Carbs | 12g Fats",
+    ingredients: [
+      "300g Cooked shredded chicken breast",
+      "250g Microwave basmati or Mexican rice",
+      "100g Mild tomato salsa",
+      "50g Grated light cheddar",
+      "Tortilla wraps or corn chips"
+    ],
+    steps: [
+      "Sauté chicken and rice in a deep skillet with salsa for 5 mins.",
+      "Top with grated cheese, cover with lid for 2 mins to melt.",
+      "Serve directly from skillet with warm tortilla wraps."
+    ]
+  },
+  {
+    id: "op3",
+    category: "onepan",
+    title: "One-Pan Honey Garlic Chicken Stir-Fry",
+    prepTime: "10 mins",
+    cookTime: "10 mins",
+    hack: "Diced chicken breast glazed in a sweet garlic soy sauce. Serve broccoli/peppers on your side plate if partner prefers plain chicken & rice!",
+    macros: "~480 kcal | 45g Protein | 52g Carbs | 9g Fats",
+    ingredients: [
+      "300g Chicken breast (diced)",
+      "2 tbsp Soy sauce + 1 tbsp honey + 1 tsp garlic",
+      "150g Microwave Jasmine or basmati rice",
+      "Steamed broccoli or sugar snap peas"
+    ],
+    steps: [
+      "Sear chicken in a hot wok/pan for 6 mins.",
+      "Pour in soy, honey & garlic, simmer 2 mins until thick shiny glaze forms.",
+      "Toss with rice and serve with green veggies."
+    ]
+  },
+  {
+    id: "op4",
+    category: "onepan",
+    title: "One-Pan Loaded Cheeseburger Dirty Fries",
+    prepTime: "10 mins",
+    cookTime: "20 mins",
+    hack: "Takeaway comfort food made lean in one pan! Oven wedges topped with 5% beef mince, melted light cheese slice & burger sauce.",
+    macros: "~530 kcal | 44g Protein | 48g Carbs | 16g Fats",
+    ingredients: [
+      "300g Potato wedges (baked crisp)",
+      "250g 5% Beef mince",
+      "2 Slices light cheddar",
+      "2 tbsp Light burger sauce / gherkin relish"
+    ],
+    steps: [
+      "Bake potato wedges in oven tray @ 200°C for 20 mins.",
+      "Pan brown beef mince with salt & pepper.",
+      "Scatter hot beef mince over wedges on the baking tray, top with cheese slice to melt, and drizzle with burger sauce."
+    ]
+  },
+  {
+    id: "op5",
+    category: "onepan",
+    title: "One-Pan Spanish Chicken & Rice Bake",
+    prepTime: "10 mins",
+    cookTime: "20 mins",
+    hack: "Mild smoked paprika seasoning (zero fiery heat). Serve sliced chorizo on top so partner can easily pick it off if they prefer pure chicken!",
+    macros: "~530 kcal | 45g Protein | 52g Carbs | 13g Fats",
+    ingredients: [
+      "300g Chicken thighs or breast",
+      "30g Sliced Spanish chorizo",
+      "150g Rice + 300ml chicken stock + 1 tsp smoked paprika",
+      "Peppers & sweetcorn"
+    ],
+    steps: [
+      "Sear chicken & chorizo in a deep pan for 5 mins.",
+      "Add rice, paprika, stock & veggies. Cover with lid and simmer for 15 mins until rice absorbs stock."
+    ]
+  },
+
+  // --- REGULAR FAMILY MEALS (5) ---
+  {
+    id: "reg1",
+    category: "regular",
+    title: "Lean Beef Cottage Pie with Sweet Potato Mash",
+    prepTime: "15 mins",
+    cookTime: "25 mins",
+    hack: "Grate onions & carrots finely into the beef gravy so they melt into the sauce—zero visible veggie chunks for fussy partners!",
+    macros: "~480 kcal | 42g Protein | 48g Carbs | 13g Fats",
+    ingredients: [
+      "300g 5% Lean beef mince",
+      "1 Onion & 1 carrot (finely grated)",
+      "1 Beef stock cube + 200ml boiling water + 1 tbsp Worcestershire sauce",
+      "300g Sweet potatoes (boiled & mashed with a splash of milk)",
+      "50g Frozen garden peas"
+    ],
+    steps: [
+      "Brown mince with grated onion & carrot for 5 mins.",
+      "Add stock and Worcestershire sauce, simmer for 10 mins until thick sauce forms.",
+      "Transfer to a dish, top with sweet potato mash, and grill for 8 mins until golden."
+    ]
+  },
+  {
+    id: "reg2",
+    category: "regular",
     title: "Cheesy Chicken & Bacon Quesadillas",
     prepTime: "5 mins",
     cookTime: "10 mins",
@@ -326,65 +457,63 @@ const familyRecipesData = [
     ]
   },
   {
-    id: "r12",
-    category: "comfort",
-    title: "Loaded Cheeseburger Dirty Fries",
-    prepTime: "10 mins",
-    cookTime: "20 mins",
-    hack: "Takeaway comfort food made lean! Crispy potato wedges topped with seasoned 5% mince, melted light cheese slice, and burger sauce.",
-    macros: "~530 kcal | 44g Protein | 48g Carbs | 16g Fats",
-    ingredients: [
-      "300g Potato wedges (baked crisp)",
-      "250g 5% Beef mince",
-      "2 Slices light cheddar",
-      "2 tbsp Light burger sauce / gherkin relish"
-    ],
-    steps: [
-      "Bake potato wedges in oven or air-fryer @ 200°C for 20 mins.",
-      "Pan brown beef mince with salt & pepper.",
-      "Top wedges with hot beef mince and cheese slice to melt, drizzle with burger sauce."
-    ]
-  },
-  {
-    id: "r13",
-    category: "comfort",
-    title: "Rich Lean Beef Cottage Pie with Sweet Potato Mash",
-    prepTime: "15 mins",
-    cookTime: "25 mins",
-    hack: "Grate onions and carrots finely into the beef gravy so they melt into the sauce—zero visible veggie chunks for fussy partners!",
-    macros: "~480 kcal | 42g Protein | 48g Carbs | 13g Fats",
-    ingredients: [
-      "300g 5% Lean beef mince",
-      "1 Onion & 1 carrot (finely grated)",
-      "1 Beef stock cube + 200ml boiling water + 1 tbsp Worcestershire sauce",
-      "300g Sweet potatoes (boiled & mashed with a splash of milk)",
-      "50g Frozen garden peas"
-    ],
-    steps: [
-      "Brown mince with grated onion & carrot for 5 mins.",
-      "Add stock and Worcestershire sauce, simmer for 10 mins until thick sauce forms.",
-      "Transfer to a dish, top with sweet potato mash, and grill for 8 mins until golden."
-    ]
-  },
-  {
-    id: "r14",
-    category: "comfort",
-    title: "Mild Tikka 'Butter Chicken' & Rice",
+    id: "reg3",
+    category: "regular",
+    title: "Mild Japanese Chicken Katsu Curry & Rice",
     prepTime: "10 mins",
     cookTime: "15 mins",
-    hack: "Blends passata + 0% Greek yogurt for a restaurant-style creamy butter chicken texture without heavy cream or burning heat.",
-    macros: "~490 kcal | 45g Protein | 52g Carbs | 9g Fats",
+    hack: "Panko breadcrumbed air-fried chicken breast with a silky smooth, no-bits curry sauce over basmati rice.",
+    macros: "~510 kcal | 43g Protein | 55g Carbs | 11g Fats",
     ingredients: [
-      "300g Chicken breast (cubed)",
-      "2 tbsp Mild tikka masala curry paste",
-      "150g Tomato passata",
-      "100g 0% Greek yogurt",
-      "150g Cooked basmati rice"
+      "250g Chicken breast (flattened with rolling pin)",
+      "30g Panko breadcrumbs + 1 egg",
+      "150g Basmati rice",
+      "1/2 Block S&B Golden Curry paste (blended smooth with 200ml water)"
     ],
     steps: [
-      "Fry cubed chicken with curry paste for 4 mins.",
-      "Pour in passata, simmer for 8 mins until chicken is tender.",
-      "Remove from heat, stir in Greek yogurt until creamy, and serve over hot basmati rice."
+      "Dip chicken in egg, coat in panko, and air-fry @ 190°C for 14 mins.",
+      "Dissolve curry paste in boiling water to create a silky smooth sauce.",
+      "Slice crispy chicken, serve over rice, and pour curry sauce on top."
+    ]
+  },
+  {
+    id: "reg4",
+    category: "regular",
+    title: "Crispy Baked Salmon Wedges & Greens",
+    prepTime: "10 mins",
+    cookTime: "18 mins",
+    hack: "Season salmon with a sweet honey-soy glaze. Serve crispy potato wedges alongside for partner comfort food!",
+    macros: "~540 kcal | 42g Protein | 45g Carbs | 20g Fats",
+    ingredients: [
+      "2 Salmon fillets (coated in 1 tbsp honey + 1 tbsp soy sauce)",
+      "300g Potato wedges",
+      "Steamed broccoli or green beans"
+    ],
+    steps: [
+      "Bake potato wedges @ 200°C for 20 mins.",
+      "Place salmon fillets on baking tray for last 12 mins.",
+      "Serve honey-glazed salmon with wedges and green veggies."
+    ]
+  },
+  {
+    id: "reg5",
+    category: "regular",
+    title: "Classic High-Protein Spaghetti Carbonara",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Blends egg yolks, light cream cheese, and bacon lardons for a rich creamy Italian classic with zero heavy double cream!",
+    macros: "~530 kcal | 46g Protein | 54g Carbs | 13g Fats",
+    ingredients: [
+      "150g Spaghetti",
+      "2 Egg yolks",
+      "60g Light cream cheese",
+      "50g Bacon lardons / pancetta",
+      "20g Grated parmesan"
+    ],
+    steps: [
+      "Boil spaghetti (reserve 50ml pasta water). Fry bacon lardons until crisp.",
+      "Whisk egg yolks, cream cheese & parmesan with reserved pasta water.",
+      "Toss hot spaghetti into the pan off the heat, pour egg cream mixture over and stir until creamy sauce coats pasta."
     ]
   }
 ];
