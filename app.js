@@ -124,14 +124,13 @@ const familyRecipesData = [
   {
     id: "sc2",
     category: "slowcooker",
-    title: "Slowcooker Tuscan White Bean & Sausage Stew",
+    title: "Slowcooker Chicken & Leek Potato Soup",
     prepTime: "10 mins",
     cookTime: "6 hrs",
-    hack: "Creamy cannellini beans thicken the sauce naturally — no cream needed. Use chicken sausages for lower fat. Partner gets hearty stew; add chilli flakes to yours!",
-    macros: "~490 kcal | 36g Protein | 52g Carbs | 11g Fats",
-    ingredients: ["4 Lean chicken or pork sausages", "2 Cans (400g each) cannellini beans, drained", "1 Can chopped tomatoes", "150ml Chicken stock", "2 tsp Italian herbs & 1 tsp garlic puree", "Handful baby spinach (stirred in at end)"]
-    ,
-    steps: ["Brown sausages in a pan 3 mins, slice and add to slowcooker.", "Add beans, tomatoes, stock, garlic and herbs. Stir.", "Cook LOW 6 hrs. Stir in spinach last 10 mins. Serve with crusty bread."]
+    hack: "Blend half the soup at the end for a thick, creamy texture with no visible chunks. Partner gets a smooth velvety bowl — looks like restaurant quality with zero effort!",
+    macros: "~470 kcal | 42g Protein | 44g Carbs | 10g Fats",
+    ingredients: ["400g Chicken thighs (boneless, skinless)", "2 Large leeks (sliced)", "400g Potatoes (cubed)", "800ml Low-salt chicken stock", "1 tsp Garlic puree & fresh thyme", "50ml Light cream or cream cheese to finish"],
+    steps: ["Add all ingredients except cream to slowcooker. Season well.", "Cook LOW 6 hrs until chicken is tender and falls apart.", "Shred chicken, blend half the soup for creaminess, stir in cream and serve with crusty bread."]
   },
   {
     id: "sc3",
@@ -160,14 +159,13 @@ const familyRecipesData = [
   {
     id: "sc5",
     category: "slowcooker",
-    title: "Slowcooker Maple Glazed Pulled Pork",
-    prepTime: "5 mins",
-    cookTime: "8 hrs",
-    hack: "Pork shoulder in maple syrup, smoked paprika and cider vinegar becomes incredibly tender. Shred with forks. Serve on brioche buns or jacket potatoes — family crowd-pleaser!",
-    macros: "~540 kcal | 44g Protein | 50g Carbs | 17g Fats",
-    ingredients: ["600g Lean pork shoulder joint", "2 tbsp Maple syrup", "1 tbsp Smoked paprika & 1 tsp garlic powder", "2 tbsp Cider vinegar", "200ml Chicken stock", "Brioche buns or jacket potatoes to serve"]
-    ,
-    steps: ["Rub pork with paprika, garlic and seasoning. Place in slowcooker.", "Pour stock, maple syrup and vinegar around the pork.", "Cook LOW 8 hrs. Shred with two forks, toss in juices, serve on buns."]
+    title: "Slowcooker Lamb & Rosemary Ragu",
+    prepTime: "10 mins",
+    cookTime: "7 hrs",
+    hack: "Slow-cooked lamb shoulder falls apart into a rich, hearty ragu. Blend smooth or leave chunky. Partner gets it with plain pappardelle pasta; you add grated parmesan and chilli!",
+    macros: "~540 kcal | 45g Protein | 50g Carbs | 16g Fats",
+    ingredients: ["500g Lamb shoulder (diced)", "1 Can chopped tomatoes & 2 tbsp tomato puree", "200ml Beef stock", "2 sprigs fresh rosemary (or 1 tsp dried)", "1 tsp Garlic puree & 1 large onion (grated)", "Pappardelle or penne pasta to serve"],
+    steps: ["Brown lamb pieces in a hot pan 4 mins. Transfer to slowcooker.", "Add tomatoes, stock, tomato puree, rosemary, garlic and onion. Stir well.", "Cook LOW 7-8 hrs until lamb is falling apart. Shred into sauce. Serve over pasta."]
   },
 
   // --- FAKEAWAYS (5) ---
@@ -222,14 +220,13 @@ const familyRecipesData = [
   {
     id: "fk5",
     category: "fakeaway",
-    title: "Salt & Pepper Chicken Chips",
+    title: "Loaded Nacho Chicken Cheese Fries",
     prepTime: "10 mins",
     cookTime: "20 mins",
-    hack: "Chinese takeaway classic made lean — chicken breast and chips tossed in a salt, pepper and spring onion mix. Partner gets a plain chip portion on the side, no fuss!",
-    macros: "~490 kcal | 42g Protein | 50g Carbs | 12g Fats",
-    ingredients: ["250g Chicken breast (cubed)", "300g Oven chips or potato wedges", "1 tsp Chinese five-spice, 1 tsp sea salt, ½ tsp white pepper", "3 Spring onions (sliced), ½ white onion (sliced), 1 chilli (optional)"]
-    ,
-    steps: ["Bake chips per packet. Coat chicken in five-spice, salt and pepper.", "Air-fry or pan-fry chicken cubes 8-10 mins until golden.", "Toss chicken and chips with spring onions and onion in hot pan 2 mins. Serve immediately."]
+    hack: "Oven chips loaded with seasoned chicken, salsa, melted cheddar and sour cream. Serve sauces on the side so partner can build a plain cheesy chips version — nobody is left out!",
+    macros: "~530 kcal | 44g Protein | 52g Carbs | 15g Fats",
+    ingredients: ["250g Chicken breast (diced)", "300g Oven chips or seasoned wedges", "1 tbsp Fajita or taco seasoning", "50g Grated light cheddar", "3 tbsp Mild salsa & 2 tbsp sour cream", "Sliced jalapenos (optional, kept on side)"],
+    steps: ["Bake chips as per packet. Season chicken with taco seasoning and fry 8 mins until cooked.", "Spread hot chips on an oven tray, scatter chicken over, top with grated cheddar.", "Grill 3-4 mins until cheese melted and bubbling. Drizzle salsa and sour cream to serve."]
   },
 
   // --- ONE-PAN (5) ---
@@ -248,14 +245,13 @@ const familyRecipesData = [
   {
     id: "op2",
     category: "onepan",
-    title: "One-Pan Teriyaki Salmon & Rice",
+    title: "One-Pan Creamy Tomato & Chicken Risotto",
     prepTime: "5 mins",
-    cookTime: "15 mins",
-    hack: "Salmon fillets in a sweet teriyaki glaze served over fluffy microwave rice. Partner gets plain grilled salmon; you add the teriyaki drizzle. Done in one non-stick pan!",
-    macros: "~560 kcal | 45g Protein | 52g Carbs | 18g Fats",
-    ingredients: ["2 Salmon fillets (skin on)", "3 tbsp Soy sauce, 1 tbsp honey, 1 tsp sesame oil", "1 tsp Ginger paste or fresh ginger", "250g Microwave basmati rice", "Sliced cucumber and sesame seeds to serve"]
-    ,
-    steps: ["Mix soy, honey, sesame oil and ginger to make teriyaki sauce.", "Pan-fry salmon skin-side down 4 mins, flip and pour teriyaki sauce over.", "Cook 3 mins basting continuously. Serve over rice with cucumber."]
+    cookTime: "20 mins",
+    hack: "Arborio rice absorbs stock and passata into a naturally creamy risotto — no wine needed. Stir regularly and partner will think it's from a restaurant. Zero visible veg to complain about!",
+    macros: "~540 kcal | 46g Protein | 58g Carbs | 11g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "200g Arborio risotto rice", "200ml Passata", "600ml Hot chicken stock (added gradually)", "20g Parmesan (grated)", "1 tsp Garlic puree & olive oil spray"],
+    steps: ["Fry chicken in pan with garlic 5 mins. Add rice and stir 1 min to coat.", "Add passata then stock one ladle at a time, stirring continuously (15-18 mins).", "When rice is tender and creamy, remove from heat. Stir in parmesan. Season and serve."]
   },
   {
     id: "op3",
@@ -272,26 +268,24 @@ const familyRecipesData = [
   {
     id: "op4",
     category: "onepan",
-    title: "One-Pan Pesto Chicken & Gnocchi",
-    prepTime: "5 mins",
-    cookTime: "12 mins",
-    hack: "Pan-fry gnocchi straight from the packet for crispy golden pillows — no boiling needed! Coat in green pesto with chicken. Partner loves it as-is; add extra pesto to yours!",
-    macros: "~540 kcal | 45g Protein | 56g Carbs | 14g Fats",
-    ingredients: ["2 Chicken breasts (sliced)", "400g Fresh or vacuum pack gnocchi", "2 tbsp Green pesto", "100g Cherry tomatoes (halved)", "20g Parmesan or light cheddar (grated)"]
-    ,
-    steps: ["Sear chicken slices in pan with olive oil spray 5 mins until cooked. Set aside.", "Add gnocchi to same hot pan dry — fry 4-5 mins until golden and crispy.", "Return chicken, add tomatoes and pesto. Toss 2 mins. Top with parmesan."]
+    title: "One-Pan Garlic Butter Chicken & Potato Bake",
+    prepTime: "10 mins",
+    cookTime: "25 mins",
+    hack: "Chicken thighs and sliced potatoes roasted in one pan with garlic butter. No chopping vegetables needed. Partner gets crispy golden potatoes with tender chicken — a guaranteed hit!",
+    macros: "~530 kcal | 46g Protein | 46g Carbs | 16g Fats",
+    ingredients: ["4 Boneless chicken thighs", "400g Baby potatoes (halved)", "2 tbsp Butter (or olive oil)", "4 Garlic cloves (minced) or 2 tsp garlic puree", "1 tsp Mixed herbs, salt & pepper", "Juice of ½ lemon"],
+    steps: ["Toss potatoes in garlic butter, herbs and lemon. Spread on large oven tray.", "Place chicken thighs on top. Season. Roast at 200°C for 25 mins turning potatoes halfway.", "Chicken is done when juices run clear. Serve straight from the tray."]
   },
   {
     id: "op5",
     category: "onepan",
-    title: "One-Pan Lemon Garlic Prawn Linguine",
+    title: "One-Pan Cajun Chicken Pasta",
     prepTime: "5 mins",
-    cookTime: "10 mins",
-    hack: "Frozen king prawns go from freezer to plate in 10 mins. Zesty lemon-garlic sauce coats pasta with no cream — feels restaurant-quality. Partner can skip chilli flakes easily!",
-    macros: "~470 kcal | 40g Protein | 52g Carbs | 10g Fats",
-    ingredients: ["200g Raw king prawns (defrosted)", "140g Linguine or spaghetti", "3 Garlic cloves (minced) or 2 tsp garlic puree", "Zest and juice of 1 lemon", "1 tbsp Olive oil, chilli flakes (optional), fresh parsley"]
-    ,
-    steps: ["Boil pasta until al dente (reserve 80ml pasta water). Drain.", "In same pan, heat olive oil, fry garlic 1 min, add prawns — cook 2-3 mins until pink.", "Add pasta, lemon zest, juice and pasta water. Toss to coat. Top with parsley."]
+    cookTime: "15 mins",
+    hack: "Cajun spice looks bold but the cream cheese completely tames the heat into a mild smoky flavour. Use just 1 tsp — partner will love the creamy orange sauce with zero spice burn!",
+    macros: "~530 kcal | 47g Protein | 56g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "140g Penne pasta", "1 tsp Mild Cajun seasoning", "80g Light garlic & herb cream cheese", "100ml Chicken stock", "100g Cherry tomatoes (halved)"],
+    steps: ["Coat chicken in Cajun seasoning and sear in pan 5 mins. Add tomatoes.", "Boil pasta separately. Add cream cheese and stock to chicken pan — stir to make sauce.", "Toss cooked pasta into the sauce. Season, serve immediately."]
   },
 
   // --- REGULAR MEALS (5) ---
@@ -310,26 +304,24 @@ const familyRecipesData = [
   {
     id: "rg2",
     category: "regular",
-    title: "Chicken & Mushroom Stroganoff",
+    title: "Honey Garlic Baked Chicken Traybake",
     prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Swap sour cream for 0% Greek yogurt — stir in off the heat to avoid splitting. Partner gets a rich, creamy dinner that tastes totally indulgent but is only 500 kcal!",
-    macros: "~500 kcal | 46g Protein | 46g Carbs | 12g Fats",
-    ingredients: ["2 Chicken breasts (sliced into strips)", "200g Chestnut mushrooms (sliced)", "150g 0% Greek yogurt", "1 tsp Smoked paprika, 1 tsp Dijon mustard", "200ml Chicken stock", "200g Long-grain rice (cooked)"]
-    ,
-    steps: ["Fry chicken strips in pan 5 mins until golden. Add mushrooms, paprika, cook 3 mins.", "Pour in stock and mustard. Simmer 5 mins until slightly reduced.", "Take off heat, stir in yogurt. Season and serve over rice immediately."]
+    cookTime: "30 mins",
+    hack: "Everything roasted together on one tray — chicken thighs, broccoli and potatoes in a simple honey-garlic glaze. Serve partner's broccoli on the side so they never see it on the tray!",
+    macros: "~510 kcal | 46g Protein | 46g Carbs | 13g Fats",
+    ingredients: ["4 Boneless chicken thighs", "400g Baby potatoes (halved)", "1 Broccoli head (cut to florets, kept separate for you!)", "3 tbsp Honey", "2 tbsp Soy sauce & 2 tsp garlic puree", "1 tbsp Olive oil"],
+    steps: ["Whisk honey, soy and garlic together. Toss chicken and potatoes in half the glaze.", "Roast at 200°C for 20 mins. Add broccoli florets to your side of the tray, drizzle remaining glaze.", "Roast another 10 mins until chicken is golden and caramelised. Serve straight from tray."]
   },
   {
     id: "rg3",
     category: "regular",
-    title: "Baked Cod with Herby Lemon Crust",
-    prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Mix breadcrumbs with lemon zest, parsley and parmesan — press on top of cod fillets. Bakes to a golden crust that's fancy enough for a date night but ready in 25 mins!",
-    macros: "~430 kcal | 45g Protein | 38g Carbs | 9g Fats",
-    ingredients: ["2 Cod or haddock fillets", "30g Panko breadcrumbs", "Zest of 1 lemon, 1 tbsp fresh parsley, 10g parmesan (grated)", "300g Baby potatoes (boiled)", "Steamed peas or green beans to serve"]
-    ,
-    steps: ["Mix breadcrumbs, lemon zest, parsley and parmesan. Press firmly onto cod.", "Bake at 200°C for 14-16 mins until crust is golden and fish flakes easily.", "Serve with boiled baby potatoes and green veg."]
+    title: "Cheesy Chicken & Bacon Potato Gratin",
+    prepTime: "15 mins",
+    cookTime: "35 mins",
+    hack: "Thin sliced potatoes baked in a light cheese sauce with chicken and bacon. Blitz the sauce completely smooth — no lumps or veg bits for a fussy partner to pick out. Pure comfort!",
+    macros: "~540 kcal | 47g Protein | 46g Carbs | 16g Fats",
+    ingredients: ["2 Chicken breasts (sliced thin)", "4 Rashers lean back bacon (chopped)", "500g Potatoes (very thinly sliced)", "150ml Semi-skimmed milk & 80g light cream cheese", "50g Grated light cheddar (for top)", "1 tsp Garlic puree & pinch of nutmeg"],
+    steps: ["Heat milk, cream cheese, garlic and nutmeg in pan until smooth sauce. Season well.", "Layer potatoes, chicken and bacon in a baking dish, pour sauce over, top with cheddar.", "Bake covered at 180°C for 25 mins, remove foil and bake 10 more mins until golden and bubbling."]
   },
   {
     id: "rg4",
