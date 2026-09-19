@@ -352,8 +352,13 @@ const familyRecipesData = [
 // ============================================================
 // APPLICATION STATE
 // ============================================================
-const defaultCompleted = { w1r1: true, w1r2: true, w1r3: true, w2r1: true, w2r2: true, w2r3: true };
-let completedRuns    = JSON.parse(localStorage.getItem('dadrunner_runs'))  || defaultCompleted;
+const defaultCompleted = {
+  w1r1: true, w1r2: true, w1r3: true,
+  w2r1: true, w2r2: true, w2r3: true,
+  w3r1: true, w3r2: true, w3r3: true,
+  w4r1: true, w4r2: true, w4r3: true
+};
+let completedRuns    = Object.assign({}, defaultCompleted, JSON.parse(localStorage.getItem('dadrunner_runs')) || {});
 let waterCount       = parseInt(localStorage.getItem('dadrunner_water'))   || 0;
 let currentCategory  = 'all';
 let selectedRecipes  = new Set(); // IDs of recipes selected for shopping list
