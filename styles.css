@@ -879,3 +879,184 @@ body {
   border-radius: 4px;
   font-size: 12px;
 }
+
+/* ====== RECIPE SELECTION & SHOPPING LIST ====== */
+.recipe-card-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.recipe-select-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--bg-inner);
+  border: 1px solid var(--border);
+  color: var(--text-sub);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.recipe-select-btn:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+.recipe-select-btn.active {
+  background: rgba(16,185,129,0.15);
+  border-color: var(--green);
+  color: var(--green);
+}
+.recipe-select-btn i { font-size: 14px; }
+
+.recipe-selected {
+  border-color: rgba(16,185,129,0.5) !important;
+  box-shadow: 0 0 0 1px rgba(16,185,129,0.2);
+}
+
+/* Shopping List Sticky Bar */
+.sl-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(18,26,44,0.98));
+  border: 1px solid rgba(16,185,129,0.4);
+  border-radius: var(--r-md);
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  gap: 12px;
+  position: sticky;
+  top: 68px;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+}
+.sl-bar.hidden { display: none; }
+
+.sl-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sl-bar-right {
+  display: flex;
+  gap: 8px;
+}
+
+.sl-generate-btn {
+  background: var(--green);
+  color: #0b0f1a;
+  border: none;
+  border-radius: var(--r-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: opacity 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+.sl-generate-btn:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.sl-clear-btn {
+  background: rgba(255,255,255,0.07);
+  color: var(--text-sub);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.sl-clear-btn:hover { background: rgba(255,255,255,0.12); }
+
+/* Shopping List Modal Content */
+.modal-box-tall {
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sl-modal-subtitle {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.4;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sl-tip {
+  font-size: 12px;
+  color: var(--amber);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.sl-list {
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 8px;
+}
+
+.sl-category {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--text-sub);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 10px 0 5px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 4px;
+}
+
+.sl-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 8px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  transition: background 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.sl-item:hover { background: rgba(255,255,255,0.04); }
+.sl-item:active { background: rgba(255,255,255,0.08); }
+
+.sl-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--green);
+  flex-shrink: 0;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.sl-item span {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.4;
+  flex: 1;
+  transition: all 0.2s;
+}
+
+.sl-item input:checked + span {
+  text-decoration: line-through;
+  color: var(--text-dim);
+}
+

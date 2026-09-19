@@ -158,12 +158,25 @@
           <span class="green-chip"><i class="fa-solid fa-shield-heart"></i> Partner Approved</span>
         </div>
         <div class="recipe-filters" id="recipe-filters">
-          <button class="filter-chip active" onclick="filterRecipes('all')">All (20)</button>
-          <button class="filter-chip" onclick="filterRecipes('slowcooker')">🍲 Slowcooker</button>
-          <button class="filter-chip" onclick="filterRecipes('fakeaway')">🍔 Fakeaways</button>
-          <button class="filter-chip" onclick="filterRecipes('onepan')">🥘 One-Pan</button>
-          <button class="filter-chip" onclick="filterRecipes('regular')">🍽️ Regular</button>
+          <button class="filter-chip active" data-cat="all" onclick="filterRecipes('all')">All (20)</button>
+          <button class="filter-chip" data-cat="slowcooker" onclick="filterRecipes('slowcooker')">🍲 Slowcooker</button>
+          <button class="filter-chip" data-cat="fakeaway" onclick="filterRecipes('fakeaway')">🍔 Fakeaways</button>
+          <button class="filter-chip" data-cat="onepan" onclick="filterRecipes('onepan')">🥘 One-Pan</button>
+          <button class="filter-chip" data-cat="regular" onclick="filterRecipes('regular')">🍽️ Regular</button>
         </div>
+
+        <!-- Shopping List Sticky Bar -->
+        <div id="shopping-list-bar" class="sl-bar hidden">
+          <div class="sl-bar-left">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="sl-count">0 recipes selected</span>
+          </div>
+          <div class="sl-bar-right">
+            <button class="sl-clear-btn" onclick="clearRecipeSelection()">Clear</button>
+            <button class="sl-generate-btn" onclick="generateShoppingList()"><i class="fa-solid fa-list-check"></i> View Shopping List</button>
+          </div>
+        </div>
+
         <div id="recipes-container"></div>
       </div>
     </section>
@@ -349,6 +362,19 @@
     </div>
   </div>
 
-  <script src="app.js?v=4"></script>
+  <!-- SHOPPING LIST MODAL -->
+  <div id="shopping-modal" class="modal-overlay">
+    <div class="modal-box modal-box-tall">
+      <div class="modal-top">
+        <h3><i class="fa-solid fa-basket-shopping"></i> Shopping List</h3>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div id="sl-modal-title" class="sl-modal-subtitle"></div>
+      <div class="sl-tip"><i class="fa-solid fa-lightbulb"></i> Tap items to cross them off as you shop!</div>
+      <div id="sl-modal-list" class="sl-list"></div>
+    </div>
+  </div>
+
+  <script src="app.js?v=5"></script>
 </body>
 </html>

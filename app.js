@@ -1,5 +1,6 @@
 /* ==========================================================================
-   DadRunner Hub - JavaScript Application Logic & LocalStorage Persistence
+   DadRunner Hub - JavaScript v5
+   20 Fresh Recipes + Shopping List Builder + All Existing Features
    ========================================================================== */
 
 // 8-Week Smart Running Plan Data Structure
@@ -80,451 +81,294 @@ const runningPlanData = [
 
 // Funny Strava Titles Bank
 const stravaTitles = [
-  "Dans Fatyard Ultra Part II",
-  "Wasn't what I was promised.",
-  "That one sucked.",
-  "Ouch.",
-  "Pushed a pram in spirit",
-  "Outrunning the newborn sleep deprivation",
-  "07:00 Dog Walk Warmup Paid Off",
-  "Escaped the 17:00 desk chair",
-  "Calories burned so I can eat extra pizza",
-  "Zone 2 or bust",
-  "Dad duty recovery jog",
-  "Dog thought we were being chased",
-  "Targeting sub-60 10k",
-  "Legs were heavy, heart was light",
-  "Post-work sweat session"
+  "Dans Fatyard Ultra Part III",
+  "Still slower than the postman",
+  "Ran further than the fridge",
+  "Baby's up, might as well run",
+  "Aggressive shuffle",
+  "Competent but confused",
+  "Fought the hill. Hill won.",
+  "Technically a run",
+  "Zone 2 or Zone Snooze",
+  "Dog dragged me round",
+  "Outrunning the mortgage",
+  "Did not stop for sausage rolls",
+  "10k dreams, 5k legs",
+  "Sweat is just crying sideways",
+  "This pace is intentional, I promise",
+  "Legs: fine. Ego: injured.",
+  "Dad mode: activated",
+  "Treated myself to a biscuit after",
+  "Definitely not walking",
+  "The garmin lies. So do I."
 ];
 
-// Fussy-Partner Approved Family Recipes Data (20 Options: 5 Slowcooker, 5 Fakeaways, 5 One-Pan, 5 Regular)
+// ============================================================
+// FRESH 20 RECIPES — All new, none from the previous batch
+// ============================================================
 const familyRecipesData = [
-  // --- SLOWCOOKER MEALS (5) ---
+
+  // --- SLOWCOOKER (5) ---
   {
     id: "sc1",
     category: "slowcooker",
-    title: "Slowcooker Beef Chilli Con Carne & Rice",
-    prepTime: "10 mins",
-    cookTime: "4-6 hrs",
-    hack: "Serve guacamole, jalapenos, cheese, sour cream, and tortilla chips on separate side dishes. Partner builds plain beef & rice; you load up the works!",
-    macros: "~510 kcal | 44g Protein | 54g Carbs | 12g Fats",
-    ingredients: [
-      "400g 5% Lean beef mince",
-      "1 Can kidney beans & 1 can chopped tomatoes",
-      "1 tbsp Mild chilli powder & 1 beef stock cube",
-      "Cooked basmati rice",
-      "Toppings: light cheddar, sour cream, guacamole, tortilla chips"
-    ],
-    steps: [
-      "Brown mince in a pan for 4 mins, then transfer to slowcooker with tomatoes, kidney beans, stock & seasoning.",
-      "Cook on LOW for 6 hours (or HIGH for 4 hours).",
-      "Serve over warm rice with customized side toppings."
-    ]
+    title: "Slowcooker Honey Mustard Chicken Thighs",
+    prepTime: "5 mins",
+    cookTime: "5 hrs",
+    hack: "Boneless chicken thighs cook in a sweet honey-mustard sauce until fall-apart tender. Serve over mash — partner can skip the Dijon if too strong, use mild American mustard instead!",
+    macros: "~500 kcal | 46g Protein | 42g Carbs | 14g Fats",
+    ingredients: ["600g Boneless skinless chicken thighs", "3 tbsp Honey", "2 tbsp Dijon or mild mustard", "200ml Low-salt chicken stock", "500g Baby potatoes (halved)", "1 tsp Garlic powder & dried thyme"]
+    ,
+    steps: ["Add all ingredients to slowcooker. Stir sauce to coat chicken.", "Cook on LOW 5-6 hrs until chicken is tender and sauce thickened.", "Serve chicken and potatoes with steamed broccoli or green beans."]
   },
   {
     id: "sc2",
     category: "slowcooker",
-    title: "Slowcooker BBQ Pulled Chicken Jackets / Sliders",
-    prepTime: "5 mins",
-    cookTime: "4 hrs",
-    hack: "Chicken breasts cooked in low-sugar BBQ sauce until shreddable with two forks. Serve on soft brioche rolls or baked jacket potatoes!",
-    macros: "~480 kcal | 45g Protein | 50g Carbs | 10g Fats",
-    ingredients: [
-      "400g Chicken breasts",
-      "150g Low-sugar BBQ sauce",
-      "1 tbsp Apple cider vinegar & 1 tsp garlic powder",
-      "4 Brioche burger buns or jacket potatoes",
-      "Light coleslaw on the side"
-    ],
-    steps: [
-      "Place chicken breasts in slowcooker, cover with BBQ sauce, vinegar & garlic powder.",
-      "Cook on LOW for 4-5 hours until tender.",
-      "Shred with two forks, toss in sauce, and serve on buns or jacket potatoes."
-    ]
+    title: "Slowcooker Tuscan White Bean & Sausage Stew",
+    prepTime: "10 mins",
+    cookTime: "6 hrs",
+    hack: "Creamy cannellini beans thicken the sauce naturally — no cream needed. Use chicken sausages for lower fat. Partner gets hearty stew; add chilli flakes to yours!",
+    macros: "~490 kcal | 36g Protein | 52g Carbs | 11g Fats",
+    ingredients: ["4 Lean chicken or pork sausages", "2 Cans (400g each) cannellini beans, drained", "1 Can chopped tomatoes", "150ml Chicken stock", "2 tsp Italian herbs & 1 tsp garlic puree", "Handful baby spinach (stirred in at end)"]
+    ,
+    steps: ["Brown sausages in a pan 3 mins, slice and add to slowcooker.", "Add beans, tomatoes, stock, garlic and herbs. Stir.", "Cook LOW 6 hrs. Stir in spinach last 10 mins. Serve with crusty bread."]
   },
   {
     id: "sc3",
     category: "slowcooker",
-    title: "Slowcooker Creamy Chicken Tikka Masala",
+    title: "Slowcooker Beef & Potato Irish Stew",
     prepTime: "10 mins",
-    cookTime: "4 hrs",
-    hack: "Passata & mild tikka paste simmered with chicken. Stir in 0% Greek yogurt at the end for a silky, non-spicy butter chicken texture partner will love!",
-    macros: "~490 kcal | 45g Protein | 52g Carbs | 9g Fats",
-    ingredients: [
-      "400g Chicken breasts (cubed)",
-      "1 Can passata (400g)",
-      "2 tbsp Mild tikka masala curry paste",
-      "150g 0% Greek yogurt (stirred in at end)",
-      "Basmati rice & naan breads"
-    ],
-    steps: [
-      "Add chicken, passata, and tikka paste to slowcooker. Cook on LOW for 4 hours.",
-      "Turn off heat, let cool slightly for 5 mins, then fold in Greek yogurt.",
-      "Serve over steamed basmati rice with warm naan."
-    ]
+    cookTime: "7 hrs",
+    hack: "Classic comfort food — rich gravy with Guinness (optional). Blend a ladle of broth to thicken the sauce without any cornstarch. Partner will lap this up!",
+    macros: "~510 kcal | 42g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["500g Lean braising/stewing steak (cubed)", "400g Potatoes (chunked)", "2 Carrots (chunked) & 1 large onion (sliced)", "300ml Beef stock + 1 tbsp Worcestershire sauce", "1 tbsp Tomato puree & fresh thyme"]
+    ,
+    steps: ["Layer beef, potatoes, carrots and onion in slowcooker.", "Mix stock, Worcestershire sauce and tomato puree, pour over.", "Cook LOW 7-8 hrs. Blend a ladle of liquid to thicken. Serve with bread."]
   },
   {
     id: "sc4",
     category: "slowcooker",
-    title: "Slowcooker Rich Beef Bolognese Pasta",
+    title: "Slowcooker Thai Green Curry Chicken",
     prepTime: "10 mins",
-    cookTime: "6 hrs",
-    hack: "Finely grate carrots & onions into the slowcooker—they melt into a sweet, rich tomato sauce with zero visible veggie chunks for fussy partners!",
-    macros: "~520 kcal | 44g Protein | 56g Carbs | 12g Fats",
-    ingredients: [
-      "400g 5% Beef mince",
-      "1 Onion & 1 carrot (finely grated)",
-      "1 Can chopped tomatoes + 2 tbsp tomato puree",
-      "1 Beef stock cube + 1 tsp oregano",
-      "Penne or spaghetti pasta"
-    ],
-    steps: [
-      "Brown mince in a pan, then transfer to slowcooker with grated veggies, tomatoes, puree & herbs.",
-      "Cook on LOW for 6 hours until super rich & thick.",
-      "Toss with freshly boiled pasta and top with light parmesan."
-    ]
+    cookTime: "4 hrs",
+    hack: "Use just 1 tbsp of mild Thai green paste for a fragrant, NOT spicy version. Coconut milk makes it naturally creamy. Partner gets it with plain rice, you add chilli sauce!",
+    macros: "~520 kcal | 44g Protein | 48g Carbs | 16g Fats",
+    ingredients: ["500g Chicken breast (cubed)", "1 Can (400ml) reduced-fat coconut milk", "1 tbsp Mild Thai green curry paste", "200g Basmati rice (cooked separately)", "1 Courgette & handful mangetout or peas", "Fresh coriander & lime wedge to serve"]
+    ,
+    steps: ["Add chicken, coconut milk, curry paste and courgette to slowcooker.", "Cook LOW 4 hrs until chicken is tender and sauce fragrant.", "Stir in mangetout last 20 mins. Serve over basmati with lime and coriander."]
   },
   {
     id: "sc5",
     category: "slowcooker",
-    title: "Slowcooker Sausage & Sweet Potato Casserole",
-    prepTime: "10 mins",
-    cookTime: "5 hrs",
-    hack: "Use 97% lean pork or chicken sausages. Thick sweet onion gravy with smooth mashed potato for partner; add green beans to your plate!",
-    macros: "~470 kcal | 38g Protein | 46g Carbs | 14g Fats",
-    ingredients: [
-      "6 Lean pork or chicken sausages (97% meat)",
-      "300g Sweet potato (cubed)",
-      "1 Can chopped tomatoes + 200ml onion gravy",
-      "1 tsp Smoked paprika & thyme"
-    ],
-    steps: [
-      "Brown sausages in a pan for 4 mins, then place in slowcooker with sweet potatoes, tomatoes & gravy.",
-      "Cook on LOW for 5 hours.",
-      "Serve piping hot with optional green vegetables."
-    ]
+    title: "Slowcooker Maple Glazed Pulled Pork",
+    prepTime: "5 mins",
+    cookTime: "8 hrs",
+    hack: "Pork shoulder in maple syrup, smoked paprika and cider vinegar becomes incredibly tender. Shred with forks. Serve on brioche buns or jacket potatoes — family crowd-pleaser!",
+    macros: "~540 kcal | 44g Protein | 50g Carbs | 17g Fats",
+    ingredients: ["600g Lean pork shoulder joint", "2 tbsp Maple syrup", "1 tbsp Smoked paprika & 1 tsp garlic powder", "2 tbsp Cider vinegar", "200ml Chicken stock", "Brioche buns or jacket potatoes to serve"]
+    ,
+    steps: ["Rub pork with paprika, garlic and seasoning. Place in slowcooker.", "Pour stock, maple syrup and vinegar around the pork.", "Cook LOW 8 hrs. Shred with two forks, toss in juices, serve on buns."]
   },
 
   // --- FAKEAWAYS (5) ---
   {
     id: "fk1",
     category: "fakeaway",
-    title: "Smash-Style Lean Burgers & Sweet Potato Wedges",
-    prepTime: "15 mins",
+    title: "Bang Bang Chicken Rice Bowls",
+    prepTime: "10 mins",
     cookTime: "15 mins",
-    hack: "Serve sauces, gherkins, and salad on separate side plates. Your partner gets a classic cheeseburger while you load yours with extra salad!",
-    macros: "~540 kcal | 42g Protein | 55g Carbs | 16g Fats",
-    ingredients: [
-      "250g 5% fat beef mince (split into 2 thin patties)",
-      "2 Brioche or wholemeal burger buns",
-      "2 Slices light cheddar cheese",
-      "200g Sweet potato (sliced into chips, tossed with 1 tsp olive oil & smoked paprika)",
-      "Side salad, pickles, light ketchup / burger sauce"
-    ],
-    steps: [
-      "Oven bake or air-fry sweet potato wedges @ 200°C for 20 mins.",
-      "Heat a hot non-stick pan. Press mince patties flat with a spatula for 2 mins per side until charred. Top with cheese.",
-      "Lightly toast buns, assemble burgers, and serve with sweet potato wedges."
-    ]
+    hack: "Mix 0% Greek yogurt, sriracha (tiny amount) and honey for a bang bang sauce that looks spicy but is actually mild and creamy. Serve partner's sauce on the side!",
+    macros: "~510 kcal | 46g Protein | 52g Carbs | 11g Fats",
+    ingredients: ["300g Chicken breast (diced)", "150g Jasmine rice", "2 tbsp 0% Greek yogurt", "1 tbsp Sweet chilli sauce & 1 tsp honey", "Shredded cucumber, spring onion, sesame seeds"]
+    ,
+    steps: ["Fry diced chicken in a hot pan with soy sauce for 7 mins until golden.", "Mix yogurt, sweet chilli and honey to make bang bang sauce.", "Serve chicken over rice, drizzle sauce, top with cucumber and spring onion."]
   },
   {
     id: "fk2",
     category: "fakeaway",
-    title: "Crispy 'KFC' Style Chicken Wraps",
+    title: "Chicken Shawarma Wraps",
     prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Coating chicken in crushed cornflakes gives an epic crunch without deep frying! Serve with plain mayo for fussy partners.",
-    macros: "~460 kcal | 40g Protein | 49g Carbs | 10g Fats",
-    ingredients: [
-      "250g Chicken breast (cut into thick strips)",
-      "30g Cornflakes (crushed)",
-      "1 Egg (beaten)",
-      "2 Tortilla wraps",
-      "Light mayo / Perinaise & shredded lettuce"
-    ],
-    steps: [
-      "Dip chicken strips into beaten egg, then roll in crushed cornflakes.",
-      "Air-fry @ 190°C or bake for 12-14 mins until golden & crispy.",
-      "Warm tortillas, spread mayo, add crispy chicken and wrap tightly."
-    ]
+    cookTime: "12 mins",
+    hack: "Marinate chicken in yogurt, cumin, turmeric and lemon — these spices are warm not hot. Serve partner a plain wrap with just chicken and garlic sauce, you load up with salad!",
+    macros: "~490 kcal | 44g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["300g Chicken breast (sliced thin)", "2 tbsp 0% Greek yogurt, juice of ½ lemon", "1 tsp Cumin, ½ tsp turmeric, 1 tsp garlic puree", "2 Large flour tortilla wraps", "Light garlic sauce/mayo, shredded lettuce, tomato"]
+    ,
+    steps: ["Toss chicken in yogurt, lemon, cumin, turmeric and garlic. Leave 5 mins.", "Pan-fry on high heat 4-5 mins per side until charred at edges.", "Warm wraps, spread garlic sauce, fill with chicken and salad, wrap tight."]
   },
   {
     id: "fk3",
     category: "fakeaway",
-    title: "Crispy Sweet & Sour Chicken & Rice",
+    title: "Crispy Chilli Beef Noodles",
     prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Air-fry cornstarch-dusted chicken for crunch. Toss sauce separately so partner gets plain crispy chicken nuggets if preferred!",
-    macros: "~500 kcal | 44g Protein | 58g Carbs | 9g Fats",
-    ingredients: [
-      "300g Chicken breast (cubed & tossed in 1 tbsp cornstarch)",
-      "3 tbsp Light sweet & sour sauce (or pineapple juice + ketchup + soy)",
-      "150g Microwave egg fried or basmati rice",
-      "Sliced peppers & pineapple chunks (optional for partner)"
-    ],
-    steps: [
-      "Spray cornstarch-dusted chicken with olive oil and air-fry @ 200°C for 12 mins until super crispy.",
-      "Heat sauce in a pan with peppers/pineapple.",
-      "Toss crispy chicken in sauce right before serving over hot rice."
-    ]
+    cookTime: "12 mins",
+    hack: "Thin strips of beef in cornstarch, fried crispy then tossed in a sweet sticky glaze. Toss noodles on the side rather than in the sauce so partner can have a plain noodle portion!",
+    macros: "~530 kcal | 42g Protein | 56g Carbs | 13g Fats",
+    ingredients: ["250g Lean beef steak (sliced thin)", "1 tbsp Cornstarch", "3 tbsp Soy sauce, 2 tbsp honey, 1 tsp chilli flakes (optional)", "150g Medium egg noodles", "Sliced spring onions & sesame seeds to serve"]
+    ,
+    steps: ["Toss beef strips in cornstarch and salt. Air-fry or pan-fry until crispy.", "Make glaze: heat soy, honey and chilli in pan 2 mins until slightly sticky.", "Toss crispy beef in glaze. Boil noodles. Serve beef over noodles, top with spring onion."]
   },
   {
     id: "fk4",
     category: "fakeaway",
-    title: "Homemade Pepperoni & Chicken Flatbread Pizza",
+    title: "Tandoori Chicken Naan Flatbreads",
     prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Use high-protein flatbreads or Greek yogurt dough. Partner builds a classic cheese & pepperoni pizza, you add chicken & veggies!",
-    macros: "~510 kcal | 45g Protein | 48g Carbs | 14g Fats",
-    ingredients: [
-      "2 High-protein flatbreads or naan breads",
-      "4 tbsp Tomato passata + 1 tsp oregano",
-      "60g Light mozzarella (grated)",
-      "100g Cooked chicken breast & 8 slices pepperoni",
-      "Fresh basil or sweetcorn (optional)"
-    ],
-    steps: [
-      "Spread passata evenly over flatbread bases.",
-      "Top with mozzarella, cooked chicken, and pepperoni.",
-      "Bake in a hot oven @ 210°C for 8-10 mins until cheese is bubbling."
-    ]
+    cookTime: "12 mins",
+    hack: "Tandoori paste with yogurt makes a mild, flavourful marinade that chars beautifully on a griddle. Serve with mango chutney on the side — zero spice, full flavour!",
+    macros: "~500 kcal | 45g Protein | 50g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (sliced into strips)", "3 tbsp 0% Greek yogurt, 1 tbsp mild tandoori paste", "2 Naan breads", "Sliced red onion, lettuce, mango chutney", "Mint raita: 100g yogurt + fresh mint + cucumber"]
+    ,
+    steps: ["Mix tandoori paste and yogurt. Coat chicken strips and rest 5 mins.", "Cook on a hot griddle/pan 4-5 mins per side until lightly charred.", "Warm naans, load with chicken, red onion, lettuce, chutney and raita."]
   },
   {
     id: "fk5",
     category: "fakeaway",
-    title: "Greek Doner Gyros Flatbread Wraps with Chips",
+    title: "Salt & Pepper Chicken Chips",
     prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Seasoned lean beef/lamb mince pressed thin and sliced into gyros strips. Serve chips inside the wrap for authentic takeaway vibes!",
-    macros: "~520 kcal | 42g Protein | 50g Carbs | 15g Fats",
-    ingredients: [
-      "250g 5% Beef mince (seasoned with garlic, oregano, cumin)",
-      "2 Greek pita or flatbreads",
-      "100g Oven chips",
-      "2 tbsp Tzatziki sauce & sliced tomatoes/cucumber"
-    ],
-    steps: [
-      "Press seasoned mince into a flat sheet in a hot pan, cook 4 mins per side, then slice into thin gyros strips.",
-      "Bake oven chips.",
-      "Warm pita, spread tzatziki, fill with gyros meat, chips, and fresh salad."
-    ]
+    cookTime: "20 mins",
+    hack: "Chinese takeaway classic made lean — chicken breast and chips tossed in a salt, pepper and spring onion mix. Partner gets a plain chip portion on the side, no fuss!",
+    macros: "~490 kcal | 42g Protein | 50g Carbs | 12g Fats",
+    ingredients: ["250g Chicken breast (cubed)", "300g Oven chips or potato wedges", "1 tsp Chinese five-spice, 1 tsp sea salt, ½ tsp white pepper", "3 Spring onions (sliced), ½ white onion (sliced), 1 chilli (optional)"]
+    ,
+    steps: ["Bake chips per packet. Coat chicken in five-spice, salt and pepper.", "Air-fry or pan-fry chicken cubes 8-10 mins until golden.", "Toss chicken and chips with spring onions and onion in hot pan 2 mins. Serve immediately."]
   },
 
-  // --- ONE-PAN MEALS (5) ---
+  // --- ONE-PAN (5) ---
   {
     id: "op1",
     category: "onepan",
-    title: "One-Pan Creamy Garlic & Herb Chicken Pasta",
+    title: "One-Pan Sun-Dried Tomato & Chicken Orzo",
     prepTime: "5 mins",
-    cookTime: "12 mins",
-    hack: "Swaps heavy double cream for Garlic & Herb Light Cream Cheese (e.g. Philadelphia Light). Smooth, rich, and zero extra pans to wash!",
-    macros: "~520 kcal | 46g Protein | 56g Carbs | 11g Fats",
-    ingredients: [
-      "250g Chicken breast (diced)",
-      "140g Penne or fusilli pasta",
-      "80g Light Garlic & Herb cream cheese",
-      "50ml Pasta cooking water",
-      "Handful of baby spinach (optional to stir into your portion!)"
-    ],
-    steps: [
-      "Boil pasta in salted water until al dente (reserve 50ml pasta water).",
-      "Sear diced chicken in same pan with olive oil spray until cooked through.",
-      "Stir light cream cheese and reserved pasta water into chicken to create a silky sauce, then toss with cooked pasta."
-    ]
+    cookTime: "15 mins",
+    hack: "Orzo pasta cooks directly in the pan with stock, absorbing all the flavour. Use sun-dried tomatoes in oil — they melt into a rich sauce partner will think took hours!",
+    macros: "~530 kcal | 47g Protein | 55g Carbs | 12g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "150g Orzo pasta", "60g Sun-dried tomatoes (chopped)", "400ml Chicken stock", "50g Light cream cheese", "Fresh basil (optional)"]
+    ,
+    steps: ["Sear chicken in pan with olive oil spray 4 mins. Season well.", "Add orzo, sun-dried tomatoes and stock. Bring to boil, stir.", "Simmer 10 mins stirring regularly until orzo cooked and liquid absorbed. Stir in cream cheese."]
   },
   {
     id: "op2",
     category: "onepan",
-    title: "One-Pan Mexican Chicken Burrito Rice Skillet",
-    prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Chicken, rice, mild salsa & cheddar cooked directly in one skillet. Partner can spoon it into warm plain tortillas!",
-    macros: "~510 kcal | 44g Protein | 58g Carbs | 12g Fats",
-    ingredients: [
-      "300g Cooked shredded chicken breast",
-      "250g Microwave basmati or Mexican rice",
-      "100g Mild tomato salsa",
-      "50g Grated light cheddar",
-      "Tortilla wraps or corn chips"
-    ],
-    steps: [
-      "Sauté chicken and rice in a deep skillet with salsa for 5 mins.",
-      "Top with grated cheese, cover with lid for 2 mins to melt.",
-      "Serve directly from skillet with warm tortilla wraps."
-    ]
+    title: "One-Pan Teriyaki Salmon & Rice",
+    prepTime: "5 mins",
+    cookTime: "15 mins",
+    hack: "Salmon fillets in a sweet teriyaki glaze served over fluffy microwave rice. Partner gets plain grilled salmon; you add the teriyaki drizzle. Done in one non-stick pan!",
+    macros: "~560 kcal | 45g Protein | 52g Carbs | 18g Fats",
+    ingredients: ["2 Salmon fillets (skin on)", "3 tbsp Soy sauce, 1 tbsp honey, 1 tsp sesame oil", "1 tsp Ginger paste or fresh ginger", "250g Microwave basmati rice", "Sliced cucumber and sesame seeds to serve"]
+    ,
+    steps: ["Mix soy, honey, sesame oil and ginger to make teriyaki sauce.", "Pan-fry salmon skin-side down 4 mins, flip and pour teriyaki sauce over.", "Cook 3 mins basting continuously. Serve over rice with cucumber."]
   },
   {
     id: "op3",
     category: "onepan",
-    title: "One-Pan Honey Garlic Chicken Stir-Fry",
-    prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Diced chicken breast glazed in a sweet garlic soy sauce. Serve broccoli/peppers on your side plate if partner prefers plain chicken & rice!",
-    macros: "~480 kcal | 45g Protein | 52g Carbs | 9g Fats",
-    ingredients: [
-      "300g Chicken breast (diced)",
-      "2 tbsp Soy sauce + 1 tbsp honey + 1 tsp garlic",
-      "150g Microwave Jasmine or basmati rice",
-      "Steamed broccoli or sugar snap peas"
-    ],
-    steps: [
-      "Sear chicken in a hot wok/pan for 6 mins.",
-      "Pour in soy, honey & garlic, simmer 2 mins until thick shiny glaze forms.",
-      "Toss with rice and serve with green veggies."
-    ]
+    title: "One-Pan Smoky Bean & Chorizo Skillet",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Spicy cooking chorizo adds huge flavour to the beans so no extra seasoning needed. Use just 50g chorizo to keep fat low but keep all the smokiness. Serve with crusty bread!",
+    macros: "~490 kcal | 38g Protein | 54g Carbs | 13g Fats",
+    ingredients: ["50g Cooking chorizo (sliced)", "2 Cans (400g each) mixed beans, drained", "1 Can chopped tomatoes", "1 tsp Smoked paprika & 1 tsp garlic puree", "2 Large eggs", "Crusty bread to serve"]
+    ,
+    steps: ["Fry chorizo in pan 2 mins, add garlic, paprika then tomatoes. Simmer 5 mins.", "Add beans and stir. Make two wells, crack eggs in. Cover with lid.", "Cook 3-4 mins until eggs set. Serve straight from pan with bread."]
   },
   {
     id: "op4",
     category: "onepan",
-    title: "One-Pan Loaded Cheeseburger Dirty Fries",
-    prepTime: "10 mins",
-    cookTime: "20 mins",
-    hack: "Takeaway comfort food made lean in one pan! Oven wedges topped with 5% beef mince, melted light cheese slice & burger sauce.",
-    macros: "~530 kcal | 44g Protein | 48g Carbs | 16g Fats",
-    ingredients: [
-      "300g Potato wedges (baked crisp)",
-      "250g 5% Beef mince",
-      "2 Slices light cheddar",
-      "2 tbsp Light burger sauce / gherkin relish"
-    ],
-    steps: [
-      "Bake potato wedges in oven tray @ 200°C for 20 mins.",
-      "Pan brown beef mince with salt & pepper.",
-      "Scatter hot beef mince over wedges on the baking tray, top with cheese slice to melt, and drizzle with burger sauce."
-    ]
+    title: "One-Pan Pesto Chicken & Gnocchi",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Pan-fry gnocchi straight from the packet for crispy golden pillows — no boiling needed! Coat in green pesto with chicken. Partner loves it as-is; add extra pesto to yours!",
+    macros: "~540 kcal | 45g Protein | 56g Carbs | 14g Fats",
+    ingredients: ["2 Chicken breasts (sliced)", "400g Fresh or vacuum pack gnocchi", "2 tbsp Green pesto", "100g Cherry tomatoes (halved)", "20g Parmesan or light cheddar (grated)"]
+    ,
+    steps: ["Sear chicken slices in pan with olive oil spray 5 mins until cooked. Set aside.", "Add gnocchi to same hot pan dry — fry 4-5 mins until golden and crispy.", "Return chicken, add tomatoes and pesto. Toss 2 mins. Top with parmesan."]
   },
   {
     id: "op5",
     category: "onepan",
-    title: "One-Pan Spanish Chicken & Rice Bake",
-    prepTime: "10 mins",
-    cookTime: "20 mins",
-    hack: "Mild smoked paprika seasoning (zero fiery heat). Serve sliced chorizo on top so partner can easily pick it off if they prefer pure chicken!",
-    macros: "~530 kcal | 45g Protein | 52g Carbs | 13g Fats",
-    ingredients: [
-      "300g Chicken thighs or breast",
-      "30g Sliced Spanish chorizo",
-      "150g Rice + 300ml chicken stock + 1 tsp smoked paprika",
-      "Peppers & sweetcorn"
-    ],
-    steps: [
-      "Sear chicken & chorizo in a deep pan for 5 mins.",
-      "Add rice, paprika, stock & veggies. Cover with lid and simmer for 15 mins until rice absorbs stock."
-    ]
-  },
-
-  // --- REGULAR FAMILY MEALS (5) ---
-  {
-    id: "reg1",
-    category: "regular",
-    title: "Lean Beef Cottage Pie with Sweet Potato Mash",
-    prepTime: "15 mins",
-    cookTime: "25 mins",
-    hack: "Grate onions & carrots finely into the beef gravy so they melt into the sauce—zero visible veggie chunks for fussy partners!",
-    macros: "~480 kcal | 42g Protein | 48g Carbs | 13g Fats",
-    ingredients: [
-      "300g 5% Lean beef mince",
-      "1 Onion & 1 carrot (finely grated)",
-      "1 Beef stock cube + 200ml boiling water + 1 tbsp Worcestershire sauce",
-      "300g Sweet potatoes (boiled & mashed with a splash of milk)",
-      "50g Frozen garden peas"
-    ],
-    steps: [
-      "Brown mince with grated onion & carrot for 5 mins.",
-      "Add stock and Worcestershire sauce, simmer for 10 mins until thick sauce forms.",
-      "Transfer to a dish, top with sweet potato mash, and grill for 8 mins until golden."
-    ]
-  },
-  {
-    id: "reg2",
-    category: "regular",
-    title: "Cheesy Chicken & Bacon Quesadillas",
+    title: "One-Pan Lemon Garlic Prawn Linguine",
     prepTime: "5 mins",
     cookTime: "10 mins",
-    hack: "Golden toasted tortilla triangles filled with shredded chicken, bacon lardons, and melted cheddar. Great for dip-and-eat dinner!",
-    macros: "~470 kcal | 41g Protein | 44g Carbs | 14g Fats",
-    ingredients: [
-      "2 Large tortilla wraps",
-      "200g Cooked shredded chicken breast",
-      "30g Cooked bacon lardons",
-      "50g Grated light cheddar",
-      "Mild salsa for dipping"
-    ],
-    steps: [
-      "Place chicken, bacon, and cheese inside folded wraps.",
-      "Toast in a hot dry pan for 3 mins per side until cheese is melted and wrap is golden.",
-      "Slice into triangles and serve with salsa."
-    ]
+    hack: "Frozen king prawns go from freezer to plate in 10 mins. Zesty lemon-garlic sauce coats pasta with no cream — feels restaurant-quality. Partner can skip chilli flakes easily!",
+    macros: "~470 kcal | 40g Protein | 52g Carbs | 10g Fats",
+    ingredients: ["200g Raw king prawns (defrosted)", "140g Linguine or spaghetti", "3 Garlic cloves (minced) or 2 tsp garlic puree", "Zest and juice of 1 lemon", "1 tbsp Olive oil, chilli flakes (optional), fresh parsley"]
+    ,
+    steps: ["Boil pasta until al dente (reserve 80ml pasta water). Drain.", "In same pan, heat olive oil, fry garlic 1 min, add prawns — cook 2-3 mins until pink.", "Add pasta, lemon zest, juice and pasta water. Toss to coat. Top with parsley."]
+  },
+
+  // --- REGULAR MEALS (5) ---
+  {
+    id: "rg1",
+    category: "regular",
+    title: "Turkey & Sweet Potato Meatball Bake",
+    prepTime: "15 mins",
+    cookTime: "25 mins",
+    hack: "Turkey mince meatballs baked in a sweet tomato sauce over sweet potato chunks. Partner gets meatballs plain; blitz the tomato sauce smooth so no onion or veg chunks are visible!",
+    macros: "~510 kcal | 44g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["400g Turkey mince", "1 Egg & 2 tbsp breadcrumbs (to bind meatballs)", "300g Sweet potato (cubed, pre-roasted)", "1 Can (400g) passata + 1 tsp oregano + 1 tsp garlic", "40g Light mozzarella (grated on top)"]
+    ,
+    steps: ["Mix turkey mince, egg, breadcrumbs and seasoning. Roll into 12 meatballs.", "Bake meatballs at 200°C for 15 mins. Add to baking dish with passata and sweet potato.", "Top with mozzarella and bake another 10 mins until bubbling."]
   },
   {
-    id: "reg3",
+    id: "rg2",
     category: "regular",
-    title: "Mild Japanese Chicken Katsu Curry & Rice",
+    title: "Chicken & Mushroom Stroganoff",
     prepTime: "10 mins",
     cookTime: "15 mins",
-    hack: "Panko breadcrumbed air-fried chicken breast with a silky smooth, no-bits curry sauce over basmati rice.",
-    macros: "~510 kcal | 43g Protein | 55g Carbs | 11g Fats",
-    ingredients: [
-      "250g Chicken breast (flattened with rolling pin)",
-      "30g Panko breadcrumbs + 1 egg",
-      "150g Basmati rice",
-      "1/2 Block S&B Golden Curry paste (blended smooth with 200ml water)"
-    ],
-    steps: [
-      "Dip chicken in egg, coat in panko, and air-fry @ 190°C for 14 mins.",
-      "Dissolve curry paste in boiling water to create a silky smooth sauce.",
-      "Slice crispy chicken, serve over rice, and pour curry sauce on top."
-    ]
+    hack: "Swap sour cream for 0% Greek yogurt — stir in off the heat to avoid splitting. Partner gets a rich, creamy dinner that tastes totally indulgent but is only 500 kcal!",
+    macros: "~500 kcal | 46g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["2 Chicken breasts (sliced into strips)", "200g Chestnut mushrooms (sliced)", "150g 0% Greek yogurt", "1 tsp Smoked paprika, 1 tsp Dijon mustard", "200ml Chicken stock", "200g Long-grain rice (cooked)"]
+    ,
+    steps: ["Fry chicken strips in pan 5 mins until golden. Add mushrooms, paprika, cook 3 mins.", "Pour in stock and mustard. Simmer 5 mins until slightly reduced.", "Take off heat, stir in yogurt. Season and serve over rice immediately."]
   },
   {
-    id: "reg4",
+    id: "rg3",
     category: "regular",
-    title: "Crispy Baked Salmon Wedges & Greens",
+    title: "Baked Cod with Herby Lemon Crust",
     prepTime: "10 mins",
-    cookTime: "18 mins",
-    hack: "Season salmon with a sweet honey-soy glaze. Serve crispy potato wedges alongside for partner comfort food!",
-    macros: "~540 kcal | 42g Protein | 45g Carbs | 20g Fats",
-    ingredients: [
-      "2 Salmon fillets (coated in 1 tbsp honey + 1 tbsp soy sauce)",
-      "300g Potato wedges",
-      "Steamed broccoli or green beans"
-    ],
-    steps: [
-      "Bake potato wedges @ 200°C for 20 mins.",
-      "Place salmon fillets on baking tray for last 12 mins.",
-      "Serve honey-glazed salmon with wedges and green veggies."
-    ]
+    cookTime: "15 mins",
+    hack: "Mix breadcrumbs with lemon zest, parsley and parmesan — press on top of cod fillets. Bakes to a golden crust that's fancy enough for a date night but ready in 25 mins!",
+    macros: "~430 kcal | 45g Protein | 38g Carbs | 9g Fats",
+    ingredients: ["2 Cod or haddock fillets", "30g Panko breadcrumbs", "Zest of 1 lemon, 1 tbsp fresh parsley, 10g parmesan (grated)", "300g Baby potatoes (boiled)", "Steamed peas or green beans to serve"]
+    ,
+    steps: ["Mix breadcrumbs, lemon zest, parsley and parmesan. Press firmly onto cod.", "Bake at 200°C for 14-16 mins until crust is golden and fish flakes easily.", "Serve with boiled baby potatoes and green veg."]
   },
   {
-    id: "reg5",
+    id: "rg4",
     category: "regular",
-    title: "Classic High-Protein Spaghetti Carbonara",
-    prepTime: "5 mins",
-    cookTime: "12 mins",
-    hack: "Blends egg yolks, light cream cheese, and bacon lardons for a rich creamy Italian classic with zero heavy double cream!",
-    macros: "~530 kcal | 46g Protein | 54g Carbs | 13g Fats",
-    ingredients: [
-      "150g Spaghetti",
-      "2 Egg yolks",
-      "60g Light cream cheese",
-      "50g Bacon lardons / pancetta",
-      "20g Grated parmesan"
-    ],
-    steps: [
-      "Boil spaghetti (reserve 50ml pasta water). Fry bacon lardons until crisp.",
-      "Whisk egg yolks, cream cheese & parmesan with reserved pasta water.",
-      "Toss hot spaghetti into the pan off the heat, pour egg cream mixture over and stir until creamy sauce coats pasta."
-    ]
+    title: "Chicken Fajita Loaded Potato Skins",
+    prepTime: "10 mins",
+    cookTime: "20 mins",
+    hack: "Bake potato skins until crispy, fill with fajita chicken and melted cheese. Everything served separately so partner can build their own plate without unwanted peppers!",
+    macros: "~520 kcal | 43g Protein | 54g Carbs | 14g Fats",
+    ingredients: ["3 Large baking potatoes (halved and baked)", "250g Chicken breast (sliced)", "1 tbsp Fajita seasoning", "1 Red pepper (sliced, optional)", "50g Grated light cheddar", "Sour cream or guacamole to serve"]
+    ,
+    steps: ["Scoop out potato flesh (save for mash another day), spray skins and bake 10 mins.", "Fry chicken with fajita seasoning and peppers 7 mins until cooked.", "Fill potato skins with chicken, top with cheese and grill 3 mins until melted."]
+  },
+  {
+    id: "rg5",
+    category: "regular",
+    title: "High-Protein Tuna Pasta Bake",
+    prepTime: "10 mins",
+    cookTime: "20 mins",
+    hack: "Mix tuna, light cream cheese and stock for a creamy sauce — no heavy béchamel needed. Use a blender to make it totally smooth and lump-free. Partner will love it!",
+    macros: "~520 kcal | 48g Protein | 56g Carbs | 10g Fats",
+    ingredients: ["2 Cans (160g each) tuna in spring water (drained)", "200g Penne pasta (cooked)", "100g Light cream cheese", "150ml Chicken or veg stock", "30g Light cheddar (grated for top)", "50g Sweetcorn (optional, easy to leave out)"]
+    ,
+    steps: ["Mix cream cheese and stock in pan over low heat until smooth sauce forms.", "Stir in drained tuna, sweetcorn and cooked pasta. Season well.", "Pour into baking dish, top with grated cheddar and bake 200°C for 15 mins until golden."]
   }
 ];
 
-// Application State
+// ============================================================
+// APPLICATION STATE
+// ============================================================
 const defaultCompleted = { w1r1: true, w1r2: true, w1r3: true, w2r1: true, w2r2: true, w2r3: true };
-let completedRuns = JSON.parse(localStorage.getItem('dadrunner_runs')) || defaultCompleted;
-let waterCount = parseInt(localStorage.getItem('dadrunner_water')) || 0;
-let currentRecipeCategory = 'all';
+let completedRuns    = JSON.parse(localStorage.getItem('dadrunner_runs'))  || defaultCompleted;
+let waterCount       = parseInt(localStorage.getItem('dadrunner_water'))   || 0;
+let currentCategory  = 'all';
+let selectedRecipes  = new Set(); // IDs of recipes selected for shopping list
 
-// Initialize Application
+// ============================================================
+// INIT
+// ============================================================
 document.addEventListener('DOMContentLoaded', () => {
   initTabs();
   renderWorkoutPlan();
@@ -533,178 +377,109 @@ document.addEventListener('DOMContentLoaded', () => {
   initModal();
 });
 
-// Tab Navigation
+// ============================================================
+// TAB NAVIGATION
+// ============================================================
 function initTabs() {
-  const navButtons = document.querySelectorAll('.nav-btn');
-  navButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tabId = btn.getAttribute('data-tab');
-      switchToTab(tabId);
-    });
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    btn.addEventListener('click', () => switchToTab(btn.getAttribute('data-tab')));
   });
 }
 
 function switchToTab(tabId) {
-  // Update Buttons
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-  const targetBtn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
-  if (targetBtn) targetBtn.classList.add('active');
+  const btn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
+  if (btn) btn.classList.add('active');
 
-  // Update Panes
   document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-  const targetPane = document.getElementById(tabId);
-  if (targetPane) targetPane.classList.add('active');
+  const pane = document.getElementById(tabId);
+  if (pane) pane.classList.add('active');
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Render Workout Plan
+// ============================================================
+// RUNNING PLAN
+// ============================================================
 function renderWorkoutPlan() {
   const container = document.getElementById('workout-list');
   if (!container) return;
-
   container.innerHTML = '';
-  let totalRunsCount = 0;
-  let completedCount = 0;
+
+  let total = 0, done = 0;
 
   runningPlanData.forEach(weekBlock => {
     const weekEl = document.createElement('div');
     weekEl.className = 'week-block';
 
-    const weekHeader = document.createElement('div');
-    weekHeader.className = 'week-header';
-    weekHeader.innerText = weekBlock.title;
-    weekEl.appendChild(weekHeader);
+    const header = document.createElement('div');
+    header.className = 'week-header';
+    header.textContent = weekBlock.title;
+    weekEl.appendChild(header);
 
     weekBlock.runs.forEach(run => {
-      totalRunsCount++;
+      total++;
       const isDone = !!completedRuns[run.id];
-      if (isDone) completedCount++;
+      if (isDone) done++;
 
-      const runEl = document.createElement('div');
-      runEl.className = `workout-item ${isDone ? 'completed' : ''}`;
-      runEl.onclick = () => toggleRunCompletion(run.id);
-
-      runEl.innerHTML = `
-        <div class="workout-checkbox">
-          <i class="fa-solid fa-check"></i>
-        </div>
+      const item = document.createElement('div');
+      item.className = 'workout-item' + (isDone ? ' completed' : '');
+      item.innerHTML = `
+        <div class="workout-checkbox"><i class="fa-solid fa-check"></i></div>
         <div class="workout-details">
           <h5>${run.day}: ${run.title}</h5>
           <p>${run.desc}</p>
-        </div>
-      `;
-
-      weekEl.appendChild(runEl);
+        </div>`;
+      item.addEventListener('click', () => toggleRun(run.id));
+      weekEl.appendChild(item);
     });
 
     container.appendChild(weekEl);
   });
 
-  // Update progress text
-  const pct = Math.round((completedCount / totalRunsCount) * 100) || 0;
-  const progressText = document.getElementById('plan-completion-text');
-  if (progressText) {
-    progressText.innerText = `${pct}% Complete (${completedCount}/${totalRunsCount} Runs)`;
-  }
+  const pct = Math.round((done / total) * 100) || 0;
+  const txt = document.getElementById('plan-completion-text');
+  if (txt) txt.textContent = `${pct}% Complete (${done}/${total} Runs)`;
 }
 
-// Toggle Workout Completion
-function toggleRunCompletion(runId) {
-  if (completedRuns[runId]) {
-    delete completedRuns[runId];
-  } else {
-    completedRuns[runId] = true;
-  }
+function toggleRun(id) {
+  if (completedRuns[id]) delete completedRuns[id];
+  else completedRuns[id] = true;
   localStorage.setItem('dadrunner_runs', JSON.stringify(completedRuns));
   renderWorkoutPlan();
 }
 
-// Hydration Tracker
+// ============================================================
+// HYDRATION TRACKER
+// ============================================================
 function initHydrationTracker() {
-  const trackerContainer = document.getElementById('water-tracker');
-  const countText = document.getElementById('water-count');
-  if (!trackerContainer || !countText) return;
+  const container = document.getElementById('water-tracker');
+  const countEl   = document.getElementById('water-count');
+  if (!container || !countEl) return;
 
-  trackerContainer.innerHTML = '';
-  countText.innerText = `${waterCount} / 6 Glasses (${(waterCount * 0.5).toFixed(1)}L)`;
+  container.innerHTML = '';
+  countEl.textContent = `${waterCount} / 6 Glasses (${(waterCount * 0.5).toFixed(1)}L)`;
 
   for (let i = 1; i <= 6; i++) {
     const glass = document.createElement('div');
-    glass.className = `water-glass ${i <= waterCount ? 'active' : ''}`;
+    glass.className = 'water-glass' + (i <= waterCount ? ' active' : '');
     glass.innerHTML = `<i class="fa-solid fa-glass-water"></i>`;
-    glass.onclick = () => {
+    glass.addEventListener('click', () => {
       waterCount = (waterCount === i) ? i - 1 : i;
       localStorage.setItem('dadrunner_water', waterCount);
       initHydrationTracker();
-    };
-    trackerContainer.appendChild(glass);
-  }
-}
-
-// Strava Title Generator
-function generateStravaTitle() {
-  const output = document.getElementById('strava-title-output');
-  if (!output) return;
-  const randomIndex = Math.floor(Math.random() * stravaTitles.length);
-  output.innerText = `"${stravaTitles[randomIndex]}"`;
-}
-
-// Pace Calculator
-function calculatePaces() {
-  const targetInput = document.getElementById('target-5k');
-  const resultsBox = document.getElementById('pace-results');
-  if (!targetInput || !resultsBox) return;
-
-  const min5k = parseFloat(targetInput.value) || 33;
-  
-  // Calculate average 5k pace in seconds/km
-  const pace5kSec = (min5k * 60) / 5;
-
-  // Easy pace is +60 to +90 seconds per km slower than 5k pace
-  const easyMinSec = formatPace(pace5kSec + 60);
-  const easyMaxSec = formatPace(pace5kSec + 90);
-
-  // Tempo pace is +15 to +30 seconds per km slower than 5k pace
-  const tempoMinSec = formatPace(pace5kSec + 15);
-  const tempoMaxSec = formatPace(pace5kSec + 30);
-
-  document.getElementById('pace-easy').innerText = `${easyMinSec} - ${easyMaxSec} /km`;
-  document.getElementById('pace-tempo').innerText = `${tempoMinSec} - ${tempoMaxSec} /km`;
-
-  resultsBox.classList.remove('hidden');
-}
-
-function formatPace(totalSeconds) {
-  const mins = Math.floor(totalSeconds / 60);
-  const secs = Math.round(totalSeconds % 60);
-  return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-}
-
-// Modal Toggle for GitHub Guide
-function initModal() {
-  const modal = document.getElementById('gh-modal');
-  const openBtn = document.getElementById('gh-help-btn');
-  const closeBtn = document.querySelector('.close-modal');
-
-  if (openBtn && modal) {
-    openBtn.addEventListener('click', () => modal.classList.add('active'));
-  }
-  if (closeBtn && modal) {
-    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
-  }
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) modal.classList.remove('active');
     });
+    container.appendChild(glass);
   }
 }
 
-// Family Recipe Renderer & Filter
+// ============================================================
+// FAMILY RECIPES — FILTER, RENDER & SHOPPING LIST
+// ============================================================
 function filterRecipes(category) {
-  currentRecipeCategory = category;
+  currentCategory = category;
   document.querySelectorAll('.filter-chip').forEach(chip => {
-    chip.classList.toggle('active', chip.getAttribute('onclick').includes(`'${category}'`));
+    chip.classList.toggle('active', chip.dataset.cat === category);
   });
   renderFamilyRecipes();
 }
@@ -712,24 +487,26 @@ function filterRecipes(category) {
 function renderFamilyRecipes() {
   const container = document.getElementById('recipes-container');
   if (!container) return;
-
   container.innerHTML = '';
 
-  const filtered = currentRecipeCategory === 'all' 
-    ? familyRecipesData 
-    : familyRecipesData.filter(r => r.category === currentRecipeCategory);
+  const list = currentCategory === 'all'
+    ? familyRecipesData
+    : familyRecipesData.filter(r => r.category === currentCategory);
 
-  filtered.forEach(recipe => {
+  list.forEach(recipe => {
+    const isSelected = selectedRecipes.has(recipe.id);
     const card = document.createElement('div');
-    card.className = 'recipe-card';
-
-    const ingredientsList = recipe.ingredients.map(i => `<li>${i}</li>`).join('');
-    const stepsList = recipe.steps.map(s => `<li>${s}</li>`).join('');
+    card.className = 'recipe-card' + (isSelected ? ' recipe-selected' : '');
+    card.dataset.id = recipe.id;
 
     card.innerHTML = `
-      <div class="recipe-header">
-        <h3>${recipe.title}</h3>
+      <div class="recipe-card-top">
+        <div class="recipe-select-btn ${isSelected ? 'active' : ''}" data-id="${recipe.id}">
+          <i class="fa-solid ${isSelected ? 'fa-circle-check' : 'fa-circle-plus'}"></i>
+          ${isSelected ? 'Added' : 'Add to List'}
+        </div>
       </div>
+      <h3>${recipe.title}</h3>
       <div class="recipe-meta">
         <span><i class="fa-solid fa-clock"></i> Prep: ${recipe.prepTime}</span>
         <span><i class="fa-solid fa-fire"></i> Cook: ${recipe.cookTime}</span>
@@ -738,93 +515,200 @@ function renderFamilyRecipes() {
         <div class="fussy-hack-title"><i class="fa-solid fa-shield-heart"></i> Fussy Partner Hack</div>
         <div class="fussy-hack-text">${recipe.hack}</div>
       </div>
-      <div class="recipe-details">
-        <div>
-          <div class="recipe-section-title">Ingredients (Serves 2-3)</div>
-          <ul class="recipe-ingredients-list">${ingredientsList}</ul>
-        </div>
-        <div>
-          <div class="recipe-section-title">Quick Steps</div>
-          <ol class="recipe-steps-list">${stepsList}</ol>
-        </div>
-      </div>
+      <div class="recipe-section-title">Ingredients (Serves 2–3)</div>
+      <ul class="recipe-ingredients-list">${recipe.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
+      <div class="recipe-section-title">Quick Steps</div>
+      <ol class="recipe-steps-list">${recipe.steps.map(s => `<li>${s}</li>`).join('')}</ol>
       <div class="recipe-footer">
         <span class="recipe-macro-badge">${recipe.macros}</span>
-      </div>
-    `;
+      </div>`;
+
+    // Toggle selection on button click
+    card.querySelector('.recipe-select-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleRecipeSelection(recipe.id);
+    });
 
     container.appendChild(card);
   });
+
+  updateShoppingListBar();
 }
 
-// Strava API Live Integration
+function toggleRecipeSelection(id) {
+  if (selectedRecipes.has(id)) selectedRecipes.delete(id);
+  else selectedRecipes.add(id);
+  renderFamilyRecipes();
+}
+
+function updateShoppingListBar() {
+  const bar = document.getElementById('shopping-list-bar');
+  if (!bar) return;
+  if (selectedRecipes.size === 0) {
+    bar.classList.add('hidden');
+  } else {
+    bar.classList.remove('hidden');
+    const countEl = bar.querySelector('.sl-count');
+    if (countEl) countEl.textContent = `${selectedRecipes.size} recipe${selectedRecipes.size > 1 ? 's' : ''} selected`;
+  }
+}
+
+function generateShoppingList() {
+  const modal = document.getElementById('shopping-modal');
+  const titleEl = document.getElementById('sl-modal-title');
+  const listEl  = document.getElementById('sl-modal-list');
+  if (!modal || !listEl) return;
+
+  const selected = familyRecipesData.filter(r => selectedRecipes.has(r.id));
+  if (selected.length === 0) return;
+
+  // Collect and deduplicate ingredients
+  const allIngredients = [];
+  selected.forEach(recipe => {
+    recipe.ingredients.forEach(ing => allIngredients.push(ing.trim()));
+  });
+
+  // Smart-group by common keywords
+  const categories = {
+    '🥩 Meat & Fish': ['chicken', 'beef', 'pork', 'turkey', 'steak', 'mince', 'salmon', 'cod', 'haddock', 'tuna', 'prawn', 'sausage', 'chorizo', 'lamb'],
+    '🥛 Dairy & Eggs': ['milk', 'yogurt', 'cream cheese', 'mozzarella', 'cheddar', 'parmesan', 'egg', 'butter'],
+    '🥫 Tins & Packets': ['can', 'tin', 'beans', 'tomatoes', 'passata', 'stock', 'coconut milk', 'orzo', 'pasta', 'rice', 'noodle', 'gnocchi', 'lentil'],
+    '🧅 Fresh Veg & Fruit': ['onion', 'garlic', 'potato', 'pepper', 'tomato', 'mushroom', 'courgette', 'spinach', 'broccoli', 'cucumber', 'lemon', 'lime', 'carrot'],
+    '🧂 Sauces & Spices': ['sauce', 'paste', 'oil', 'vinegar', 'soy', 'honey', 'mustard', 'paprika', 'cumin', 'oregano', 'pesto', 'chilli', 'seasoning', 'spice', 'herb', 'teriyaki', 'mayonnaise'],
+    '🍞 Bread & Carbs': ['bread', 'bun', 'wrap', 'naan', 'tortilla', 'flatbread', 'pita', 'brioche', 'jacket', 'chip', 'breadcrumb', 'panko'],
+  };
+
+  const grouped = {};
+  Object.keys(categories).forEach(cat => grouped[cat] = []);
+  grouped['🛒 Other'] = [];
+
+  allIngredients.forEach(ing => {
+    const lower = ing.toLowerCase();
+    let matched = false;
+    for (const [cat, keywords] of Object.entries(categories)) {
+      if (keywords.some(kw => lower.includes(kw))) {
+        grouped[cat].push(ing);
+        matched = true;
+        break;
+      }
+    }
+    if (!matched) grouped['🛒 Other'].push(ing);
+  });
+
+  // Build HTML
+  titleEl.textContent = `Shopping List (${selected.map(r => r.title).join(', ')})`;
+  let html = '';
+  Object.entries(grouped).forEach(([cat, items]) => {
+    if (items.length === 0) return;
+    html += `<div class="sl-category">${cat}</div>`;
+    items.forEach(item => {
+      html += `<label class="sl-item"><input type="checkbox"><span>${item}</span></label>`;
+    });
+  });
+  listEl.innerHTML = html;
+  modal.classList.add('active');
+}
+
+function clearRecipeSelection() {
+  selectedRecipes.clear();
+  renderFamilyRecipes();
+}
+
+// ============================================================
+// STRAVA TITLE GENERATOR
+// ============================================================
+function generateStravaTitle() {
+  const el = document.getElementById('strava-title-output');
+  if (!el) return;
+  el.textContent = `"${stravaTitles[Math.floor(Math.random() * stravaTitles.length)]}"`;
+}
+
+// ============================================================
+// PACE CALCULATOR
+// ============================================================
+function calculatePaces() {
+  const input = document.getElementById('target-5k');
+  const box   = document.getElementById('pace-results');
+  if (!input || !box) return;
+
+  const min5k = parseFloat(input.value) || 33;
+  const pace5k = (min5k * 60) / 5;
+
+  document.getElementById('pace-easy').textContent  = `${formatPace(pace5k + 60)} – ${formatPace(pace5k + 90)} /km`;
+  document.getElementById('pace-tempo').textContent = `${formatPace(pace5k + 15)} – ${formatPace(pace5k + 30)} /km`;
+  box.classList.remove('hidden');
+}
+
+function formatPace(secs) {
+  const m = Math.floor(secs / 60);
+  const s = Math.round(secs % 60);
+  return `${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+// ============================================================
+// STRAVA API SYNC
+// ============================================================
 async function syncStravaActivities() {
   const tokenInput = document.getElementById('strava-token');
-  const outputBox = document.getElementById('strava-sync-output');
+  const outputBox  = document.getElementById('strava-sync-output');
   if (!tokenInput || !outputBox) return;
 
   const token = tokenInput.value.trim() || localStorage.getItem('dadrunner_strava_token');
-
-  if (!token) {
-    alert("Please enter your Strava Access Token! Click 'Help' to see how to get it in 30 seconds.");
-    return;
-  }
+  if (!token) { alert("Please paste your Strava Access Token first! Click Help for instructions."); return; }
 
   localStorage.setItem('dadrunner_strava_token', token);
   outputBox.classList.remove('hidden');
-  outputBox.innerHTML = `<span><i class="fa-solid fa-spinner fa-spin"></i> Connecting to Strava API...</span>`;
+  outputBox.innerHTML = `<span><i class="fa-solid fa-spinner fa-spin"></i> Connecting to Strava...</span>`;
 
   try {
-    const response = await fetch('https://www.strava.com/api/v3/athlete/activities?per_page=5', {
-      headers: {
-        'Authorization': `Bearer ${token}`
-      }
+    const res = await fetch('https://www.strava.com/api/v3/athlete/activities?per_page=5', {
+      headers: { 'Authorization': `Bearer ${token}` }
     });
+    if (!res.ok) throw new Error(`Strava API Error ${res.status} — token invalid or expired`);
 
-    if (!response.ok) {
-      throw new Error(`Strava API Error: ${response.status} (Invalid or expired token)`);
-    }
-
-    const activities = await response.json();
-
+    const activities = await res.json();
     if (!activities || activities.length === 0) {
-      outputBox.innerHTML = `<span>No recent activities found on Strava.</span>`;
+      outputBox.innerHTML = `<span>No recent activities found.</span>`;
       return;
     }
 
-    let html = `<strong><i class="fa-brands fa-strava"></i> Latest Synced Runs:</strong>`;
+    let html = `<strong><i class="fa-brands fa-strava"></i> Latest Strava Runs:</strong>`;
     activities.forEach(act => {
       if (act.type === 'Run' || act.type === 'Hike') {
-        const distKm = (act.distance / 1000).toFixed(2);
-        const timeMin = Math.floor(act.moving_time / 60);
+        const km  = (act.distance / 1000).toFixed(2);
+        const min = Math.floor(act.moving_time / 60);
         const sec = act.moving_time % 60;
-        const paceSecPerKm = act.moving_time / (act.distance / 1000);
-        const paceStr = formatPace(paceSecPerKm);
-
-        html += `
-          <div class="pace-row" style="padding: 6px 0; border-bottom: 1px dashed rgba(255,255,255,0.1);">
-            <div>
-              <strong>${act.name}</strong><br>
-              <small style="color: var(--text-muted);">${new Date(act.start_date_local).toLocaleDateString()}</small>
-            </div>
-            <div style="text-align: right;">
-              <strong style="color: var(--accent-cyan);">${distKm} km</strong> in ${timeMin}m ${sec}s<br>
-              <small>Pace: ${paceStr}/km</small>
-            </div>
-          </div>
-        `;
+        html += `<div class="pace-row" style="padding:6px 0;border-bottom:1px dashed rgba(255,255,255,0.1)">
+          <div><strong>${act.name}</strong><br><small>${new Date(act.start_date_local).toLocaleDateString()}</small></div>
+          <div style="text-align:right"><strong style="color:var(--cyan)">${km} km</strong><br><small>${min}m ${sec}s · ${formatPace(act.moving_time / (act.distance / 1000))}/km</small></div>
+        </div>`;
       }
     });
-
     outputBox.innerHTML = html;
-
   } catch (err) {
-    outputBox.innerHTML = `<span style="color: #f87171;"><i class="fa-solid fa-circle-exclamation"></i> ${err.message}</span>`;
+    outputBox.innerHTML = `<span style="color:#f87171"><i class="fa-solid fa-circle-exclamation"></i> ${err.message}</span>`;
   }
 }
 
 function openStravaTokenGuide() {
-  alert("How to get your Strava Access Token:\n\n1. Log into Strava on your computer or phone browser.\n2. Go to: strava.com/settings/api\n3. Copy your 'Your Access Token'.\n4. Paste it into your web app and click Sync!");
+  alert("Get your Strava Access Token:\n\n1. Go to strava.com/settings/api on your computer\n2. Create a free API app if you haven't already\n3. Click 'My API Application' and copy your Access Token\n4. Paste it in the box and click Sync Runs!");
 }
 
+// ============================================================
+// MODALS (GitHub + Shopping List)
+// ============================================================
+function initModal() {
+  // GitHub modal
+  const ghModal  = document.getElementById('gh-modal');
+  const ghBtn    = document.getElementById('gh-help-btn');
+  const ghClose  = document.querySelector('#gh-modal .close-modal');
+  if (ghBtn)   ghBtn.addEventListener('click',  () => ghModal.classList.add('active'));
+  if (ghClose) ghClose.addEventListener('click', () => ghModal.classList.remove('active'));
+  if (ghModal) ghModal.addEventListener('click', e => { if (e.target === ghModal) ghModal.classList.remove('active'); });
 
+  // Shopping list modal
+  const slModal  = document.getElementById('shopping-modal');
+  const slClose  = document.querySelector('#shopping-modal .close-modal');
+  if (slClose) slClose.addEventListener('click',  () => slModal.classList.remove('active'));
+  if (slModal) slModal.addEventListener('click', e => { if (e.target === slModal) slModal.classList.remove('active'); });
+}
