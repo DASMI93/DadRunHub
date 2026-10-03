@@ -123,24 +123,24 @@ const familyRecipesData = [
   {
     id: "sc2",
     category: "slowcooker",
-    title: "Slowcooker Pork Carnitas Tacos",
-    prepTime: "10 mins",
-    cookTime: "6 hrs",
-    hack: "Pork shoulder simmers in orange juice, garlic & oregano, then crisp under the grill for 5 mins. Partner gets juicy pork in soft warm tortillas with just cheese!",
-    macros: "~510 kcal | 45g Protein | 44g Carbs | 15g Fats",
-    ingredients: ["500g Lean pork shoulder (fat trimmed)", "Juice of 1 Orange & 1 Lime", "1 tsp Garlic puree & 1 tsp dried oregano", "1 tsp Cumin & salt", "6 Small flour soft tortillas", "Grated light cheddar & guacamole"],
-    steps: ["Add pork, orange juice, lime juice, garlic, oregano and cumin to slowcooker.", "Cook LOW 6-7 hrs. Shred pork, spread on oven tray and grill 5 mins until edges are crispy.", "Stuff into warm tortillas with cheese and guacamole."]
+    title: "Slowcooker Honey & Mustard Pork Tenderloin",
+    prepTime: "5 mins",
+    cookTime: "5 hrs",
+    hack: "Lean pork tenderloin slow cooked in honey, wholegrain mustard and apple juice. Melt-in-your-mouth pork served over creamy mash — partner gets gravy poured on top!",
+    macros: "~490 kcal | 46g Protein | 44g Carbs | 11g Fats",
+    ingredients: ["500g Pork tenderloin or shoulder", "3 tbsp Honey", "2 tbsp Wholegrain or Dijon mustard", "150ml Apple juice or chicken stock", "500g Potatoes (for mash)", "1 tsp Garlic powder & dried thyme"],
+    steps: ["Add pork, honey, mustard, apple juice, garlic and thyme to slowcooker.", "Cook LOW 5-6 hrs until tender. Boil potatoes and mash with milk.", "Slice pork, thicken slowcooker juices with cornstarch to make gravy, serve over mash."]
   },
   {
     id: "sc3",
     category: "slowcooker",
-    title: "Slowcooker Smoky Chicken Enchilada Mix",
-    prepTime: "5 mins",
-    cookTime: "5 hrs",
-    hack: "Chicken breasts cooked directly in passata & sweet mild spices. Shred inside the slowcooker into a silky tomato-chicken filling. Zero chopping needed!",
-    macros: "~490 kcal | 46g Protein | 42g Carbs | 11g Fats",
-    ingredients: ["500g Chicken breast", "300ml Passata", "1 tbsp Mild fajita seasoning", "1 Can (400g) black beans or sweetcorn (drained)", "4 Tortilla wraps", "50g Grated light cheddar"],
-    steps: ["Place chicken, passata and fajita seasoning in slowcooker. Cook LOW 5 hrs.", "Shred chicken directly in sauce, stir in black beans or sweetcorn.", "Roll into tortillas, place in baking dish, top with cheese and bake 10 mins until melted."]
+    title: "Slowcooker Beef Shin Ragu with Tagliatelle",
+    prepTime: "10 mins",
+    cookTime: "7 hrs",
+    hack: "Beef shin melts into a rich Italian tomato sauce. Blitz the tomato sauce smooth before adding the shredded beef — zero onion chunks for partner to complain about!",
+    macros: "~530 kcal | 47g Protein | 52g Carbs | 13g Fats",
+    ingredients: ["500g Beef shin or braising steak", "1 Can (400g) passata & 2 tbsp tomato puree", "150ml Beef stock", "1 tsp Garlic puree & dried oregano", "200g Tagliatelle or pappardelle pasta", "Grated parmesan to serve"],
+    steps: ["Add beef, passata, stock, tomato puree, garlic and oregano to slowcooker.", "Cook LOW 7-8 hrs until beef is falling apart. Shred beef with forks into the sauce.", "Boil pasta, toss with ragu, serve topped with parmesan."]
   },
   {
     id: "sc4",
@@ -180,59 +180,59 @@ const familyRecipesData = [
   {
     id: "fk2",
     category: "fakeaway",
-    title: "Mexican Street Corn & Chicken Burrito Bowls",
+    title: "Sweet & Sour Crispy Chicken Rice Bowls",
     prepTime: "10 mins",
     cookTime: "12 mins",
-    hack: "Char sweetcorn in a hot pan with paprika, toss with diced seasoned chicken over cilantro-lime rice. Serve all toppings separate so partner picks exactly what they like!",
-    macros: "~510 kcal | 45g Protein | 52g Carbs | 12g Fats",
-    ingredients: ["300g Chicken breast (diced)", "150g Sweetcorn (canned or frozen)", "150g Basmati rice", "1 tbsp Taco seasoning", "2 tbsp Light mayo or sour cream", "Juice of 1 Lime & fresh coriander"],
-    steps: ["Sear chicken with taco seasoning in pan 7 mins. Pan-fry sweetcorn in dry pan 4 mins until lightly charred.", "Boil rice and stir in lime juice and chopped coriander.", "Assemble bowls: rice base, taco chicken, charred corn, drizzled with mayo/sour cream."]
+    hack: "Diced chicken tossed in cornstarch, fried crispy and coated in a 3-ingredient sweet & sour glaze (pineapple juice + ketchup + soy). Tastes like takeaway night!",
+    macros: "~510 kcal | 44g Protein | 56g Carbs | 11g Fats",
+    ingredients: ["300g Chicken breast (diced)", "1 tbsp Cornstarch", "1 Small can (220g) pineapple chunks in juice", "2 tbsp Tomato ketchup & 2 tbsp soy sauce", "150g Jasmine or basmati rice", "1 Red pepper (sliced, optional)"],
+    steps: ["Toss chicken in cornstarch and fry in hot pan 6 mins until crispy.", "Mix pineapple juice, ketchup and soy sauce. Pour into pan with pineapple chunks and pepper, simmer 3 mins until glossy.", "Serve crispy sweet & sour chicken over warm rice."]
   },
   {
     id: "fk3",
     category: "fakeaway",
-    title: "Smoky BBQ Beef & Cheese Burritos",
+    title: "Smoky BBQ Pulled Chicken Loaded Fries",
     prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Lean beef mince cooked in smoky sweet BBQ sauce, rolled tight in toasted tortilla wraps with melted mozzarella. Tastes like a gourmet takeaway wrap!",
-    macros: "~530 kcal | 44g Protein | 54g Carbs | 14g Fats",
-    ingredients: ["300g 5% Fat beef mince", "3 tbsp Smoky BBQ sauce", "4 Large tortilla wraps", "60g Light mozzarella (grated)", "Shredded iceberg lettuce"],
-    steps: ["Fry beef mince in pan 6 mins until browned. Stir in BBQ sauce and simmer 2 mins.", "Divide beef onto tortillas, sprinkle mozzarella and shredded lettuce, roll tight.", "Toast burritos in a hot pan 2 mins per side until crispy on the outside."]
+    cookTime: "20 mins",
+    hack: "Oven chips topped with shredded chicken in sweet BBQ sauce and melted cheddar cheese. Serve salad/sauces on the side so partner can build plain cheesy chips!",
+    macros: "~530 kcal | 45g Protein | 54g Carbs | 14g Fats",
+    ingredients: ["300g Oven chips or wedges", "250g Cooked chicken breast (shredded)", "3 tbsp Smoky BBQ sauce", "60g Light cheddar (grated)", "2 tbsp Sour cream or light mayo"],
+    steps: ["Bake chips in oven at 200°C for 18-20 mins until crispy.", "Toss shredded chicken with BBQ sauce in a small pan until hot.", "Top hot chips with BBQ chicken and grated cheese, grill 2 mins until bubbling."]
   },
   {
     id: "fk4",
     category: "fakeaway",
-    title: "Crispy Fish Tacos with Lime Crema",
+    title: "Greek Souvlaki Chicken Gyros Wraps",
     prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Oven-baked breaded cod fillets sliced into soft warm tortillas with a quick 2-ingredient lime crema (Greek yogurt + lime). Super fresh & kid/partner friendly!",
-    macros: "~480 kcal | 38g Protein | 52g Carbs | 11g Fats",
-    ingredients: ["4 Breaded cod or white fish fillets", "6 Small soft tortilla wraps", "3 tbsp 0% Greek yogurt", "Juice of 1 Lime", "Shredded crunchy lettuce or cabbage"],
-    steps: ["Bake breaded fish fillets as per packet (approx 12-15 mins at 200°C). Slice into strips.", "Mix Greek yogurt with lime juice and pinch of salt to make crema.", "Warm tortillas, line with lettuce, add fish strips and drizzle lime crema."]
+    cookTime: "10 mins",
+    hack: "Chicken breasts marinated in lemon, oregano and garlic, grilled and served in warm flatbreads with tzatziki. Fresh, clean takeaway vibes!",
+    macros: "~490 kcal | 44g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["300g Chicken breast (sliced)", "Juice of 1 Lemon & 1 tsp dried oregano", "1 tsp Garlic puree", "2 Greek pita or flatbreads", "Tzatziki (Greek yogurt + grated cucumber + garlic)", "Sliced tomatoes & red onion"],
+    steps: ["Marinate chicken in lemon juice, oregano and garlic 5 mins. Pan-fry 6 mins until golden.", "Warm flatbreads in pan.", "Assemble gyros: spread tzatziki, fill with chicken, tomato and onion."]
   },
   {
     id: "fk5",
     category: "fakeaway",
-    title: "Cheesy Fajita Chicken Rice Skillet",
+    title: "Crispy Teriyaki Beef & Broccoli Rice",
     prepTime: "10 mins",
-    cookTime: "15 mins",
-    hack: "Diced chicken, mild fajita seasoning, pre-cooked rice and passata simmered together in one skillet, covered in melted cheddar. Zero fuss, pure comfort!",
-    macros: "~530 kcal | 46g Protein | 52g Carbs | 14g Fats",
-    ingredients: ["300g Chicken breast (diced)", "250g Pre-cooked pouch long grain rice", "150ml Passata", "1 tbsp Mild fajita seasoning", "60g Grated light cheddar", "1 Red pepper (sliced thin, optional)"],
-    steps: ["Fry chicken and peppers with fajita seasoning in skillet 6 mins.", "Stir in passata and rice, cook 4 mins until hot and sauce is absorbed.", "Top with grated cheddar, cover with lid 2 mins until cheese is melted."]
+    cookTime: "10 mins",
+    hack: "Thin strips of steak cooked fast in sweet teriyaki glaze over jasmine rice. Broccoli florets served on your side of the plate so partner's rice remains clean!",
+    macros: "~520 kcal | 45g Protein | 52g Carbs | 12g Fats",
+    ingredients: ["300g Rump steak (sliced thin)", "3 tbsp Teriyaki sauce & 1 tsp honey", "150g Jasmine rice", "1 Broccoli head (cut florets)", "Sesame seeds & spring onion to finish"],
+    steps: ["Boil rice. Steam broccoli florets for 4 mins.", "High heat fry steak strips 2 mins. Add teriyaki sauce and honey, toss 1 min until sticky.", "Serve teriyaki beef over rice with broccoli on the side, garnish with sesame seeds."]
   },
 
   // --- ONE-PAN (5) ---
   {
     id: "op1",
     category: "onepan",
-    title: "One-Pan Mexican Fiesta Chicken & Rice",
+    title: "One-Pan Creamy Tomato & Sausage Gnocchi",
     prepTime: "5 mins",
-    cookTime: "18 mins",
-    hack: "Rice cooks right in the skillet alongside chicken breast, passata, stock & sweetcorn. Everything finishes at the same time with minimal washing up!",
-    macros: "~520 kcal | 46g Protein | 54g Carbs | 11g Fats",
-    ingredients: ["2 Chicken breasts (diced)", "150g Long grain rice (uncooked)", "150ml Passata & 350ml chicken stock", "1 tbsp Mild taco seasoning", "100g Sweetcorn (drained)", "Fresh coriander to finish"],
-    steps: ["Sear chicken in pan with oil spray 3 mins. Add taco seasoning and rice, stir 1 min.", "Pour in passata, chicken stock and sweetcorn. Bring to boil, cover with lid.", "Simmer on low heat 15 mins until rice is fluffy and liquid absorbed."]
+    cookTime: "12 mins",
+    hack: "Fresh potato gnocchi cooks in 5 mins directly in the tomato-cream sausage sauce. Soft, pillowy comfort food in under 15 minutes!",
+    macros: "~530 kcal | 38g Protein | 58g Carbs | 14g Fats",
+    ingredients: ["6 Lean pork sausages (removed from skins, crumbled)", "400g Fresh potato gnocchi", "250ml Passata", "60g Light cream cheese", "1 tsp Garlic puree & dried basil", "30g Parmesan to serve"],
+    steps: ["Fry crumbled sausage meat in skillet 5 mins until browned.", "Add passata, cream cheese, garlic and 100ml water. Stir until smooth sauce.", "Add gnocchi directly to pan, cover and simmer 5 mins until tender. Top with parmesan."]
   },
   {
     id: "op2",
@@ -270,37 +270,37 @@ const familyRecipesData = [
   {
     id: "op5",
     category: "onepan",
-    title: "One-Pan Mexican Cheesy Beef Taco Pasta",
+    title: "One-Pan Lemon Herb Chicken Thighs & Orzo",
     prepTime: "5 mins",
-    cookTime: "15 mins",
-    hack: "Lean beef mince and shell pasta cooked together in taco-seasoned tomato broth, finished with melted cheddar. Tastes like homemade Helper but 10x healthier!",
-    macros: "~540 kcal | 46g Protein | 55g Carbs | 13g Fats",
-    ingredients: ["300g 5% Fat beef mince", "140g Shell or macaroni pasta", "1 tbsp Taco seasoning", "200ml Passata & 300ml beef stock", "50g Grated light cheddar", "100g Sweetcorn (optional)"],
-    steps: ["Brown beef mince in skillet 4 mins. Drain any fat.", "Add taco seasoning, pasta, passata, beef stock and sweetcorn. Simmer covered 10 mins.", "Top with grated cheddar, remove from heat and cover 2 mins until cheese melts."]
+    cookTime: "18 mins",
+    hack: "Orzo pasta cooks directly in chicken stock, lemon and herbs underneath pan-seared chicken thighs. Absorbs all the rich juices!",
+    macros: "~520 kcal | 46g Protein | 50g Carbs | 13g Fats",
+    ingredients: ["4 Boneless chicken thighs", "140g Orzo pasta", "350ml Chicken stock", "Juice of 1 Lemon", "1 tsp Garlic puree & dried oregano", "50g Feta cheese (crumbled on top)"],
+    steps: ["Sear chicken thighs skin-side down 5 mins, flip and sear 3 mins. Remove.", "Add orzo, chicken stock, lemon juice, garlic and oregano to pan. Place chicken back on top.", "Cover and simmer 12 mins until orzo is cooked and stock absorbed. Sprinkle feta."]
   },
 
   // --- REGULAR MEALS (5) ---
   {
     id: "rg1",
     category: "regular",
-    title: "Cheesy Chicken Enchilada Bake",
-    prepTime: "15 mins",
-    cookTime: "20 mins",
-    hack: "Soft tortillas filled with shredded chicken and sweetcorn, rolled and smothered in mild tomato enchilada sauce & bubbling cheddar cheese.",
-    macros: "~520 kcal | 47g Protein | 48g Carbs | 13g Fats",
-    ingredients: ["300g Cooked chicken breast (shredded)", "4 Soft tortilla wraps", "250ml Passata + 1 tbsp taco seasoning (enchilada sauce)", "100g Sweetcorn (drained)", "60g Grated light cheddar"],
-    steps: ["Mix shredded chicken with sweetcorn and 2 tbsp passata.", "Divide mixture among tortillas, roll tightly and place seam-down in baking dish.", "Pour remaining passata mixed with taco seasoning over top, cover with cheddar. Bake 200°C 20 mins."]
+    title: "Crispy Pesto Chicken & Halloumi Traybake",
+    prepTime: "10 mins",
+    cookTime: "25 mins",
+    hack: "Chicken breasts brushed with green pesto, roasted with baby potatoes and halloumi slices. Simple Mediterranean sheet pan dinner!",
+    macros: "~530 kcal | 46g Protein | 42g Carbs | 16g Fats",
+    ingredients: ["2 Chicken breasts", "2 tbsp Green basil pesto", "400g Baby potatoes (halved)", "100g Halloumi cheese (sliced)", "1 tbsp Olive oil & cherry tomatoes"],
+    steps: ["Toss baby potatoes in olive oil, season, roast at 200°C for 15 mins.", "Spread pesto over chicken breasts. Add chicken, halloumi and tomatoes to tray.", "Roast 12-15 mins until chicken is cooked through and halloumi is golden."]
   },
   {
     id: "rg2",
     category: "regular",
-    title: "Mexican Loaded Sweet Potato Jackets",
+    title: "Loaded Shepherd's Pie Potato Jackets",
     prepTime: "10 mins",
     cookTime: "30 mins",
-    hack: "Microwave baked sweet potatoes loaded with mild beef chilli & melted cheese. Easy weeknight win where everyone customises their toppings!",
-    macros: "~510 kcal | 42g Protein | 54g Carbs | 12g Fats",
-    ingredients: ["2 Large sweet potatoes", "250g 5% Fat beef mince", "1 tbsp Taco seasoning", "150ml Passata & 100g black beans or sweetcorn", "50g Grated light cheddar", "Sour cream to serve"],
-    steps: ["Prick sweet potatoes with fork, microwave 8-10 mins until soft inside.", "Fry beef mince with taco seasoning 5 mins, add passata and beans/sweetcorn, simmer 5 mins.", "Slice potatoes open, stuff with taco beef, top with cheese and grill 3 mins. Drizzle sour cream."]
+    hack: "Baked potato jackets stuffed with rich minced lamb/beef in savory gravy, topped with extra mash and cheddar. Ultimate British comfort meal!",
+    macros: "~510 kcal | 43g Protein | 50g Carbs | 13g Fats",
+    ingredients: ["2 Large baking potatoes", "250g Lean beef or lamb mince", "1 tbsp Tomato puree & 150ml beef stock", "1 tsp Worcestershire sauce", "50g Grated light cheddar", "Frozen peas (optional)"],
+    steps: ["Microwave potatoes 8-10 mins until soft. Scoop out middle into bowl.", "Fry mince with tomato puree, stock and Worcestershire sauce 8 mins.", "Stuff potato skins with mince, top with scooped potato mash and cheddar, grill 4 mins."]
   },
   {
     id: "rg3",
@@ -327,13 +327,13 @@ const familyRecipesData = [
   {
     id: "rg5",
     category: "regular",
-    title: "Smoky Turkey Taco Meatball Bake",
-    prepTime: "15 mins",
+    title: "Baked Honey & Soy Chicken Thighs with Rice",
+    prepTime: "10 mins",
     cookTime: "25 mins",
-    hack: "Lean turkey mince rolled into meatballs, baked in taco tomato sauce, topped with crushed tortilla chips & melted cheddar for crunch!",
-    macros: "~500 kcal | 45g Protein | 46g Carbs | 12g Fats",
-    ingredients: ["400g Turkey mince", "1 Egg & 2 tbsp breadcrumbs", "1 tbsp Taco seasoning", "300ml Passata", "40g Crushed salted tortilla chips", "50g Grated light cheddar"],
-    steps: ["Mix turkey mince, egg, breadcrumbs and half taco seasoning. Roll into 12 meatballs.", "Bake meatballs at 200°C 15 mins. Transfer to baking dish with passata and rest of seasoning.", "Top with crushed tortilla chips and cheddar. Bake 10 mins until cheese is bubbling."]
+    hack: "Chicken thighs baked in sweet honey, garlic & soy sauce until sticky and glazed. Serve over rice with steamed broccoli for you!",
+    macros: "~510 kcal | 45g Protein | 50g Carbs | 12g Fats",
+    ingredients: ["4 Boneless chicken thighs", "3 tbsp Soy sauce & 2 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "200g Jasmine or basmati rice", "1 Broccoli head (florets)"],
+    steps: ["Whisk soy, honey, garlic and sesame oil. Coat chicken thighs in baking dish.", "Bake at 200°C for 22-25 mins until chicken is cooked and glaze is bubbling.", "Serve sticky chicken over warm rice with steamed broccoli."]
   }
 ];
 
