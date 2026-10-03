@@ -43,38 +43,38 @@ const runningPlanData = [
   },
   {
     week: 5,
-    title: "Week 5: Speed & Distance Build",
+    title: "Week 5: Endurance Base & Distance Build",
     runs: [
-      { id: "w5r1", day: "Tuesday", title: "Easy Base Run", desc: "5.5 km @ Zone 2 Pace." },
-      { id: "w5r2", day: "Thursday", title: "Interval Power", desc: "10m Warmup + 6x (3m @ 6:00/km / 90s Walk) + Cooldown." },
-      { id: "w5r3", day: "Saturday/Sunday", title: "Long Run Milestone", desc: "8.5 km @ Conversational Pace." }
+      { id: "w5r1", day: "Tuesday", title: "Easy Base Run", desc: "5.0 km @ Zone 2 Pace. Logged 23/09 (32:36 @ 6:31/km)." },
+      { id: "w5r2", day: "Thursday", title: "Aerobic Steady Run", desc: "5.5 km @ Conversational Pace. Logged 29/09 (39:13 @ 7:07/km)." },
+      { id: "w5r3", day: "Saturday/Sunday", title: "Weekend Long Run Milestone", desc: "7.5 km @ Steady Aerobic Pace. Keep HR low and focus on smooth distance." }
     ]
   },
   {
     week: 6,
-    title: "Week 6: Sub-30 5k Speed Prep",
+    title: "Week 6: Aerobic Volume & Distance Extension",
     runs: [
-      { id: "w6r1", day: "Tuesday", title: "Easy Aerobic Run", desc: "6.0 km @ Easy Pace." },
-      { id: "w6r2", day: "Thursday", title: "Threshold Test Run", desc: "5.0 km Total: 3.0 km Continuous @ Sub-30 5k Pace (5:55/km)." },
-      { id: "w6r3", day: "Saturday/Sunday", title: "Peak Long Run #1", desc: "9.5 km @ Easy Steady Pace." }
+      { id: "w6r1", day: "Tuesday", title: "Aerobic Flush Run", desc: "5.5 km @ Easy Zone 2 Pace (7:30 - 7:50/km)." },
+      { id: "w6r2", day: "Thursday", title: "Aerobic Tempo Blocks", desc: "6.0 km Total: 2x 2.0 km @ Steady Aerobic Tempo with 2m walk recovery." },
+      { id: "w6r3", day: "Saturday/Sunday", title: "Peak Long Run #1", desc: "8.5 km @ Conversational Pace. Hydrate well before & after!" }
     ]
   },
   {
     week: 7,
     title: "Week 7: Peak Endurance Block",
     runs: [
-      { id: "w7r1", day: "Tuesday", title: "Easy Recovery Run", desc: "5.0 km @ Zone 2 Pace." },
-      { id: "w7r2", day: "Thursday", title: "Sharpening Intervals", desc: "10m Warmup + 4x (4m @ 6:00/km Pace / 2m Walk) + Cooldown." },
-      { id: "w7r3", day: "Saturday/Sunday", title: "Peak Long Run #2", desc: "10.5 km @ Smooth Effort." }
+      { id: "w7r1", day: "Tuesday", title: "Easy Recovery Run", desc: "5.5 km @ Relaxed Zone 2 Pace." },
+      { id: "w7r2", day: "Thursday", title: "Extended Aerobic Steady Run", desc: "6.5 km @ Continuous Steady Effort." },
+      { id: "w7r3", day: "Saturday/Sunday", title: "Peak Long Run #2", desc: "9.5 km @ Smooth Conversational Pace. Build leg stamina!" }
     ]
   },
   {
     week: 8,
-    title: "Week 8: Sub-60 10k Celebration",
+    title: "Week 8: 10k Distance Taper & Milestone",
     runs: [
-      { id: "w8r1", day: "Tuesday", title: "Easy Taper Run", desc: "4.0 km Easy Pace." },
-      { id: "w8r2", day: "Thursday", title: "Leg Opener", desc: "3.5 km Easy + 3 Strides." },
-      { id: "w8r3", day: "Saturday/Sunday", title: "🏆 Milestone 10k Run", desc: "10.0 km Time Trial / Fun Run! Target sub-60 mins!" }
+      { id: "w8r1", day: "Tuesday", title: "Taper Flush Run", desc: "4.5 km Easy Pace to stay loose." },
+      { id: "w8r2", day: "Thursday", title: "Easy Leg Opener", desc: "3.5 km Easy + light form drills." },
+      { id: "w8r3", day: "Saturday/Sunday", title: "🏆 Milestone 10k Endurance Run", desc: "10.0 km Continuous Fun Run! Target sub-65 mins, focus on strong endurance finishing finish!" }
     ]
   }
 ];
@@ -344,7 +344,8 @@ const defaultCompleted = {
   w1r1: true, w1r2: true, w1r3: true,
   w2r1: true, w2r2: true, w2r3: true,
   w3r1: true, w3r2: true, w3r3: true,
-  w4r1: true, w4r2: true, w4r3: true
+  w4r1: true, w4r2: true, w4r3: true,
+  w5r1: true, w5r2: true
 };
 let completedRuns    = Object.assign({}, defaultCompleted, JSON.parse(localStorage.getItem('dadrunner_runs')) || {});
 let waterCount       = parseInt(localStorage.getItem('dadrunner_water'))   || 0;
