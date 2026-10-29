@@ -104,9 +104,66 @@ const stravaTitles = [
 ];
 
 // ============================================================
-// FRESH 20 RECIPES — All new, none from the previous batch
+// 25 RECIPES — Speedy Cook, Slowcooker, Fakeaways, One-Pan & Regular
 // ============================================================
 const familyRecipesData = [
+
+  // --- SPEEDY COOK (5) ---
+  {
+    id: "sp1",
+    category: "speedy",
+    title: "10-Minute Sesame Garlic Steak Strips & Rice",
+    prepTime: "3 mins",
+    cookTime: "7 mins",
+    hack: "Flash-fry thin rump steak strips in a smoking pan for 3 minutes, then toss in a 30-second garlic-soy glaze. Serve over microwaved basmati rice with tenderstem broccoli on the side!",
+    macros: "~490 kcal | 45g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["300g Lean rump steak (sliced thin)", "250g Pre-cooked microwave basmati rice", "2 tbsp Soy sauce & 1 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "150g Tenderstem broccoli or green beans"],
+    steps: ["Sear steak strips in a smoking hot pan with oil spray for 3 mins until browned.", "Steam tenderstem broccoli in microwave with splash of water for 3 mins.", "Pour soy sauce, honey, garlic and sesame oil into the steak pan for 1 min until glossy. Serve over warm basmati rice."]
+  },
+  {
+    id: "sp2",
+    category: "speedy",
+    title: "12-Minute Mediterranean Lemon Herb Prawn Linguine",
+    prepTime: "3 mins",
+    cookTime: "9 mins",
+    hack: "Raw king prawns cook in just 3 minutes! Toss into freshly boiled linguine with lemon juice, garlic, olive oil and grated parmesan. Incredibly light, fresh and restaurant-quality.",
+    macros: "~480 kcal | 42g Protein | 54g Carbs | 10g Fats",
+    ingredients: ["300g Raw peeled king prawns", "160g Quick-cook linguine or spaghetti", "1 tbsp Olive oil & juice of 1 Lemon", "1 tsp Garlic puree & 1 tsp dried parsley", "25g Grated parmesan", "Handful cherry tomatoes (halved, optional)"],
+    steps: ["Boil linguine in salted water 8-9 mins until al dente.", "Heat olive oil in pan, add garlic and prawns, cook 3 mins until pink and cooked through. Add lemon juice and cherry tomatoes.", "Toss drained pasta directly into the prawn pan, stir in parmesan, and serve immediately."]
+  },
+  {
+    id: "sp3",
+    category: "speedy",
+    title: "10-Minute Crispy Bacon & Egg Protein Noodle Bowl",
+    prepTime: "2 mins",
+    cookTime: "8 mins",
+    hack: "Crispy smoked back bacon tossed into soft egg noodles with soy, topped with a fried egg. Soft yolk creates a natural rich sauce without heavy cream. Comfort in minutes!",
+    macros: "~510 kcal | 42g Protein | 50g Carbs | 15g Fats",
+    ingredients: ["4 Rashers lean smoked back bacon (chopped)", "2 Large eggs", "150g Quick medium egg noodles", "2 tbsp Soy sauce & 1 tsp sesame oil", "Handful baby spinach (wilted, optional on your side)"],
+    steps: ["Fry chopped bacon in pan 4 mins until crispy.", "Drop noodles into boiling water for 3 mins, drain and toss into bacon pan with soy sauce and sesame oil.", "Fry two eggs in the pan 2-3 mins until whites are set and yolk is runny. Slide over noodles and serve."]
+  },
+  {
+    id: "sp4",
+    category: "speedy",
+    title: "10-Minute Honey Mustard Chicken Cutlets & Mash",
+    prepTime: "3 mins",
+    cookTime: "7 mins",
+    hack: "Thin chicken cutlets cook through in just 3 minutes per side. Whisk honey, mild mustard and a spoonful of light cream cheese in the pan for an instant velvety sauce over ready-mash!",
+    macros: "~490 kcal | 46g Protein | 42g Carbs | 12g Fats",
+    ingredients: ["2 Chicken breasts (sliced horizontally into thin cutlets)", "400g Fresh ready-made potato mash (microwave 3 mins)", "2 tbsp Honey & 2 tbsp mild mustard", "40g Light cream cheese", "1 tsp Garlic puree & dried thyme"],
+    steps: ["Sear thin chicken cutlets in a hot pan 3 mins per side until golden and cooked through.", "Turn heat to low, stir in honey, mustard, garlic and cream cheese into pan juices for 1 min until smooth.", "Microwave mash for 3 mins, spoon onto plates, top with tender chicken cutlets and spoon glaze over."]
+  },
+  {
+    id: "sp5",
+    category: "speedy",
+    title: "12-Minute Smoky Turkey Taco Bowls with Crushed Crispy Nachos",
+    prepTime: "2 mins",
+    cookTime: "10 mins",
+    hack: "Lean turkey mince browns in under 6 mins with taco seasoning and passata. Spoon over warm pouch rice, top with crushed salted tortilla chips and grated cheddar. Fast, crunchy & fun!",
+    macros: "~500 kcal | 46g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["400g Turkey mince (lean)", "250g Pre-cooked pouch Mexican or long grain rice", "1 tbsp Mild taco seasoning", "150ml Passata & 100g sweetcorn (drained)", "50g Grated light cheddar", "30g Salted tortilla chips (crushed for crunch)"],
+    steps: ["Brown turkey mince in skillet 5 mins until cooked. Drain any liquid.", "Stir in taco seasoning, passata and sweetcorn, simmer 3 mins until thick.", "Microwave rice pouch 90 secs, divide into bowls, ladle turkey chili over, scatter cheddar and crushed tortilla chips."]
+  },
 
   // --- SLOWCOOKER (5) ---
   {
