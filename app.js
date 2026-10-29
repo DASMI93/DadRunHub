@@ -7,7 +7,7 @@
 const runningPlanData = [
   {
     week: 1,
-    title: "Week 1: Base Building & Initial Rhythm (Completed)",
+    title: "Week 1: Base Building & Initial Rhythm",
     runs: [
       { id: "w1r1", day: "Tue, 01/09", title: "Low and Slow!", desc: "5.02 km in 39:07 @ 7:47/km. (Logged on Strava)" },
       { id: "w1r2", day: "Thu, 03/09", title: "Slow and consistent", desc: "5.05 km in 36:38 @ 7:15/km. (Logged on Strava)" },
@@ -16,7 +16,7 @@ const runningPlanData = [
   },
   {
     week: 2,
-    title: "Week 2: Volume Building & Deload (Completed)",
+    title: "Week 2: Volume Building & Deload",
     runs: [
       { id: "w2r1", day: "Sun, 13/09", title: "No sleep and a sore knee", desc: "4.03 km in 27:28 @ 6:49/km. (Logged on Strava)" },
       { id: "w2r2", day: "Tue, 15/09", title: "Evening Run", desc: "5.01 km in 33:51 @ 6:45/km. (Logged on Strava)" },
@@ -115,237 +115,242 @@ const familyRecipesData = [
     title: "Slowcooker Mexican Beef Barbacoa Bowls",
     prepTime: "10 mins",
     cookTime: "7 hrs",
-    hack: "Beef shoulder slow-cooked with lime, garlic & mild chipotle spices until falling apart. Serve over rice with sour cream and salsa on the side so partner can build a plain beef & rice bowl!",
+    hack: "Beef shoulder slow-cooked with lime, garlic & mild chipotle spices until falling apart tender. Serve over rice with sour cream and mild salsa on the side so partner can build a plain beef & rice bowl!",
     macros: "~520 kcal | 48g Protein | 46g Carbs | 14g Fats",
-    ingredients: ["500g Beef braising steak or shoulder", "1 Can (400g) chopped tomatoes", "Juice of 1 Lime & 1 tsp garlic puree", "1 tsp Cumin & 1 tsp mild taco/fajita seasoning", "200g Basmati or long grain rice", "Sour cream, mild salsa & grated cheddar to serve"],
+    ingredients: ["500g Beef braising steak or shoulder", "1 Can (400g) chopped tomatoes", "Juice of 1 Lime & 1 tsp garlic puree", "1 tsp Cumin & 1 tsp mild taco seasoning", "200g Basmati or long grain rice", "Sour cream, mild salsa & grated cheddar to serve"],
     steps: ["Place beef in slowcooker. Mix tomatoes, lime juice, garlic, cumin and taco seasoning, pour over.", "Cook LOW 7-8 hrs until beef is super tender. Shred beef with two forks.", "Serve over warm rice with sour cream, salsa and grated cheese on the side."]
   },
   {
     id: "sc2",
     category: "slowcooker",
-    title: "Slowcooker Honey & Mustard Pork Tenderloin",
+    title: "Slowcooker Creamy French Garlic Chicken & Potatoes",
     prepTime: "5 mins",
     cookTime: "5 hrs",
-    hack: "Lean pork tenderloin slow cooked in honey, wholegrain mustard and apple juice. Melt-in-your-mouth pork served over creamy mash — partner gets gravy poured on top!",
-    macros: "~490 kcal | 46g Protein | 44g Carbs | 11g Fats",
-    ingredients: ["500g Pork tenderloin or shoulder", "3 tbsp Honey", "2 tbsp Wholegrain or Dijon mustard", "150ml Apple juice or chicken stock", "500g Potatoes (for mash)", "1 tsp Garlic powder & dried thyme"],
-    steps: ["Add pork, honey, mustard, apple juice, garlic and thyme to slowcooker.", "Cook LOW 5-6 hrs until tender. Boil potatoes and mash with milk.", "Slice pork, thicken slowcooker juices with cornstarch to make gravy, serve over mash."]
+    hack: "Boneless chicken thighs and potatoes cook together in savory broth. Stir in light cream cheese at the end for a velvety French bistro sauce with zero visible veg chunks!",
+    macros: "~490 kcal | 46g Protein | 42g Carbs | 12g Fats",
+    ingredients: ["600g Boneless skinless chicken thighs", "500g Baby potatoes (halved)", "150ml Low-salt chicken stock", "70g Light cream cheese", "2 tsp Mild Dijon mustard", "1 tsp Garlic puree & dried thyme"],
+    steps: ["Place chicken thighs, halved potatoes, stock, mustard, garlic and thyme into slowcooker.", "Cook LOW 5-6 hrs until chicken and potatoes are tender.", "Stir in light cream cheese 15 mins before serving to create a rich, silky sauce. Serve immediately."]
   },
   {
     id: "sc3",
     category: "slowcooker",
-    title: "Slowcooker Beef Shin Ragu with Tagliatelle",
+    title: "Slowcooker Rich Beef Steak & Gravy Stew",
     prepTime: "10 mins",
     cookTime: "7 hrs",
-    hack: "Beef shin melts into a rich Italian tomato sauce. Blitz the tomato sauce smooth before adding the shredded beef — zero onion chunks for partner to complain about!",
-    macros: "~530 kcal | 47g Protein | 52g Carbs | 13g Fats",
-    ingredients: ["500g Beef shin or braising steak", "1 Can (400g) passata & 2 tbsp tomato puree", "150ml Beef stock", "1 tsp Garlic puree & dried oregano", "200g Tagliatelle or pappardelle pasta", "Grated parmesan to serve"],
-    steps: ["Add beef, passata, stock, tomato puree, garlic and oregano to slowcooker.", "Cook LOW 7-8 hrs until beef is falling apart. Shred beef with forks into the sauce.", "Boil pasta, toss with ragu, serve topped with parmesan."]
+    hack: "Lean beef cubes slow-cooked in thick savory pub-style gravy. Mash or blend one ladle of gravy with a potato to thicken naturally without any lumpy flour. Tender beef melts in your mouth!",
+    macros: "~500 kcal | 45g Protein | 44g Carbs | 12g Fats",
+    ingredients: ["500g Lean diced stewing steak", "300ml Beef stock", "2 tbsp Tomato puree", "1 tbsp Worcestershire sauce", "450g Baby potatoes", "Crusty bread or mash to serve"],
+    steps: ["Place beef, potatoes, tomato puree, Worcestershire sauce and beef stock into slowcooker. Season with pepper.", "Cook LOW 7-8 hrs until beef is fall-apart tender.", "Thicken gravy by crushing a couple of cooked potato cubes into the juices. Serve with crusty bread."]
   },
   {
     id: "sc4",
     category: "slowcooker",
-    title: "Slowcooker Creamy Tuscan Chicken Thighs",
+    title: "Slowcooker Smoky BBQ Pulled Pork Buns",
     prepTime: "5 mins",
-    cookTime: "5 hrs",
-    hack: "Boneless chicken thighs cooked in a rich sun-dried tomato and garlic cream sauce. Partner gets tender chicken over mash or pasta with sauce blended smooth!",
-    macros: "~510 kcal | 46g Protein | 42g Carbs | 14g Fats",
-    ingredients: ["600g Boneless skinless chicken thighs", "60g Sun-dried tomatoes (chopped)", "200ml Chicken stock", "60g Light cream cheese", "1 tsp Garlic puree & dried oregano", "500g Baby potatoes or pasta to serve"],
-    steps: ["Add chicken, sun-dried tomatoes, stock, garlic and oregano to slowcooker.", "Cook LOW 5 hrs. Stir in cream cheese 15 mins before serving to thicken.", "Serve chicken and sauce over boiled potatoes or pasta."]
+    cookTime: "6 hrs",
+    hack: "Lean pork shoulder simmers in sweet smoky BBQ sauce until tender enough to shred with two forks. Serve inside toasted brioche buns with melted cheese — partner gets zero visible onion or bits!",
+    macros: "~510 kcal | 44g Protein | 48g Carbs | 14g Fats",
+    ingredients: ["500g Lean pork shoulder (fat trimmed)", "150ml Smoky BBQ sauce", "1 tbsp Apple cider vinegar or honey", "1 tsp Garlic puree & smoked paprika", "4 Soft brioche burger buns", "50g Grated light cheddar (for melting)"],
+    steps: ["Rub pork with paprika and garlic. Place in slowcooker with BBQ sauce and apple cider vinegar.", "Cook LOW 6-7 hrs until completely tender. Shred with two forks directly in the sweet glaze.", "Load shredded pork into warm brioche buns, top with grated cheddar, and grill 1 min to melt."]
   },
   {
     id: "sc5",
     category: "slowcooker",
-    title: "Slowcooker Mild Beef & Bean Chilli",
-    prepTime: "10 mins",
-    cookTime: "6 hrs",
-    hack: "Lean beef mince cooked low and slow with sweetcorn, kidney beans and a square of dark chocolate for rich gloss without heat. Partner can skip beans easily!",
-    macros: "~520 kcal | 47g Protein | 48g Carbs | 12g Fats",
-    ingredients: ["500g 5% Fat beef mince", "1 Can (400g) kidney beans & 1 small can sweetcorn", "1 Can chopped tomatoes & 2 tbsp tomato puree", "1 tbsp Mild chilli powder or taco seasoning", "10g Dark chocolate (70%+)", "200g Long grain rice to serve"],
-    steps: ["Brown beef mince in pan 4 mins, transfer to slowcooker.", "Add tomatoes, tomato puree, kidney beans, sweetcorn, spices and chocolate.", "Cook LOW 6 hrs. Serve over fluffy rice with a dollop of Greek yogurt or sour cream."]
+    title: "Slowcooker Creamy Tomato & Basil Shredded Chicken",
+    prepTime: "5 mins",
+    cookTime: "5 hrs",
+    hack: "Chicken breasts cook directly in seasoned passata. Shred with two forks, stir in cream cheese for a rich rose pink sauce, and toss with pasta. Smooth, creamy, 100% partner-approved comfort!",
+    macros: "~510 kcal | 47g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["500g Chicken breast", "400ml Passata", "80g Light cream cheese", "1 tsp Garlic puree & dried basil", "200g Penne pasta or tagliatelle", "20g Grated parmesan to serve"],
+    steps: ["Place chicken breasts, passata, garlic and dried basil into slowcooker. Season with salt and pepper.", "Cook LOW 5 hrs. Shred chicken with forks into the sauce.", "Stir in cream cheese until a velvety pink sauce forms. Toss through freshly boiled pasta and top with parmesan."]
   },
 
   // --- FAKEAWAYS (5) ---
   {
     id: "fk1",
     category: "fakeaway",
-    title: "Crispy Chicken & Cheese Quesadillas",
+    title: "Double Smash Cheeseburger & Crispy Potato Bowls",
     prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Fold seasoned cooked chicken and grated cheddar inside tortillas, pan-fry until golden crispy on the outside and melted inside. Cut into triangles for instant crowd-pleaser!",
-    macros: "~520 kcal | 46g Protein | 48g Carbs | 14g Fats",
-    ingredients: ["300g Cooked chicken breast (shredded)", "4 Large flour tortilla wraps", "80g Grated light cheddar", "1 tbsp Mild salsa", "2 tbsp 0% Greek yogurt or sour cream"],
-    steps: ["Spread chicken and grated cheese over half of each tortilla, fold over to seal.", "Dry fry in a hot non-stick pan 3 mins per side until golden brown and cheese is melted.", "Slice into wedges and serve with salsa and Greek yogurt for dipping."]
+    cookTime: "12 mins",
+    hack: "Seasoned lean beef mince flash-seared crispy in a hot pan, served over oven chips with burger sauce and melted cheese. All the takeaway burger satisfaction, 45g protein, and zero grease!",
+    macros: "~530 kcal | 46g Protein | 50g Carbs | 14g Fats",
+    ingredients: ["300g 5% Fat beef mince", "350g Crispy oven chips or seasoned potato wedges", "50g Grated light cheddar", "2 tbsp Light burger sauce (light mayo + ketchup)", "Shredded iceberg lettuce & sliced gherkins (optional)"],
+    steps: ["Bake chips in oven at 200°C for 18 mins until crispy.", "High-heat sear beef mince in a smoking pan 5 mins until browned and crispy at edges. Season with salt and garlic powder.", "Layer chips into bowls, top with hot crispy beef, grated cheddar, shredded lettuce, and a drizzle of burger sauce."]
   },
   {
     id: "fk2",
     category: "fakeaway",
-    title: "Sweet & Sour Crispy Chicken Rice Bowls",
+    title: "Sweet Sticky Honey Sesame Crispy Chicken",
     prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Diced chicken tossed in cornstarch, fried crispy and coated in a 3-ingredient sweet & sour glaze (pineapple juice + ketchup + soy). Tastes like takeaway night!",
-    macros: "~510 kcal | 44g Protein | 56g Carbs | 11g Fats",
-    ingredients: ["300g Chicken breast (diced)", "1 tbsp Cornstarch", "1 Small can (220g) pineapple chunks in juice", "2 tbsp Tomato ketchup & 2 tbsp soy sauce", "150g Jasmine or basmati rice", "1 Red pepper (sliced, optional)"],
-    steps: ["Toss chicken in cornstarch and fry in hot pan 6 mins until crispy.", "Mix pineapple juice, ketchup and soy sauce. Pour into pan with pineapple chunks and pepper, simmer 3 mins until glossy.", "Serve crispy sweet & sour chicken over warm rice."]
+    cookTime: "10 mins",
+    hack: "Crispy fried diced chicken tossed in a 3-minute honey-soy glaze. Coat partner's portion in just a light glaze, serve with plain jasmine rice. Beats Chinese takeaway every time!",
+    macros: "~520 kcal | 45g Protein | 54g Carbs | 11g Fats",
+    ingredients: ["300g Chicken breast (diced)", "1 tbsp Cornstarch", "3 tbsp Soy sauce & 2 tbsp honey", "1 tsp Sesame oil", "150g Jasmine rice", "1 tsp Sesame seeds & sliced spring onion to garnish"],
+    steps: ["Toss diced chicken in cornstarch. Pan-fry in hot oil spray 6 mins until golden and crispy.", "In a bowl mix soy sauce, honey and sesame oil. Pour into hot pan and toss with chicken 1 min until glossy.", "Serve over fluffy jasmine rice, sprinkled with toasted sesame seeds and spring onion."]
   },
   {
     id: "fk3",
     category: "fakeaway",
-    title: "Smoky BBQ Pulled Chicken Loaded Fries",
+    title: "Greek Lemon Chicken & Halloumi Souvlaki Wraps",
     prepTime: "10 mins",
-    cookTime: "20 mins",
-    hack: "Oven chips topped with shredded chicken in sweet BBQ sauce and melted cheddar cheese. Serve salad/sauces on the side so partner can build plain cheesy chips!",
-    macros: "~530 kcal | 45g Protein | 54g Carbs | 14g Fats",
-    ingredients: ["300g Oven chips or wedges", "250g Cooked chicken breast (shredded)", "3 tbsp Smoky BBQ sauce", "60g Light cheddar (grated)", "2 tbsp Sour cream or light mayo"],
-    steps: ["Bake chips in oven at 200°C for 18-20 mins until crispy.", "Toss shredded chicken with BBQ sauce in a small pan until hot.", "Top hot chips with BBQ chicken and grated cheese, grill 2 mins until bubbling."]
+    cookTime: "10 mins",
+    hack: "Chicken breast strips marinated in lemon and oregano, pan-seared alongside squeaky golden halloumi. Rolled in warm flatbreads with tzatziki. Fresh, vibrant, and incredibly tasty!",
+    macros: "~510 kcal | 45g Protein | 44g Carbs | 16g Fats",
+    ingredients: ["300g Chicken breast (sliced into strips)", "80g Light halloumi cheese (sliced)", "Juice of 1 Lemon & 1 tsp dried oregano", "1 tsp Garlic puree", "2 Greek flatbreads or folded naans", "3 tbsp Tzatziki & sliced cucumber"],
+    steps: ["Toss chicken strips in lemon juice, oregano and garlic. Pan-fry 5 mins until browned.", "Add halloumi slices to the same pan for 2 mins per side until golden.", "Warm flatbreads, spread with tzatziki, load with chicken and crispy halloumi, roll tightly."]
   },
   {
     id: "fk4",
     category: "fakeaway",
-    title: "Greek Souvlaki Chicken Gyros Wraps",
+    title: "Crispy Beef & Sweet Chilli Noodle Toss",
     prepTime: "10 mins",
     cookTime: "10 mins",
-    hack: "Chicken breasts marinated in lemon, oregano and garlic, grilled and served in warm flatbreads with tzatziki. Fresh, clean takeaway vibes!",
-    macros: "~490 kcal | 44g Protein | 46g Carbs | 12g Fats",
-    ingredients: ["300g Chicken breast (sliced)", "Juice of 1 Lemon & 1 tsp dried oregano", "1 tsp Garlic puree", "2 Greek pita or flatbreads", "Tzatziki (Greek yogurt + grated cucumber + garlic)", "Sliced tomatoes & red onion"],
-    steps: ["Marinate chicken in lemon juice, oregano and garlic 5 mins. Pan-fry 6 mins until golden.", "Warm flatbreads in pan.", "Assemble gyros: spread tzatziki, fill with chicken, tomato and onion."]
+    hack: "Thin steak strips tossed in cornstarch flash-fry in 3 mins until ultra crispy, then glazed in sweet chilli and soy. Serve noodles on the side so partner can have plain noodles if preferred!",
+    macros: "~530 kcal | 44g Protein | 55g Carbs | 13g Fats",
+    ingredients: ["250g Lean beef steak (sliced thin)", "1 tbsp Cornstarch", "3 tbsp Sweet chilli sauce", "2 tbsp Soy sauce & 1 tsp garlic puree", "150g Egg noodles", "1 Red pepper (sliced thin, kept on side for you)"],
+    steps: ["Toss steak strips in cornstarch. Cook in smoking hot pan 3 mins until crispy. Remove to plate.", "Boil noodles 4 mins. In the pan, simmer sweet chilli, soy and garlic 1 min until sticky.", "Toss crispy beef into the glaze. Serve over noodles with stir-fried peppers on your side."]
   },
   {
     id: "fk5",
     category: "fakeaway",
-    title: "Crispy Teriyaki Beef & Broccoli Rice",
-    prepTime: "10 mins",
-    cookTime: "10 mins",
-    hack: "Thin strips of steak cooked fast in sweet teriyaki glaze over jasmine rice. Broccoli florets served on your side of the plate so partner's rice remains clean!",
-    macros: "~520 kcal | 45g Protein | 52g Carbs | 12g Fats",
-    ingredients: ["300g Rump steak (sliced thin)", "3 tbsp Teriyaki sauce & 1 tsp honey", "150g Jasmine rice", "1 Broccoli head (cut florets)", "Sesame seeds & spring onion to finish"],
-    steps: ["Boil rice. Steam broccoli florets for 4 mins.", "High heat fry steak strips 2 mins. Add teriyaki sauce and honey, toss 1 min until sticky.", "Serve teriyaki beef over rice with broccoli on the side, garnish with sesame seeds."]
+    title: "Stovetop Creamy Buffalo Chicken Mac & Cheese",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Ultra creamy stovetop mac & cheese made with light cream cheese, cheddar and shredded chicken. Drizzle Buffalo sauce on your portion — partner enjoys pure comforting cheesy pasta!",
+    macros: "~530 kcal | 46g Protein | 52g Carbs | 14g Fats",
+    ingredients: ["250g Cooked chicken breast (shredded)", "150g Macaroni pasta", "100ml Semi-skimmed milk", "70g Light cream cheese", "50g Grated light cheddar", "2 tbsp Mild Buffalo hot sauce (kept on side for you)"],
+    steps: ["Boil macaroni pasta in salted water 8 mins until al dente, drain.", "Over low heat in the pasta pot, stir together milk, cream cheese and grated cheddar until smooth sauce forms.", "Fold in cooked macaroni and shredded chicken. Spoon into bowls and drizzle yours with Buffalo sauce."]
   },
 
   // --- ONE-PAN (5) ---
   {
     id: "op1",
     category: "onepan",
-    title: "One-Pan Creamy Tomato & Sausage Gnocchi",
+    title: "One-Pan Creamy Sun-Dried Tomato Chicken & Gnocchi",
     prepTime: "5 mins",
-    cookTime: "12 mins",
-    hack: "Fresh potato gnocchi cooks in 5 mins directly in the tomato-cream sausage sauce. Soft, pillowy comfort food in under 15 minutes!",
-    macros: "~530 kcal | 38g Protein | 58g Carbs | 14g Fats",
-    ingredients: ["6 Lean pork sausages (removed from skins, crumbled)", "400g Fresh potato gnocchi", "250ml Passata", "60g Light cream cheese", "1 tsp Garlic puree & dried basil", "30g Parmesan to serve"],
-    steps: ["Fry crumbled sausage meat in skillet 5 mins until browned.", "Add passata, cream cheese, garlic and 100ml water. Stir until smooth sauce.", "Add gnocchi directly to pan, cover and simmer 5 mins until tender. Top with parmesan."]
+    cookTime: "15 mins",
+    hack: "Pillowy potato gnocchi cooks directly in the creamy tomato-garlic broth in 4 minutes. One skillet, zero boiling water to drain, and guaranteed restaurant-quality comfort!",
+    macros: "~520 kcal | 45g Protein | 54g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "400g Fresh potato gnocchi", "200ml Chicken stock", "60g Light cream cheese", "50g Sun-dried tomatoes (chopped)", "1 tsp Garlic puree & Italian dried herbs"],
+    steps: ["Sear diced chicken with oil spray in skillet 5 mins until golden.", "Add sun-dried tomatoes, garlic, Italian herbs, chicken stock and cream cheese. Stir until smooth.", "Add fresh gnocchi directly to pan. Cover and simmer 4 mins until gnocchi is tender and sauce is thick."]
   },
   {
     id: "op2",
     category: "onepan",
-    title: "One-Pan Creamy Garlic Mushroom Chicken",
+    title: "One-Pan Spanish Chorizo & Chicken Rice Skillet",
     prepTime: "5 mins",
-    cookTime: "15 mins",
-    hack: "Tender chicken breasts cooked in a rich garlic & cream cheese sauce. Partner gets smooth creamy chicken; you load up on sliced mushrooms!",
-    macros: "~500 kcal | 46g Protein | 42g Carbs | 12g Fats",
-    ingredients: ["2 Chicken breasts (sliced into cutlets)", "150g Sliced chestnut mushrooms", "70g Light cream cheese", "150ml Low-salt chicken stock", "1 tsp Garlic puree & dried thyme", "400g Boiled baby potatoes to serve"],
-    steps: ["Sear chicken cutlets 4 mins per side until golden, remove to plate.", "Fry mushrooms and garlic in same pan 3 mins. Add stock and cream cheese, stir until smooth sauce.", "Return chicken to pan 2 mins to heat through. Serve over baby potatoes."]
+    cookTime: "18 mins",
+    hack: "Slicing chorizo into the pan releases smoky paprika oil that naturally flavours the chicken and rice without extra butter or oil. Everything cooks together under one lid!",
+    macros: "~520 kcal | 45g Protein | 52g Carbs | 14g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "60g Cooking chorizo (sliced)", "150g Long grain rice (uncooked)", "350ml Chicken stock", "150ml Passata", "1 tsp Smoked paprika & garlic puree"],
+    steps: ["Fry sliced chorizo in skillet 2 mins to release oil, add diced chicken and brown 3 mins.", "Stir in rice, smoked paprika, garlic, passata and chicken stock. Bring to boil.", "Cover with lid, turn heat to low and simmer 15 mins until rice is fluffy and liquid absorbed."]
   },
   {
     id: "op3",
     category: "onepan",
-    title: "One-Pan Chorizo & Sweet Potato Taco Skillet",
+    title: "One-Pan Creamy Lemon & Garlic Salmon Orzo",
     prepTime: "5 mins",
-    cookTime: "15 mins",
-    hack: "Crispy diced sweet potatoes and smoky mild chorizo sauteed together, topped with baked eggs or cheese. Huge flavour from minimal ingredients!",
-    macros: "~510 kcal | 38g Protein | 50g Carbs | 15g Fats",
-    ingredients: ["60g Cooking chorizo (diced)", "350g Sweet potato (diced small)", "1 Can (400g) black beans (drained)", "1 tsp Smoked paprika & 1 tsp garlic puree", "2 Large eggs", "Warm tortillas or bread to serve"],
-    steps: ["Fry diced chorizo 2 mins to release oil, add sweet potato cubes. Cover pan and cook 8 mins until tender.", "Stir in black beans, garlic and paprika. Make two wells, crack eggs into wells.", "Cover and cook 4 mins until egg whites are set. Serve directly from skillet."]
+    cookTime: "16 mins",
+    hack: "Pan-sear salmon fillets 4 mins, set on a plate while orzo simmers in lemon-garlic cream broth. Return salmon on top to finish steaming. Rich in omega-3 and pure decadence!",
+    macros: "~530 kcal | 42g Protein | 48g Carbs | 17g Fats",
+    ingredients: ["2 Salmon fillets", "140g Orzo pasta", "350ml Low-salt veg or chicken stock", "Juice of 1 Lemon", "60g Light cream cheese", "1 tsp Garlic puree & dried parsley"],
+    steps: ["Sear salmon fillets in skillet 3 mins per side until golden, remove to plate.", "In same pan, add orzo, stock, lemon juice, garlic and dried herbs. Simmer covered 8 mins.", "Stir cream cheese into orzo until creamy. Nestle salmon back on top for 2 mins to warm through."]
   },
   {
     id: "op4",
     category: "onepan",
-    title: "One-Pan Creamy Tuscan Sausage & Penne",
+    title: "One-Pan Sausage, Sweet Potato & Cheddar Hash",
     prepTime: "5 mins",
     cookTime: "15 mins",
-    hack: "Pork or turkey sausages sliced into penne pasta in a smooth tomato-cream sauce. Blitz tomato sauce smooth if partner dislikes visible onions!",
-    macros: "~530 kcal | 42g Protein | 56g Carbs | 14g Fats",
-    ingredients: ["6 Lean pork or turkey sausages (sliced)", "140g Penne pasta", "200ml Passata & 200ml chicken stock", "60g Light cream cheese", "1 tsp Garlic puree & dried basil"],
-    steps: ["Fry sliced sausages in skillet 5 mins until browned.", "Add penne, passata, stock and garlic. Simmer covered 10-12 mins stirring occasionally.", "Stir in cream cheese until rich creamy sauce forms. Season and serve."]
+    hack: "Sweet potato cubes cook super fast when diced small and covered with a lid. Pork sausages and melted cheddar turn this into the ultimate hearty family hash!",
+    macros: "~510 kcal | 38g Protein | 48g Carbs | 16g Fats",
+    ingredients: ["6 Lean pork sausages (sliced into rounds)", "350g Sweet potato (diced small)", "1 tsp Smoked paprika & 1 tsp garlic puree", "50g Grated light cheddar", "2 Large eggs (cracked on top, optional)"],
+    steps: ["Fry sausage rounds in skillet 4 mins until lightly browned.", "Toss in diced sweet potato, paprika and garlic. Add 2 tbsp water, cover with lid and cook 8 mins until tender.", "Uncover, scatter grated cheddar over top, crack eggs into wells if desired, cover 3 mins until cheese melts."]
   },
   {
     id: "op5",
     category: "onepan",
-    title: "One-Pan Lemon Herb Chicken Thighs & Orzo",
+    title: "One-Pan Creamy Mild Cajun Chicken & Penne",
     prepTime: "5 mins",
-    cookTime: "18 mins",
-    hack: "Orzo pasta cooks directly in chicken stock, lemon and herbs underneath pan-seared chicken thighs. Absorbs all the rich juices!",
-    macros: "~520 kcal | 46g Protein | 50g Carbs | 13g Fats",
-    ingredients: ["4 Boneless chicken thighs", "140g Orzo pasta", "350ml Chicken stock", "Juice of 1 Lemon", "1 tsp Garlic puree & dried oregano", "50g Feta cheese (crumbled on top)"],
-    steps: ["Sear chicken thighs skin-side down 5 mins, flip and sear 3 mins. Remove.", "Add orzo, chicken stock, lemon juice, garlic and oregano to pan. Place chicken back on top.", "Cover and simmer 12 mins until orzo is cooked and stock absorbed. Sprinkle feta."]
+    cookTime: "15 mins",
+    hack: "Mild Cajun seasoning looks bold but light cream cheese transforms it into a smooth, silky orange sauce with zero spice burn. Partner will love every mouthful!",
+    macros: "~530 kcal | 46g Protein | 55g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "140g Penne pasta", "1 tsp Mild Cajun seasoning", "80g Light cream cheese", "250ml Chicken stock", "100g Cherry tomatoes (halved)"],
+    steps: ["Dust diced chicken in Cajun seasoning and sear in pan 5 mins until cooked.", "Boil penne pasta separately (or in same pan with stock).", "Stir cream cheese, stock and cherry tomatoes into the chicken pan to create sauce. Toss pasta in sauce and serve."]
   },
 
   // --- REGULAR MEALS (5) ---
   {
     id: "rg1",
     category: "regular",
-    title: "Crispy Pesto Chicken & Halloumi Traybake",
+    title: "Crispy Honey Mustard Chicken & Sweet Potato Wedges",
     prepTime: "10 mins",
     cookTime: "25 mins",
-    hack: "Chicken breasts brushed with green pesto, roasted with baby potatoes and halloumi slices. Simple Mediterranean sheet pan dinner!",
-    macros: "~530 kcal | 46g Protein | 42g Carbs | 16g Fats",
-    ingredients: ["2 Chicken breasts", "2 tbsp Green basil pesto", "400g Baby potatoes (halved)", "100g Halloumi cheese (sliced)", "1 tbsp Olive oil & cherry tomatoes"],
-    steps: ["Toss baby potatoes in olive oil, season, roast at 200°C for 15 mins.", "Spread pesto over chicken breasts. Add chicken, halloumi and tomatoes to tray.", "Roast 12-15 mins until chicken is cooked through and halloumi is golden."]
+    hack: "Everything bakes on one oven tray. Sweet honey and mild mustard glaze caramelizes onto the chicken thighs while sweet potato wedges turn golden and crispy. Zero faff!",
+    macros: "~510 kcal | 46g Protein | 46g Carbs | 13g Fats",
+    ingredients: ["4 Boneless chicken thighs", "350g Sweet potatoes (cut into wedges)", "2 tbsp Honey", "2 tbsp Mild mustard", "1 tbsp Olive oil", "1 tsp Garlic powder & smoked paprika"],
+    steps: ["Toss sweet potato wedges in half the olive oil, garlic powder and paprika. Spread on large baking tray.", "Mix honey and mustard, brush over chicken thighs, place on same tray.", "Bake at 200°C for 25 mins until sweet potatoes are tender and chicken is glazed and cooked through."]
   },
   {
     id: "rg2",
     category: "regular",
-    title: "Loaded Shepherd's Pie Potato Jackets",
+    title: "Italian Mozzarella & Pesto Stuffed Chicken Breasts",
     prepTime: "10 mins",
-    cookTime: "30 mins",
-    hack: "Baked potato jackets stuffed with rich minced lamb/beef in savory gravy, topped with extra mash and cheddar. Ultimate British comfort meal!",
-    macros: "~510 kcal | 43g Protein | 50g Carbs | 13g Fats",
-    ingredients: ["2 Large baking potatoes", "250g Lean beef or lamb mince", "1 tbsp Tomato puree & 150ml beef stock", "1 tsp Worcestershire sauce", "50g Grated light cheddar", "Frozen peas (optional)"],
-    steps: ["Microwave potatoes 8-10 mins until soft. Scoop out middle into bowl.", "Fry mince with tomato puree, stock and Worcestershire sauce 8 mins.", "Stuff potato skins with mince, top with scooped potato mash and cheddar, grill 4 mins."]
+    cookTime: "22 mins",
+    hack: "Slice a pocket into chicken breasts, stuff with green basil pesto and mozzarella, and bake. The melted cheese keeps the chicken extraordinarily moist and tender!",
+    macros: "~520 kcal | 47g Protein | 42g Carbs | 15g Fats",
+    ingredients: ["2 Chicken breasts", "60g Light mozzarella (sliced)", "2 tbsp Green basil pesto", "400g Baby potatoes (halved)", "1 tbsp Olive oil & cherry tomatoes"],
+    steps: ["Cut a horizontal pocket into each chicken breast. Spoon 1 tbsp pesto inside and tuck in mozzarella slices.", "Place on baking tray alongside halved baby potatoes tossed in olive oil.", "Bake at 200°C for 22 mins until potatoes are crispy and chicken is golden and bubbling with cheese."]
   },
   {
     id: "rg3",
     category: "regular",
-    title: "Garlic Herb Salmon & Crispy Potato Traybake",
-    prepTime: "10 mins",
+    title: "Classic British Cottage Pie with Cheddar Mash",
+    prepTime: "15 mins",
     cookTime: "25 mins",
-    hack: "Salmon fillets roasted alongside golden cubed potatoes and asparagus/green beans. Zero fuss, 1 tray, fantastic clean nutrition!",
-    macros: "~520 kcal | 42g Protein | 44g Carbs | 18g Fats",
-    ingredients: ["2 Salmon fillets", "400g Baby potatoes (cubed)", "1 tbsp Olive oil & 1 tsp garlic puree", "Juice of 1 Lemon & 1 tsp dried parsley", "150g Green beans or asparagus"],
-    steps: ["Toss cubed potatoes in olive oil, garlic and herbs. Roast at 200°C for 15 mins.", "Add salmon fillets and green beans to the tray, season salmon with lemon juice.", "Return to oven for 10-12 mins until salmon is flakey and potatoes are crispy."]
+    hack: "Rich lean beef mince in a thick Worcestershire gravy topped with creamy mash and melted cheddar. Blitz gravy smooth before baking — zero visible onion chunks for partner!",
+    macros: "~510 kcal | 44g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["400g 5% Fat beef mince", "500g Potatoes (mashed with milk)", "1 tbsp Tomato puree & 200ml beef stock", "1 tbsp Worcestershire sauce", "40g Grated light cheddar (for top)", "50g Frozen sweetcorn (optional)"],
+    steps: ["Brown beef mince in pan 5 mins, add tomato puree, Worcestershire sauce and beef stock. Simmer 5 mins.", "Transfer beef mixture to an oven dish. Spread warm fluffy mashed potatoes over the top.", "Scatter grated cheddar over mash. Grill or bake at 200°C for 15 mins until bubbling and golden."]
   },
   {
     id: "rg4",
     category: "regular",
-    title: "Cheesy Steak & Pepper Fajita Skillet",
+    title: "Garlic Herb Baked Cod with Crispy Parmesan Crust",
     prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Rump steak strips flash-fried with peppers and fajita spices, topped with melted mozzarella. Serve with warm tortillas on the side!",
-    macros: "~510 kcal | 46g Protein | 42g Carbs | 14g Fats",
-    ingredients: ["300g Lean rump steak (sliced thin)", "1 Red pepper & 1 Yellow pepper (sliced)", "1 tbsp Fajita seasoning", "60g Light mozzarella (grated)", "4 Small soft tortillas"],
-    steps: ["Sear steak strips in a super hot pan 2 mins, remove to plate.", "Fry peppers in same pan 4 mins with fajita seasoning until tender.", "Return steak to pan, top with mozzarella, cover with lid 1 min to melt cheese. Serve with warm tortillas."]
+    cookTime: "15 mins",
+    hack: "White fish fillets topped with lemon, garlic, parmesan and crunchy panko breadcrumbs. Bakes in only 15 mins. Delivers the crunch of fish & chips with clean, lean nutrition!",
+    macros: "~490 kcal | 42g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["2 Thick cod or haddock fillets", "30g Panko breadcrumbs", "20g Grated parmesan", "Juice of 1 Lemon & 1 tsp garlic puree", "400g Baby potatoes (cubed)", "150g Green beans or peas"],
+    steps: ["Roast cubed potatoes tossed in olive oil spray at 200°C for 15 mins.", "Mix panko, parmesan, garlic puree and lemon juice. Press crust onto cod fillets.", "Place fish on tray with potatoes and green beans. Bake 12-15 mins until fish flakes easily and topping is golden."]
   },
   {
     id: "rg5",
     category: "regular",
-    title: "Baked Honey & Soy Chicken Thighs with Rice",
-    prepTime: "10 mins",
-    cookTime: "25 mins",
-    hack: "Chicken thighs baked in sweet honey, garlic & soy sauce until sticky and glazed. Serve over rice with steamed broccoli for you!",
-    macros: "~510 kcal | 45g Protein | 50g Carbs | 12g Fats",
-    ingredients: ["4 Boneless chicken thighs", "3 tbsp Soy sauce & 2 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "200g Jasmine or basmati rice", "1 Broccoli head (florets)"],
-    steps: ["Whisk soy, honey, garlic and sesame oil. Coat chicken thighs in baking dish.", "Bake at 200°C for 22-25 mins until chicken is cooked and glaze is bubbling.", "Serve sticky chicken over warm rice with steamed broccoli."]
+    title: "Crispy BBQ Chicken Flatbread Pizzas",
+    prepTime: "5 mins",
+    cookTime: "8 mins",
+    hack: "Greek flatbreads or folded naans make the ultimate quick, crispy pizza crust! Top with smoky BBQ sauce, shredded chicken and mozzarella. Melts in under 10 minutes!",
+    macros: "~520 kcal | 44g Protein | 52g Carbs | 13g Fats",
+    ingredients: ["2 Greek flatbreads or folded naans", "200g Cooked chicken breast (shredded)", "3 tbsp Smoky BBQ sauce", "60g Light mozzarella (grated)", "Sliced red onion or sweetcorn (optional, easy to leave on your half)"],
+    steps: ["Place flatbreads on a baking tray. Spread smoky BBQ sauce evenly over the bases.", "Scatter shredded chicken and top generously with grated mozzarella.", "Bake at 220°C for 8 mins until cheese is bubbling, golden and base is crispy. Slice into slices."]
   }
 ];
 
 // ============================================================
 // APPLICATION STATE
 // ============================================================
-const defaultCompleted = {
-  w1r1: true, w1r2: true, w1r3: true,
-  w2r1: true, w2r2: true, w2r3: true,
-  w3r1: true, w3r2: true
-};
-let completedRuns    = Object.assign({}, defaultCompleted, JSON.parse(localStorage.getItem('dadrunner_runs')) || {});
+const defaultCompleted = {};
+
+// Clean up any legacy completed runs from older versions
+if (localStorage.getItem('dadrunner_runs')) {
+  localStorage.removeItem('dadrunner_runs');
+}
+if (localStorage.getItem('dadrunner_runs_v2')) {
+  localStorage.removeItem('dadrunner_runs_v2');
+}
+
+let completedRuns    = JSON.parse(localStorage.getItem('dadrunner_runs_v3')) || defaultCompleted;
 let waterCount       = parseInt(localStorage.getItem('dadrunner_water'))   || 0;
 let currentCategory  = 'all';
 let selectedRecipes  = new Set(); // IDs of recipes selected for shopping list
@@ -424,12 +429,63 @@ function renderWorkoutPlan() {
   const pct = Math.round((done / total) * 100) || 0;
   const txt = document.getElementById('plan-completion-text');
   if (txt) txt.textContent = `${pct}% Complete (${done}/${total} Runs)`;
+
+  // Dynamic hero stats update
+  const heroProgress = document.getElementById('hero-progress');
+  if (heroProgress) heroProgress.textContent = `${pct}% Complete`;
+
+  const heroRunsDone = document.getElementById('hero-runs-done');
+  if (heroRunsDone) heroRunsDone.innerHTML = `${done}<small>/${total}</small>`;
+
+  const heroPill = document.getElementById('hero-live-pill');
+  if (heroPill) {
+    if (done === 0) heroPill.innerHTML = `<span class="live-dot"></span>Plan Ready`;
+    else if (done >= total) heroPill.innerHTML = `<span class="live-dot"></span>Plan Completed! 🏆`;
+    else {
+      let activeWeek = 1;
+      for (const w of runningPlanData) {
+        const hasUnticked = w.runs.some(r => !completedRuns[r.id]);
+        if (hasUnticked) {
+          activeWeek = w.week;
+          break;
+        }
+      }
+      heroPill.innerHTML = `<span class="live-dot"></span>Week ${activeWeek} Active`;
+    }
+  }
+
+  // Next run dynamic callout
+  let nextRun = null;
+  let nextWeekNum = 1;
+  for (const weekBlock of runningPlanData) {
+    for (const run of weekBlock.runs) {
+      if (!completedRuns[run.id]) {
+        nextRun = run;
+        nextWeekNum = weekBlock.week;
+        break;
+      }
+    }
+    if (nextRun) break;
+  }
+
+  const nextWeekEl = document.getElementById('next-run-week');
+  const nextTitleEl = document.getElementById('next-run-title');
+  const nextDescEl = document.getElementById('next-run-desc');
+  if (nextRun) {
+    if (nextWeekEl) nextWeekEl.textContent = `Week ${nextWeekNum} · ${nextRun.day.split(',')[0]}`;
+    if (nextTitleEl) nextTitleEl.textContent = nextRun.title;
+    if (nextDescEl) nextDescEl.textContent = nextRun.desc;
+  } else if (done === total && total > 0) {
+    if (nextWeekEl) nextWeekEl.textContent = `Completed 🏆`;
+    if (nextTitleEl) nextTitleEl.textContent = `All 24 Runs Finished!`;
+    if (nextDescEl) nextDescEl.textContent = `Incredible work Dan! You completed the full 8-week progressive endurance schedule!`;
+  }
 }
 
 function toggleRun(id) {
   if (completedRuns[id]) delete completedRuns[id];
   else completedRuns[id] = true;
-  localStorage.setItem('dadrunner_runs', JSON.stringify(completedRuns));
+  localStorage.setItem('dadrunner_runs_v3', JSON.stringify(completedRuns));
   renderWorkoutPlan();
 }
 

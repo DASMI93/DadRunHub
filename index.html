@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=18">
 </head>
 <body>
 
@@ -64,11 +64,11 @@
       <!-- Hero Card -->
       <div class="hero-card">
         <div class="hero-top">
-          <span class="live-pill"><span class="live-dot"></span>Week 3 Active</span>
-          <span class="week-tag">33% Complete</span>
+          <span class="live-pill" id="hero-live-pill"><span class="live-dot"></span>Plan Ready</span>
+          <span class="week-tag" id="hero-progress">0% Complete</span>
         </div>
-        <h2>Looking strong, Dan! 💪</h2>
-        <p>8 actual Strava runs logged! Progressing from 5.02km (01/09) to your latest 5.51km (29/09). All upcoming runs step up in distance smoothly from 6.0km straight to 10.0km!</p>
+        <h2>Ready to run, Dan! 💪</h2>
+        <p id="hero-summary-text">Your 8-week progressive endurance training plan is loaded. All runs are unticked by default so you can tick them off as you complete them!</p>
         <div class="stat-grid">
           <div class="stat-item">
             <span class="stat-val">11.81<small>st</small></span>
@@ -83,7 +83,7 @@
             <span class="stat-lbl">Best Pace</span>
           </div>
           <div class="stat-item">
-            <span class="stat-val">8<small>/24</small></span>
+            <span class="stat-val" id="hero-runs-done">0<small>/24</small></span>
             <span class="stat-lbl">Runs Done</span>
           </div>
         </div>
@@ -120,10 +120,10 @@
       <div class="next-run-card" onclick="switchToTab('tab-running')">
         <div class="next-run-header">
           <span class="next-run-badge">Next Scheduled Run</span>
-          <span class="next-run-week">Week 3 · Run 3</span>
+          <span class="next-run-week" id="next-run-week">Week 1 · Tue</span>
         </div>
-        <div class="next-run-title">6.0 km Base Extension (Run 9)</div>
-        <div class="next-run-desc">Zone 2 @ ~7:15–7:40/km. Your first step into 6.0 km territory — keep it smooth, relaxed and conversational as you step up the endurance!</div>
+        <div class="next-run-title" id="next-run-title">Low and Slow! (5.02 km)</div>
+        <div class="next-run-desc" id="next-run-desc">5.02 km @ 7:47/km easy base pace. Relaxed breathing, low heart rate, establishing the rhythm.</div>
         <div class="next-run-link"><span>View full 8-week schedule</span> <i class="fa-solid fa-arrow-right"></i></div>
       </div>
 
@@ -137,7 +137,7 @@
             <div class="page-card-title">8-Week Training Plan</div>
             <div class="page-card-sub">3 runs/week around dog walks & work</div>
           </div>
-          <div class="progress-chip" id="plan-completion-text">25% Complete</div>
+          <div class="progress-chip" id="plan-completion-text">0% Complete (0/24 Runs)</div>
         </div>
         <div class="tip-box">
           <i class="fa-solid fa-lightbulb"></i>
@@ -369,6 +369,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=17"></script>
+  <script src="app.js?v=18"></script>
 </body>
 </html>
