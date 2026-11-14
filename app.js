@@ -3,78 +3,78 @@
    20 Fresh Recipes + Shopping List Builder + All Existing Features
    ========================================================================== */
 
-// 8-Week Smart Running Plan Data Structure
+// 8-Week 5k Comeback & Improvement Plan (Starting baseline: 7.0 km/h / 8:34/km)
 const runningPlanData = [
   {
     week: 1,
-    title: "Week 1: Base Building & Initial Rhythm",
+    title: "Week 1: The Re-Entry & Aerobic Reset",
     runs: [
-      { id: "w1r1", day: "Tue, 01/09", title: "Low and Slow!", desc: "5.02 km in 39:07 @ 7:47/km. (Logged on Strava)" },
-      { id: "w1r2", day: "Thu, 03/09", title: "Slow and consistent", desc: "5.05 km in 36:38 @ 7:15/km. (Logged on Strava)" },
-      { id: "w1r3", day: "Sat, 05/09", title: "Nice", desc: "3.07 km in 22:37 @ 7:22/km. (Logged on Strava)" }
+      { id: "w1r1", day: "Midweek 1", title: "Easy Aerobic Re-Start", desc: "3.5 km continuous @ 7.0 km/h (8:34/km). Shake off the 4 weeks of rust, zero pressure, light footsteps and relaxed breathing." },
+      { id: "w1r2", day: "Midweek 2", title: "Rhythm & Form Reset", desc: "4.0 km continuous @ 7.0 km/h. Conversational effort around work. Keep shoulders relaxed and cadence brisk." },
+      { id: "w1r3", day: "Weekend", title: "5k Baseline Check-In", desc: "5.0 km continuous @ 7.0 km/h (~42:50). Settle into your steady baseline rhythm. Proves the 5k engine is still there!" }
     ]
   },
   {
     week: 2,
-    title: "Week 2: Volume Building & Deload",
+    title: "Week 2: Awakening Leg Turnover (Strides)",
     runs: [
-      { id: "w2r1", day: "Sun, 13/09", title: "No sleep and a sore knee", desc: "4.03 km in 27:28 @ 6:49/km. (Logged on Strava)" },
-      { id: "w2r2", day: "Tue, 15/09", title: "Evening Run", desc: "5.01 km in 33:51 @ 6:45/km. (Logged on Strava)" },
-      { id: "w2r3", day: "Thu, 17/09", title: "Nope + And the rest", desc: "5.11 km total (2.09 km + 3.02 km) in 32:46 @ 6:25/km. (Logged on Strava)" }
+      { id: "w2r1", day: "Midweek 1", title: "Aerobic Base Run", desc: "4.0 km easy recovery pace (8:30–8:45/km). Rebuilding joint and tendon resilience." },
+      { id: "w2r2", day: "Midweek 2", title: "5k Base + 4x30s Strides", desc: "4.5 km total: 3.5 km easy (7.0 km/h) + 4x 30s smooth accelerations (~8.0–8.5 km/h / 60s jog recovery). Wakes up fast-twitch fibers!" },
+      { id: "w2r3", day: "Weekend", title: "5.2 km Aerobic Over-Distance", desc: "5.2 km continuous @ 7.0 km/h. Smooth, easy breathing, locking in consistent pacing." }
     ]
   },
   {
     week: 3,
-    title: "Week 3: Base Stepping & 6.0km Extension",
+    title: "Week 3: Introducing 5k Speed Intervals",
     runs: [
-      { id: "w3r1", day: "Wed, 23/09", title: "Lunch Run", desc: "5.00 km in 32:36 @ 6:31/km. (Logged on Strava)" },
-      { id: "w3r2", day: "Tue, 29/09", title: "Slow and Steady", desc: "5.51 km in 39:13 @ 7:07/km. (Logged on Strava)" },
-      { id: "w3r3", day: "Weekend", title: "6.0 km Base Extension", desc: "6.0 km @ Conversational Zone 2 (7:15 - 7:40/km). First step into 6k territory!" }
+      { id: "w3r1", day: "Midweek 1", title: "Easy Recovery Flush", desc: "4.0 km @ 7.0 km/h easy. Keeps legs fresh and builds weekly aerobic volume." },
+      { id: "w3r2", day: "Midweek 2", title: "1-Minute 5k Pace Surges", desc: "4.8 km total: 1.5 km warmup + 6x (1 min @ 8.0–8.2 km/h / 1 min easy jog) + 1 km cooldown. Teaches your body to hold faster paces!" },
+      { id: "w3r3", day: "Weekend", title: "5.5 km Stamina Builder", desc: "5.5 km continuous steady run (7.0–7.2 km/h). Running beyond 5k makes race distance feel mentally so much shorter." }
     ]
   },
   {
     week: 4,
-    title: "Week 4: Stepping Up into 7.0km Territory",
+    title: "Week 4: Mid-Point Consolidation & 7.5 km/h Target",
     runs: [
-      { id: "w4r1", day: "Tuesday", title: "6.2 km Midweek Build", desc: "6.2 km @ Easy Aerobic Pace. Keep breathing relaxed." },
-      { id: "w4r2", day: "Thursday", title: "6.5 km Steady Aerobic Run", desc: "6.5 km Continuous Run. Focus on steady rhythm." },
-      { id: "w4r3", day: "Weekend", title: "7.0 km Milestone Long Run", desc: "7.0 km @ Conversational Effort. Fuel with water/toast before!" }
+      { id: "w4r1", day: "Midweek 1", title: "Aerobic Deload Run", desc: "4.0 km easy conversational pace (8:30/km). Relaxed reset run before the pace test." },
+      { id: "w4r2", day: "Midweek 2", title: "5k Progressive Pace Run", desc: "5.0 km total: 2 km @ 7.0 km/h, 2 km @ 7.3 km/h, 1 km finish @ 7.6 km/h. Practicing negative splits and finishing strong!" },
+      { id: "w4r3", day: "Weekend", title: "6.0 km Long Aerobic Anchor", desc: "6.0 km continuous @ comfortable Zone 2 effort (7.0 km/h). Solidifies endurance baseline." }
     ]
   },
   {
     week: 5,
-    title: "Week 5: Endurance Engine & 8.0km Milestone",
+    title: "Week 5: 1km Sustained Speed Repeats",
     runs: [
-      { id: "w5r1", day: "Tuesday", title: "7.2 km Aerobic Base Run", desc: "7.2 km @ Zone 2 Pace. Building strong leg stamina." },
-      { id: "w5r2", day: "Thursday", title: "7.5 km Midweek Steady Run", desc: "7.5 km @ Smooth Effort. Pace yourself early." },
-      { id: "w5r3", day: "Weekend", title: "8.0 km Long Run Milestone", desc: "8.0 km @ Relaxed Pace. Big endurance benchmark!" }
+      { id: "w5r1", day: "Midweek 1", title: "Easy Base Cruise", desc: "4.5 km easy conversational pace (8:20–8:40/km). Light on your feet." },
+      { id: "w5r2", day: "Midweek 2", title: "3 x 1km 5k Pace Repeats", desc: "5.2 km total: 1 km warmup + 3x (1.0 km @ 7.8–8.2 km/h / 90s slow jog recovery) + 1 km cooldown. Big aerobic stimulus for 5k speed." },
+      { id: "w5r3", day: "Weekend", title: "6.2 km Weekend Long Run", desc: "6.2 km continuous @ 7.1 km/h. Steady, relaxed, high aerobic efficiency." }
     ]
   },
   {
     week: 6,
-    title: "Week 6: Volume Build & 9.0km Peak",
+    title: "Week 6: Lactate Threshold & Sustained 5k Tempo",
     runs: [
-      { id: "w6r1", day: "Tuesday", title: "8.2 km Aerobic Flush Run", desc: "8.2 km @ Easy Zone 2 Pace." },
-      { id: "w6r2", day: "Thursday", title: "8.5 km Extended Steady Run", desc: "8.5 km Continuous Steady Aerobic Run." },
-      { id: "w6r3", day: "Weekend", title: "9.0 km Peak Long Run #1", desc: "9.0 km @ Conversational Pace. Only 1 km away from 10k!" }
+      { id: "w6r1", day: "Midweek 1", title: "Midweek Aerobic Flush", desc: "4.5 km easy pace (8:15–8:35/km). Decompresses legs after workday." },
+      { id: "w6r2", day: "Midweek 2", title: "15-Min Sustained Tempo Block", desc: "5.0 km total: 1.5 km warmup + 2.5 km continuous tempo @ 8.0–8.3 km/h (~7:20/km) + 1 km cooldown. Pushes out your lactate threshold!" },
+      { id: "w6r3", day: "Weekend", title: "6.5 km Peak Over-Distance", desc: "6.5 km continuous easy aerobic run (7.2 km/h). Your longest run of the block — will make 5k feel so manageable!" }
     ]
   },
   {
     week: 7,
-    title: "Week 7: Peak 9.5km Dress Rehearsal & Deload",
+    title: "Week 7: Sharpening & Speed Polish",
     runs: [
-      { id: "w7r1", day: "Tuesday", title: "9.2 km Aerobic Stamina Run", desc: "9.2 km @ Smooth Aerobic Effort." },
-      { id: "w7r2", day: "Thursday", title: "9.5 km Peak Dress Rehearsal", desc: "9.5 km Continuous Run! Proves you can handle the 10k distance easily." },
-      { id: "w7r3", day: "Weekend", title: "7.0 km Active Deload Run", desc: "7.0 km @ Easy Pace. Reset legs for race week!" }
+      { id: "w7r1", day: "Midweek 1", title: "Easy Recovery Jog", desc: "4.0 km @ relaxed effort (8:20/km). Keeps turnover smooth." },
+      { id: "w7r2", day: "Midweek 2", title: "5x 500m Speed Repeats", desc: "5.0 km total: 1.5 km warmup + 5x (500m fast @ 8.5–9.0 km/h / 90s walking recovery) + 1 km cooldown. Sharpens turnover and leg snap!" },
+      { id: "w7r3", day: "Weekend", title: "4.5 km Shakeout Deload", desc: "4.5 km smooth easy pace with 3x20s light strides at the end. Resting legs for benchmark week." }
     ]
   },
   {
     week: 8,
-    title: "Week 8: 10k Celebration Week",
+    title: "Week 8: 5k Benchmark & Celebration Week",
     runs: [
-      { id: "w8r1", day: "Tuesday", title: "5.0 km Taper Flush Run", desc: "5.0 km Easy Pace to keep legs fresh." },
-      { id: "w8r2", day: "Thursday", title: "3.5 km Shakeout Run", desc: "3.5 km Easy Pace + light strides." },
-      { id: "w8r3", day: "Weekend", title: "🏆 10.0 km Milestone Endurance Run", desc: "10.0 km Continuous Celebration Run! You built the endurance step by step — claim your 10k!" }
+      { id: "w8r1", day: "Midweek 1", title: "Easy Aerobic Tune-Up", desc: "3.5 km easy conversational jog + light dynamic stretching. Feel light and springy." },
+      { id: "w8r2", day: "Midweek 2", title: "2.5 km Shakeout + Strides", desc: "2.5 km very easy jog + 3x 50m brisk strides. Priming neuromuscular system." },
+      { id: "w8r3", day: "Weekend", title: "🏆 5k Benchmark Time-Trial!", desc: "5.0 km continuous effort! Aiming for 7.8–8.5+ km/h (sub-38 or sub-35 min territory). Smash your 7 km/h comeback baseline!" }
     ]
   }
 ];
@@ -112,13 +112,13 @@ const familyRecipesData = [
   {
     id: "sp1",
     category: "speedy",
-    title: "10-Minute Bang Bang Crispy Chicken Rice Bowls",
+    title: "10-Minute Teriyaki Chicken Breast & Sesame Rice Bowls",
     prepTime: "2 mins",
     cookTime: "8 mins",
-    hack: "Air-fry or pan-crisp pre-cooked chicken breast tenders, toss in sweet & creamy Bang Bang sauce (Greek yogurt + light mayo + sweet chilli). Piled over warm jasmine rice with sweetcorn. Pure comfort!",
-    macros: "~510 kcal | 46g Protein | 50g Carbs | 12g Fats",
-    ingredients: ["350g Cooked chicken breast (strips or tenders)", "250g Pre-cooked microwave basmati rice", "2 tbsp Light mayonnaise & 2 tbsp 0% Greek yogurt", "2 tbsp Sweet chilli sauce", "1 Can (200g) sweetcorn (drained)", "1 Cucumber (sliced for side)"],
-    steps: ["Crisp chicken tenders in air-fryer, oven, or hot pan for 6 mins until hot and crunchy.", "Whisk light mayo, Greek yogurt, and sweet chilli sauce into a smooth creamy Bang Bang drizzle.", "Heat rice pouch 90 secs, plate with warm sweetcorn, top with crispy chicken and generous sauce drizzle."]
+    hack: "Mini chicken breast fillets flash-fried in 6 mins, basted in a sticky teriyaki-honey glaze, served over warm microwave basmati rice and sweet garden peas. Zero prep!",
+    macros: "~510 kcal | 46g Protein | 48g Carbs | 11g Fats",
+    ingredients: ["350g Mini chicken breast fillets", "250g Pre-cooked microwave basmati rice", "3 tbsp Teriyaki sauce & 1 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "150g Garden peas or sweetcorn"],
+    steps: ["Sear chicken breast mini fillets in hot skillet 3 mins per side until golden.", "Pour in teriyaki sauce, honey, garlic puree, and sesame oil; bubble 1-2 mins until glossy and sticky.", "Microwave rice pouch 90 secs, plate with warm peas, and top with glazed chicken tenders."]
   },
   {
     id: "sp2",
@@ -156,10 +156,10 @@ const familyRecipesData = [
   {
     id: "sp5",
     category: "speedy",
-    title: "12-Minute Crispy Bacon, Chicken & Ranch Flatbread Melts",
+    title: "12-Minute Crispy Bacon, Chicken Breast & Ranch Flatbread Melts",
     prepTime: "3 mins",
     cookTime: "9 mins",
-    hack: "Warm Greek flatbreads spread with creamy light ranch or garlic mayo, loaded with shredded chicken, crispy bacon pieces, and melted mozzarella. Bakes into gooey perfection under the grill.",
+    hack: "Warm Greek flatbreads spread with creamy light ranch or garlic mayo, loaded with shredded chicken breast, crispy bacon pieces, and melted mozzarella. Bakes into gooey perfection under the grill.",
     macros: "~520 kcal | 47g Protein | 45g Carbs | 14g Fats",
     ingredients: ["2 Greek flatbreads or folded naans", "250g Cooked chicken breast (shredded)", "3 Rashers lean back bacon (cooked and chopped)", "2 tbsp Light garlic mayonnaise or ranch dressing", "70g Light mozzarella (grated)"],
     steps: ["Spread light garlic mayo across flatbreads.", "Top evenly with shredded chicken breast, crispy bacon pieces, and a blanket of mozzarella.", "Grill on high 3-4 mins until cheese is bubbling, browned, and edges of flatbread are crispy."]
@@ -191,7 +191,7 @@ const familyRecipesData = [
   {
     id: "sc3",
     category: "slowcooker",
-    title: "Slowcooker Beef Brisket French Dip Subs with Rich Jus",
+    title: "Slowcooker Beef Brisket French Dip Subs with Hot Dipping Jus",
     prepTime: "10 mins",
     cookTime: "7 hrs",
     hack: "Tender beef brisket braised in rich garlic beef broth and Worcestershire sauce. Piled into crusty baguettes with melted cheddar, served with the strained hot jus to dip!",
@@ -202,37 +202,37 @@ const familyRecipesData = [
   {
     id: "sc4",
     category: "slowcooker",
-    title: "Slowcooker Creamy Garlic & Parmesan Chicken with Rice",
+    title: "Slowcooker Creamy Garlic & Herb Chicken Breast with Rice",
     prepTime: "5 mins",
     cookTime: "5 hrs",
-    hack: "Chicken thighs slow-cooked in savory broth and garlic, enriched with light cream cheese and parmesan into a silky, luscious sauce over rice. Zero onion chunks for partner!",
-    macros: "~515 kcal | 46g Protein | 46g Carbs | 13g Fats",
-    ingredients: ["500g Boneless skinless chicken thighs", "300ml Chicken stock", "1 tsp Garlic puree & Italian dried herbs", "70g Light cream cheese", "30g Grated parmesan", "200g Jasmine or basmati rice"],
-    steps: ["Place chicken thighs, stock, garlic, and herbs in slowcooker. Cook LOW 5 hrs.", "Shred chicken lightly, stir in cream cheese and grated parmesan until the sauce turns creamy and velvety.", "Serve over warm jasmine or basmati rice with sweet peas or greens on the side."]
+    hack: "Chicken breasts slow-cooked in savory chicken stock and garlic, enriched with light cream cheese and parmesan into a silky, luscious sauce over rice. 100% lean chicken breast, zero onion chunks!",
+    macros: "~510 kcal | 48g Protein | 45g Carbs | 11g Fats",
+    ingredients: ["500g Chicken breast", "300ml Chicken stock", "1 tsp Garlic puree & Italian dried herbs", "70g Light cream cheese", "30g Grated parmesan", "200g Jasmine or basmati rice"],
+    steps: ["Place chicken breasts, chicken stock, garlic puree, and Italian herbs into slowcooker. Cook on LOW 4-5 hrs.", "Shred chicken breasts with two forks, stir in light cream cheese and parmesan until silky and smooth.", "Serve piping hot over steamed jasmine or basmati rice with sweet garden peas."]
   },
   {
     id: "sc5",
     category: "slowcooker",
-    title: "Slowcooker Sticky Honey Garlic Chicken Wings & Wedges",
+    title: "Slowcooker Sweet Honey Garlic Pulled Chicken Breast & Wedges",
     prepTime: "5 mins",
     cookTime: "4 hrs",
-    hack: "Chicken wings or mini fillets slow-cooked in honey, soy, garlic, and tomato glaze. Finished under a blistering hot grill for 4 mins to get sticky, caramelized char marks!",
-    macros: "~500 kcal | 45g Protein | 44g Carbs | 12g Fats",
-    ingredients: ["600g Skinless chicken drumsticks or mini fillets", "3 tbsp Honey & 3 tbsp soy sauce", "2 tbsp Tomato ketchup", "1 tsp Garlic puree & 1 tsp sesame oil", "300g Oven chips or wedges"],
-    steps: ["Whisk honey, soy sauce, ketchup, garlic, and sesame oil. Pour over chicken in slowcooker, cook LOW 4-5 hrs.", "Transfer chicken to a baking tray, brush with slowcooker juices, grill on high 4 mins until sticky and charred.", "Serve with crispy oven chips or wedges."]
+    hack: "Chicken breasts slow-cooked in honey, soy sauce, garlic, and tomato glaze. Shreds into glossy, sweet-savory pulled chicken to pile over oven-crisped wedges with melted cheddar!",
+    macros: "~515 kcal | 47g Protein | 48g Carbs | 12g Fats",
+    ingredients: ["500g Chicken breast", "3 tbsp Honey & 3 tbsp soy sauce", "2 tbsp Tomato ketchup & 1 tsp garlic puree", "1 tsp Sesame oil", "350g Potato wedges or chips", "60g Grated light cheddar"],
+    steps: ["Whisk honey, soy sauce, ketchup, garlic, and sesame oil. Pour over chicken breasts in slowcooker, cook LOW 4 hrs.", "Bake potato wedges at 200°C for 22 mins until crisp.", "Shred chicken in the slowcooker sauce, ladle over hot wedges, scatter cheddar and grill 2 mins to melt."]
   },
 
   // --- FAKEAWAYS (5) ---
   {
     id: "fk1",
     category: "fakeaway",
-    title: "Loaded Crispy Salt & Pepper Chicken Rice Boxes",
+    title: "Loaded Crispy Salt & Pepper Chicken Breast Rice Boxes",
     prepTime: "10 mins",
     cookTime: "12 mins",
-    hack: "Takeaway style! Panko-dusted chicken tenders tossed in Chinese five-spice, garlic, and crunchy sea salt over golden egg fried microwave rice with a pot of sweet chilli sauce.",
-    macros: "~520 kcal | 46g Protein | 54g Carbs | 11g Fats",
+    hack: "Takeaway style! Panko-dusted chicken breast strips tossed in Chinese five-spice, garlic, and crunchy sea salt over golden egg fried microwave rice with sweet chilli sauce.",
+    macros: "~520 kcal | 47g Protein | 54g Carbs | 11g Fats",
     ingredients: ["350g Chicken breast (cut into thin strips)", "1 tbsp Cornstarch & 30g panko breadcrumbs", "1 tsp Chinese five-spice & coarse sea salt", "250g Pre-cooked microwave basmati rice", "2 Eggs (beaten)", "2 tbsp Sweet chilli sauce to dip"],
-    steps: ["Coat chicken in cornstarch, five-spice, and panko. Oven bake or air-fry 14 mins at 200°C until super crispy.", "Scramble eggs in hot skillet 1 min, toss in rice pouch with splash of soy sauce 2 mins.", "Box up egg fried rice, top with hot crispy salt & pepper chicken, serve with sweet chilli dip."]
+    steps: ["Coat chicken breast strips in cornstarch, five-spice, and panko. Oven bake or air-fry 14 mins at 200°C until super crispy.", "Scramble eggs in hot skillet 1 min, toss in rice pouch with splash of soy sauce 2 mins.", "Box up egg fried rice, top with hot crispy salt & pepper chicken, serve with sweet chilli dip."]
   },
   {
     id: "fk2",
@@ -240,7 +240,7 @@ const familyRecipesData = [
     title: "The Double Smash Bacon Cheeseburger & Seasoned Wedges",
     prepTime: "8 mins",
     cookTime: "10 mins",
-    hack: "Two thin, crispy-crusted 5% beef patties smashed thin in a smoking hot pan, layered with melted cheddar, back bacon, and burger sauce in a toasted brioche bun!",
+    hack: "Two thin, crispy-crusted 5% beef patties smashed thin in a smoking hot skillet, layered with melted cheese, back bacon, and burger sauce in a toasted brioche bun!",
     macros: "~530 kcal | 48g Protein | 46g Carbs | 15g Fats",
     ingredients: ["350g 5% Fat beef mince", "2 Rashers lean back bacon (cooked)", "2 Soft brioche burger buns", "4 Slices light cheddar or burger cheese", "300g Potato wedges or chips", "2 tbsp Light burger sauce"],
     steps: ["Bake potato wedges at 200°C for 20 mins until crisp.", "Divide mince into 4 balls, smash super flat into hot dry skillet 2 mins per side, melt cheese on top.", "Assemble double patties into toasted brioche with bacon and burger sauce. Pure burger joint bliss!"]
@@ -248,24 +248,24 @@ const familyRecipesData = [
   {
     id: "fk3",
     category: "fakeaway",
-    title: "Nando's-Style Peri-Peri Chicken Pittas & Peri Chips",
+    title: "Nando's-Style Peri-Peri Butterfly Chicken Breast & Peri Chips",
     prepTime: "8 mins",
     cookTime: "12 mins",
     hack: "Butterflied chicken breasts marinated in mild lemon & herb peri-peri marinade, griddled with dark char marks, tucked into toasted pittas with garlic perinaise and oven chips.",
-    macros: "~510 kcal | 47g Protein | 48g Carbs | 12g Fats",
+    macros: "~510 kcal | 48g Protein | 48g Carbs | 11g Fats",
     ingredients: ["2 Chicken breasts (butterflied flat)", "2 tbsp Mild lemon & herb peri-peri sauce", "2 Greek flatbreads or large pitta breads", "2 tbsp Light mayonnaise mixed with 1 tsp peri-peri", "300g Oven chips", "Crispy shredded lettuce"],
-    steps: ["Coat chicken in peri-peri marinade, grill on hot griddle pan 5 mins per side until charred and juicy.", "Bake chips tossed in smoked paprika at 200°C for 18 mins.", "Stuff warm pittas with grilled chicken, shredded lettuce, and peri-mayo, serve with peri-chips."]
+    steps: ["Coat butterflied chicken breasts in peri-peri marinade, grill on hot griddle pan 5 mins per side until charred and juicy.", "Bake chips tossed in smoked paprika at 200°C for 18 mins.", "Stuff warm pittas with grilled chicken, shredded lettuce, and peri-mayo, serve with peri-chips."]
   },
   {
     id: "fk4",
     category: "fakeaway",
-    title: "Crispy Firecracker Glazed Popcorn Chicken & Fried Rice",
+    title: "Crispy Firecracker Glazed Popcorn Chicken Breast & Fried Rice",
     prepTime: "10 mins",
     cookTime: "14 mins",
-    hack: "Bite-sized crispy chicken pieces tossed in sweet, sticky, mild firecracker glaze (honey + soy + ketchup + sweet chilli) over egg fried rice. Restaurant crunch without the grease!",
-    macros: "~520 kcal | 46g Protein | 52g Carbs | 11g Fats",
+    hack: "Bite-sized crispy chicken breast nuggets tossed in sweet, sticky, mild firecracker glaze (honey + soy + ketchup + sweet chilli) over egg fried rice. Restaurant crunch without the grease!",
+    macros: "~520 kcal | 47g Protein | 52g Carbs | 11g Fats",
     ingredients: ["350g Chicken breast (diced into bite-sized chunks)", "40g Panko breadcrumbs", "1 Egg (beaten)", "2 tbsp Sweet chilli sauce & 1 tbsp honey", "1 tbsp Soy sauce & 1 tbsp tomato ketchup", "250g Pre-cooked microwave basmati rice"],
-    steps: ["Dip chicken chunks in beaten egg, roll in panko, bake at 200°C for 14 mins until golden.", "Warm sweet chilli sauce, honey, soy, and ketchup in a pan for 1 min until glossy.", "Toss crunchy chicken in sauce and serve immediately over warm rice with sweetcorn."]
+    steps: ["Dip chicken breast chunks in beaten egg, roll in panko, bake at 200°C for 14 mins until golden.", "Warm sweet chilli sauce, honey, soy, and ketchup in a pan for 1 min until glossy.", "Toss crunchy chicken in sauce and serve immediately over warm rice with sweetcorn."]
   },
   {
     id: "fk5",
@@ -283,13 +283,13 @@ const familyRecipesData = [
   {
     id: "op1",
     category: "onepan",
-    title: "One-Pan Creamy Cajun Chicken & Bacon Penne",
+    title: "One-Pan Creamy Cajun Chicken Breast & Bacon Penne",
     prepTime: "5 mins",
     cookTime: "15 mins",
-    hack: "Tender chicken and smoked bacon simmered with penne in seasoned chicken stock and milk. Swirl in light cream cheese and mild Cajun spice for a velvety pasta that's pure comfort!",
-    macros: "~525 kcal | 47g Protein | 50g Carbs | 14g Fats",
+    hack: "Tender chicken breast cubes and smoked bacon simmered with penne in seasoned chicken stock and milk. Swirl in light cream cheese and mild Cajun spice for a velvety pasta that's pure comfort!",
+    macros: "~525 kcal | 48g Protein | 50g Carbs | 13g Fats",
     ingredients: ["2 Chicken breasts (diced)", "3 Rashers lean back bacon (chopped)", "140g Penne pasta", "1 tsp Mild Cajun seasoning & 1 tsp garlic puree", "300ml Chicken stock & 150ml semi-skimmed milk", "70g Light cream cheese"],
-    steps: ["Pan-fry chicken, bacon, and Cajun seasoning in a deep skillet 4 mins until lightly browned.", "Add dry penne, stock, and milk. Simmer 10 mins until pasta is tender and liquid has reduced.", "Stir in cream cheese until thick, glossy, and creamy. Partner-approved with zero chopped onions!"]
+    steps: ["Pan-fry chicken breast cubes, bacon, and Cajun seasoning in a deep skillet 4 mins until lightly browned.", "Add dry penne, stock, and milk. Simmer 10 mins until pasta is tender and liquid has reduced.", "Stir in cream cheese until thick, glossy, and creamy. Partner-approved with zero chopped onions!"]
   },
   {
     id: "op2",
@@ -340,13 +340,13 @@ const familyRecipesData = [
   {
     id: "rg1",
     category: "regular",
-    title: "Crispy BBQ Chicken & Melted Cheddar Quesadilla Wedges",
+    title: "Crispy BBQ Chicken Breast & Melted Cheddar Quesadilla Wedges",
     prepTime: "8 mins",
     cookTime: "12 mins",
     hack: "Shredded chicken breast tossed in sweet smoky BBQ sauce, sandwiched in large flour tortillas with melted cheddar and baked super crisp in the oven. Cut into triangles!",
-    macros: "~520 kcal | 46g Protein | 48g Carbs | 14g Fats",
+    macros: "~520 kcal | 47g Protein | 48g Carbs | 13g Fats",
     ingredients: ["300g Cooked chicken breast (shredded)", "4 Large flour tortilla wraps", "3 tbsp Smoky BBQ sauce", "80g Grated light cheddar", "Sour cream to dip"],
-    steps: ["Mix shredded chicken with smoky BBQ sauce.", "Fold chicken and grated cheddar inside tortillas, place on baking tray sprayed with oil.", "Bake at 200°C for 10-12 mins until golden and crunchy. Slice into wedges for an easy family dinner."]
+    steps: ["Mix shredded chicken breast with smoky BBQ sauce.", "Fold chicken and grated cheddar inside tortillas, place on baking tray sprayed with oil.", "Bake at 200°C for 10-12 mins until golden and crunchy. Slice into wedges for an easy family dinner."]
   },
   {
     id: "rg2",
@@ -362,13 +362,13 @@ const familyRecipesData = [
   {
     id: "rg3",
     category: "regular",
-    title: "Crispy Parmesan-Crusted Chicken Cutlets with Wedges",
+    title: "Crispy Parmesan-Crusted Chicken Breast Cutlets with Wedges",
     prepTime: "8 mins",
     cookTime: "18 mins",
-    hack: "Chicken cutlets pressed into grated parmesan and crunchy panko breadcrumbs, baked extra crisp and served with oven wedges and garlic mayo. Always a crowd-pleaser.",
-    macros: "~510 kcal | 48g Protein | 46g Carbs | 12g Fats",
+    hack: "Chicken breast cutlets pressed into grated parmesan and crunchy panko breadcrumbs, baked extra crisp and served with oven wedges and garlic mayo. Always a crowd-pleaser.",
+    macros: "~510 kcal | 49g Protein | 46g Carbs | 11g Fats",
     ingredients: ["2 Chicken breasts (sliced into thin cutlets)", "35g Panko breadcrumbs", "25g Grated parmesan", "1 Egg (beaten)", "350g Potato wedges or chips", "2 tbsp Light mayonnaise"],
-    steps: ["Dip chicken cutlets in beaten egg, coat firmly in parmesan and panko mixture.", "Place on baking tray with wedges at 200°C for 18 mins until deeply golden and crunchy.", "Serve with light garlic mayo dip and sweetcorn or peas."]
+    steps: ["Dip chicken breast cutlets in beaten egg, coat firmly in parmesan and panko mixture.", "Place on baking tray with wedges at 200°C for 18 mins until deeply golden and crunchy.", "Serve with light garlic mayo dip and sweetcorn or peas."]
   },
   {
     id: "rg4",
@@ -384,11 +384,11 @@ const familyRecipesData = [
   {
     id: "rg5",
     category: "regular",
-    title: "French Bread Cheesy Bacon & Chicken Pizza Boats",
+    title: "French Bread Cheesy Bacon & Chicken Breast Pizza Boats",
     prepTime: "5 mins",
     cookTime: "10 mins",
-    hack: "Crusty baguette halved lengthwise, loaded with smooth marinara sauce, shredded chicken, crispy bacon pieces, and melted mozzarella. Bakes into crunchy pizza boats in 10 mins!",
-    macros: "~525 kcal | 46g Protein | 50g Carbs | 14g Fats",
+    hack: "Crusty baguette halved lengthwise, loaded with smooth marinara sauce, shredded chicken breast, crispy bacon pieces, and melted mozzarella. Bakes into crunchy pizza boats in 10 mins!",
+    macros: "~525 kcal | 47g Protein | 50g Carbs | 13g Fats",
     ingredients: ["1 Crusty French baguette (halved lengthwise)", "200g Cooked chicken breast (shredded)", "2 Rashers back bacon (cooked and chopped)", "4 tbsp Smooth tomato passata", "70g Light mozzarella (grated)"],
     steps: ["Cut baguette in half lengthwise and place crust-side down on an oven tray.", "Spread smooth passata across bread, top with shredded chicken and bacon pieces.", "Cover generously with mozzarella, bake at 200°C for 10 mins until bubbling and crispy. Slice into sections."]
   }
@@ -406,8 +406,11 @@ if (localStorage.getItem('dadrunner_runs')) {
 if (localStorage.getItem('dadrunner_runs_v2')) {
   localStorage.removeItem('dadrunner_runs_v2');
 }
+if (localStorage.getItem('dadrunner_runs_v3')) {
+  localStorage.removeItem('dadrunner_runs_v3');
+}
 
-let completedRuns    = JSON.parse(localStorage.getItem('dadrunner_runs_v3')) || defaultCompleted;
+let completedRuns    = JSON.parse(localStorage.getItem('dadrunner_runs_v4')) || defaultCompleted;
 let waterCount       = parseInt(localStorage.getItem('dadrunner_water'))   || 0;
 let currentCategory  = 'all';
 let selectedRecipes  = new Set(); // IDs of recipes selected for shopping list
@@ -542,7 +545,7 @@ function renderWorkoutPlan() {
 function toggleRun(id) {
   if (completedRuns[id]) delete completedRuns[id];
   else completedRuns[id] = true;
-  localStorage.setItem('dadrunner_runs_v3', JSON.stringify(completedRuns));
+  localStorage.setItem('dadrunner_runs_v4', JSON.stringify(completedRuns));
   renderWorkoutPlan();
 }
 
