@@ -1,6 +1,6 @@
 /* ==========================================================================
-   DadRunner Hub - JavaScript v5
-   20 Fresh Recipes + Shopping List Builder + All Existing Features
+   DadRunner Hub - JavaScript v6
+   25 Fresh Recipes (5 Speedy, 5 Slowcooker, 5 Fakeaways, 5 One-Pan, 5 Regular)
    ========================================================================== */
 
 // 8-Week 5k Comeback & Improvement Plan (Starting baseline: 7.0 km/h / 8:34/km)
@@ -112,285 +112,285 @@ const familyRecipesData = [
   {
     id: "sp1",
     category: "speedy",
-    title: "10-Minute Teriyaki Chicken Breast & Sesame Rice Bowls",
+    title: "10-Minute Sticky Honey Garlic Salmon Rice Bowls",
     prepTime: "2 mins",
     cookTime: "8 mins",
-    hack: "Mini chicken breast fillets flash-fried in 6 mins, basted in a sticky teriyaki-honey glaze, served over warm microwave basmati rice and sweet garden peas. Zero prep!",
-    macros: "~510 kcal | 46g Protein | 48g Carbs | 11g Fats",
-    ingredients: ["350g Mini chicken breast fillets", "250g Pre-cooked microwave basmati rice", "3 tbsp Teriyaki sauce & 1 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "150g Garden peas or sweetcorn"],
-    steps: ["Sear chicken breast mini fillets in hot skillet 3 mins per side until golden.", "Pour in teriyaki sauce, honey, garlic puree, and sesame oil; bubble 1-2 mins until glossy and sticky.", "Microwave rice pouch 90 secs, plate with warm peas, and top with glazed chicken tenders."]
+    hack: "Fresh salmon pan-seared in 6 mins, basted in a glossy 3-ingredient sweet honey garlic soy glaze. Flaked over steaming microwave jasmine rice with sweetcorn. Fast, omega-3 rich, and naturally sweet!",
+    macros: "~510 kcal | 42g Protein | 46g Carbs | 14g Fats",
+    ingredients: ["2 Fresh salmon fillets", "250g Pre-cooked microwave jasmine rice", "2 tbsp Honey & 2 tbsp light soy sauce", "1 tsp Garlic puree & 1 tsp sesame oil", "150g Sweetcorn or garden peas"],
+    steps: ["Sear salmon fillets in a hot skillet 3 mins skin-side down, flip and cook 2 mins.", "Pour in honey, soy sauce, garlic puree, and sesame oil; bubble 1-2 mins until sticky and glossy.", "Microwave rice pouch 90 secs, plate with warm sweetcorn, and top with glazed flaked salmon."]
   },
   {
     id: "sp2",
     category: "speedy",
-    title: "12-Minute Cheesy Beef Crunchwrap Supreme",
+    title: "12-Minute Crispy Bacon & Chicken Caesar Piadina Flatbreads",
     prepTime: "3 mins",
     cookTime: "9 mins",
-    hack: "The legendary Taco Bell hack! Seasoned 5% beef, light cheddar, sour cream, and a crunchy tortilla chip layer folded inside a warm flour tortilla and pan-toasted sealed. Guaranteed family obsession.",
-    macros: "~520 kcal | 45g Protein | 46g Carbs | 14g Fats",
-    ingredients: ["350g 5% Fat beef mince", "1 tbsp Mild fajita/taco seasoning", "2 Large flour tortilla wraps", "2 Handfuls salted crunchy tortilla chips (for crunch layer)", "60g Grated light cheddar", "2 tbsp Sour cream & mild salsa"],
-    steps: ["Brown beef mince with taco seasoning in skillet 5 mins.", "Lay large tortillas flat: add beef, cheddar, sour cream, flat crunchy tortilla chips, and mild salsa.", "Fold edges into the centre to enclose, place seam-side down in a dry hot pan 2-3 mins per side until toasted and sealed."]
+    hack: "Toasted Greek flatbreads spread with creamy light Caesar dressing, piled with succulent shredded chicken breast, crispy smoked bacon pieces, and shaved parmesan. No onion, no fuss, diner crunch!",
+    macros: "~520 kcal | 48g Protein | 44g Carbs | 13g Fats",
+    ingredients: ["2 Greek flatbreads or folded naans", "250g Cooked chicken breast (shredded)", "4 Rashers lean back bacon (cooked & chopped)", "3 tbsp Light Caesar dressing", "30g Shaved or grated parmesan", "Crispy shredded romaine lettuce"],
+    steps: ["Fry bacon rashers in a pan 4 mins until crispy, chop into bite-sized bits.", "Warm flatbreads in a dry skillet or under the grill for 1 min until soft and toasted.", "Spread with light Caesar dressing, fill with chicken breast, crispy bacon, parmesan, and crisp lettuce. Fold and enjoy."]
   },
   {
     id: "sp3",
     category: "speedy",
-    title: "10-Minute Sizzling Garlic Butter King Prawn Tacos",
+    title: "10-Minute Sweet Chilli King Prawn Egg Fried Noodles",
     prepTime: "2 mins",
     cookTime: "8 mins",
-    hack: "King prawns pan-fry in garlic butter and smoked paprika in only 3 mins! Tuck into warm mini tortillas with a zesty lime sour cream crema. Light, juicy, and lightning fast.",
-    macros: "~480 kcal | 42g Protein | 42g Carbs | 12g Fats",
-    ingredients: ["300g Raw peeled king prawns", "4 Mini soft flour tortilla wraps", "1 tbsp Butter & 1 tsp garlic puree", "1 tsp Smoked paprika & juice of 1 lime", "3 tbsp Light sour cream", "Crispy shredded lettuce"],
-    steps: ["Melt butter in skillet, add garlic puree, paprika, and prawns; flash-fry 3 mins until pink and juicy.", "Warm mini tortillas in microwave for 15 seconds.", "Whisk sour cream with lime juice. Layer tortillas with lettuce, sizzling prawns, and lime crema."]
+    hack: "Juicy king prawns sizzled in garlic oil, tossed with straight-to-wok egg noodles, scrambled eggs, and sweet chilli glaze. 10 minutes total and zero veg peeling!",
+    macros: "~490 kcal | 43g Protein | 50g Carbs | 11g Fats",
+    ingredients: ["300g Raw peeled king prawns", "300g Ready-to-wok egg noodles (2 pouches)", "2 Eggs (lightly beaten)", "3 tbsp Sweet chilli sauce", "1 tbsp Light soy sauce & 1 tsp garlic puree"],
+    steps: ["Sizzle prawns and garlic puree in a hot wok or skillet 2 mins until pink.", "Push to the side, scramble beaten eggs 1 min, then toss in straight-to-wok noodles.", "Drizzle over sweet chilli and soy sauce, toss everything high-heat for 2 mins until piping hot."]
   },
   {
     id: "sp4",
     category: "speedy",
-    title: "10-Minute Sticky Korean Honey-Soy Steak Sliders",
-    prepTime: "2 mins",
-    cookTime: "8 mins",
-    hack: "Flash-sear thin steak strips in sweet soy, garlic, and honey. Stuff into toasted soft brioche slider buns with melted cheddar. Pure street-food luxury in 10 minutes flat.",
-    macros: "~510 kcal | 44g Protein | 48g Carbs | 13g Fats",
-    ingredients: ["300g Lean rump steak (sliced into thin strips)", "4 Mini brioche slider buns or soft rolls", "3 tbsp Soy sauce & 2 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "4 Slices light cheddar or burger cheese"],
-    steps: ["High-heat sear steak strips in oil spray 3 mins until caramelized.", "Add soy sauce, honey, garlic, and sesame oil, bubbling 1 min into a thick glossy glaze.", "Tuck sticky steak into toasted slider buns with a slice of cheese that melts instantly."]
+    title: "12-Minute Cheesy Philly Steak & Melted Mozzarella Bagels",
+    prepTime: "3 mins",
+    cookTime: "9 mins",
+    hack: "Shaved lean rump steak flash-fried in garlic butter and Worcestershire sauce, stuffed into toasted bagels with melted mozzarella. Dan's hack: toss sliced peppers in the pan on the side!",
+    macros: "~515 kcal | 46g Protein | 45g Carbs | 14g Fats",
+    ingredients: ["300g Lean rump steak (sliced ultra-thin)", "2 Plain bagels (halved and toasted)", "4 Slices light mozzarella or cheddar", "1 tsp Garlic puree & 1 tbsp Worcestershire sauce", "1 tsp Butter", "1 Red bell pepper (sliced thin, for Dan)"],
+    steps: ["Toast bagels under grill or in toaster.", "High-heat flash-fry thin steak strips with butter, garlic puree, and Worcestershire sauce for 2-3 mins.", "Pile juicy steak into toasted bagels, top with cheese slices, grill 1 min to melt into gooey perfection."]
   },
   {
     id: "sp5",
     category: "speedy",
-    title: "12-Minute Crispy Bacon, Chicken Breast & Ranch Flatbread Melts",
-    prepTime: "3 mins",
-    cookTime: "9 mins",
-    hack: "Warm Greek flatbreads spread with creamy light ranch or garlic mayo, loaded with shredded chicken breast, crispy bacon pieces, and melted mozzarella. Bakes into gooey perfection under the grill.",
-    macros: "~520 kcal | 47g Protein | 45g Carbs | 14g Fats",
-    ingredients: ["2 Greek flatbreads or folded naans", "250g Cooked chicken breast (shredded)", "3 Rashers lean back bacon (cooked and chopped)", "2 tbsp Light garlic mayonnaise or ranch dressing", "70g Light mozzarella (grated)"],
-    steps: ["Spread light garlic mayo across flatbreads.", "Top evenly with shredded chicken breast, crispy bacon pieces, and a blanket of mozzarella.", "Grill on high 3-4 mins until cheese is bubbling, browned, and edges of flatbread are crispy."]
+    title: "10-Minute Mild Honey Buffalo Chicken Breast Pitta Pockets",
+    prepTime: "2 mins",
+    cookTime: "8 mins",
+    hack: "Mini chicken breast tenders tossed in a sweet & tangy mild glaze (mild hot sauce, honey & a touch of butter), loaded into warm fluffy pitta pockets with melted cheddar and sour cream.",
+    macros: "~510 kcal | 47g Protein | 46g Carbs | 12g Fats",
+    ingredients: ["350g Mini chicken breast fillets", "2 tbsp Mild buffalo sauce & 1 tbsp honey", "1 tsp Butter", "2 Large Greek pitta breads or soft wraps", "50g Grated light cheddar", "2 tbsp Light sour cream or ranch dressing"],
+    steps: ["Pan-fry mini chicken breast fillets 3 mins per side until golden and cooked through.", "Stir in mild buffalo sauce, honey, and butter; coat chicken into a glossy sweet-tangy glaze.", "Split warm pittas, fill with glazed chicken tenders, grated cheddar, and cool sour cream."]
   },
 
   // --- SLOWCOOKER (5) ---
   {
     id: "sc1",
     category: "slowcooker",
-    title: "Slowcooker Mexican Beef Barbacoa Bowls (Dan's Favourite!)",
-    prepTime: "10 mins",
+    title: "Slowcooker Rich Beef Ragu with Pappardelle & Parmesan",
+    prepTime: "8 mins",
     cookTime: "7 hrs",
-    hack: "Chuck braising steak cooked low and slow with pureed chopped tomatoes, lime juice, cumin, and mild chipotle seasoning. Shreds into succulent, juicy barbacoa beef over fluffy rice with sour cream!",
-    macros: "~520 kcal | 48g Protein | 46g Carbs | 14g Fats",
-    ingredients: ["500g Beef braising steak or chuck", "1 Can (400g) chopped tomatoes", "Juice of 1 Lime & 1 tsp garlic puree", "1 tsp Cumin & 1 tbsp mild fajita seasoning", "200g Basmati or long grain rice", "Sour cream, mild salsa & grated cheddar to serve"],
-    steps: ["Place beef into slowcooker. Blend chopped tomatoes with lime juice, garlic, cumin, and fajita seasoning smooth, pour over.", "Cook on LOW for 7-8 hrs until beef falls apart effortlessly. Shred thoroughly with two forks.", "Serve warm over fluffy basmati rice with sour cream, mild salsa, and grated cheddar on the side."]
+    hack: "Lean beef braising steak slow-cooked in smooth tomato passata, beef stock, garlic, and dried oregano until melt-in-the-mouth tender. Shreds with two forks into a velvety, onion-free Italian ragu!",
+    macros: "~525 kcal | 48g Protein | 48g Carbs | 13g Fats",
+    ingredients: ["500g Beef braising steak or chuck", "400g Smooth tomato passata", "200ml Beef stock", "1 tsp Garlic puree & 1 tsp Italian dried herbs", "160g Pappardelle or tagliatelle pasta", "40g Grated parmesan cheese"],
+    steps: ["Place braising steak into slowcooker, pour over smooth passata, beef stock, garlic puree, and Italian herbs. Cook on LOW for 7-8 hrs.", "Shred tender beef directly into the rich tomato sauce with two forks.", "Boil pasta 9 mins, drain, toss through the shredded beef ragu, and dust generously with parmesan."]
   },
   {
     id: "sc2",
     category: "slowcooker",
-    title: "Slowcooker Smoky BBQ Pulled Pork Mac & Cheese",
+    title: "Slowcooker Sticky Honey & Garlic Pork Tenderloin Bites",
     prepTime: "5 mins",
-    cookTime: "7 hrs",
-    hack: "Pork shoulder cooked in rich smoky BBQ sauce, shredded and layered on top of warm, velvety macaroni cheese. Ultimate Saturday-night comfort with Monday-night ease!",
-    macros: "~530 kcal | 46g Protein | 52g Carbs | 14g Fats",
-    ingredients: ["500g Lean pork shoulder (fat trimmed)", "5 tbsp Smoky BBQ sauce & 1 tbsp honey", "1 tsp Garlic puree & smoked paprika", "150g Macaroni pasta", "150ml Semi-skimmed milk & 1 tsp cornstarch", "60g Grated light cheddar"],
-    steps: ["Rub pork with paprika and garlic, slow-cook with BBQ sauce and honey on LOW 7 hrs. Shred with two forks.", "Boil macaroni 8 mins. Whisk milk, cornstarch, and garlic in a pan until bubbling, stir in cheddar until melted.", "Stir pasta into cheese sauce and top bowls with heaps of hot BBQ pulled pork."]
+    cookTime: "5 hrs",
+    hack: "Lean pork medallions slow-braised in honey, soy sauce, garlic, and tomato glaze. Becomes melt-in-the-mouth succulent with a sweet Asian barbecue glaze over rice.",
+    macros: "~515 kcal | 46g Protein | 50g Carbs | 11g Fats",
+    ingredients: ["500g Lean pork tenderloin (cut into thick bite-sized medallions)", "4 tbsp Honey & 3 tbsp light soy sauce", "2 tbsp Tomato ketchup & 1 tsp garlic puree", "1 tsp Cornstarch (dissolved in 1 tbsp water)", "200g Jasmine or basmati rice", "150g Tenderstem broccoli or sweet peas"],
+    steps: ["Whisk honey, soy sauce, ketchup, and garlic puree; pour over pork chunks in the slowcooker. Cook on LOW 4-5 hrs.", "Stir in cornstarch slurry 15 mins before serving to turn the cooking juices into a thick glossy glaze.", "Serve juicy pork bites over steamed jasmine rice with tenderstem broccoli or sweet peas."]
   },
   {
     id: "sc3",
     category: "slowcooker",
-    title: "Slowcooker Beef Brisket French Dip Subs with Hot Dipping Jus",
-    prepTime: "10 mins",
-    cookTime: "7 hrs",
-    hack: "Tender beef brisket braised in rich garlic beef broth and Worcestershire sauce. Piled into crusty baguettes with melted cheddar, served with the strained hot jus to dip!",
-    macros: "~520 kcal | 47g Protein | 48g Carbs | 13g Fats",
-    ingredients: ["500g Beef brisket or braising steak", "400ml Beef stock", "1 tbsp Worcestershire sauce & 1 tbsp tomato puree", "1 tsp Garlic puree & dried thyme", "2 Crusty French baguettes (halved)", "60g Grated light cheddar or mozzarella"],
-    steps: ["Place brisket in slowcooker with beef stock, Worcestershire sauce, tomato puree, garlic, and thyme. Cook LOW 7-8 hrs.", "Shred tender beef. Split baguettes, stuff generously with beef, top with cheese, and grill 2 mins to melt.", "Ladle the strained cooking broth into small ramekins for dipping each crunchy sandwich bite!"]
+    title: "Slowcooker Cheesy Chicken Breast & Bacon Ranch Potato Casserole",
+    prepTime: "8 mins",
+    cookTime: "5 hrs",
+    hack: "Lean chicken breast, baby potatoes, and bacon lardons slow-cooked with light cream cheese, mild garlic ranch seasoning, and cheddar. Pure cozy potato-bake comfort with zero prep!",
+    macros: "~520 kcal | 48g Protein | 44g Carbs | 14g Fats",
+    ingredients: ["500g Chicken breast (diced)", "400g Baby potatoes (halved)", "3 Rashers lean back bacon (chopped)", "80g Light cream cheese", "1 tsp Garlic powder & dried parsley", "70g Grated light cheddar"],
+    steps: ["Layer halved baby potatoes, chicken breast cubes, and chopped bacon in slowcooker with garlic powder and parsley.", "Dollop cream cheese over the top and cook on LOW 5 hrs until potatoes and chicken are fork-tender.", "Stir together so the cream cheese coats everything in silky sauce, scatter cheddar on top to melt, and serve."]
   },
   {
     id: "sc4",
     category: "slowcooker",
-    title: "Slowcooker Creamy Garlic & Herb Chicken Breast with Rice",
-    prepTime: "5 mins",
-    cookTime: "5 hrs",
-    hack: "Chicken breasts slow-cooked in savory chicken stock and garlic, enriched with light cream cheese and parmesan into a silky, luscious sauce over rice. 100% lean chicken breast, zero onion chunks!",
-    macros: "~510 kcal | 48g Protein | 45g Carbs | 11g Fats",
-    ingredients: ["500g Chicken breast", "300ml Chicken stock", "1 tsp Garlic puree & Italian dried herbs", "70g Light cream cheese", "30g Grated parmesan", "200g Jasmine or basmati rice"],
-    steps: ["Place chicken breasts, chicken stock, garlic puree, and Italian herbs into slowcooker. Cook on LOW 4-5 hrs.", "Shred chicken breasts with two forks, stir in light cream cheese and parmesan until silky and smooth.", "Serve piping hot over steamed jasmine or basmati rice with sweet garden peas."]
+    title: "Slowcooker Mexican Shredded Beef Tacos with Mild Salsa",
+    prepTime: "8 mins",
+    cookTime: "7 hrs",
+    hack: "Lean beef brisket slow-cooked in lime juice, cumin, smoked paprika, and smooth tomato passata. Shreds effortlessly for crowd-pleasing DIY tacos with zero onion chunks!",
+    macros: "~520 kcal | 47g Protein | 46g Carbs | 13g Fats",
+    ingredients: ["500g Lean beef brisket or braising steak", "200g Smooth tomato passata", "Juice of 1 lime & 1 tbsp mild fajita seasoning", "1 tsp Garlic puree", "6 Mini soft flour tortillas or taco shells", "60g Grated light cheddar & sour cream to serve"],
+    steps: ["Place brisket in slowcooker with passata, lime juice, garlic puree, and fajita seasoning. Cook on LOW 7 hrs.", "Shred the tender beef with two forks in the spiced cooking juices.", "Warm soft tortillas and build tacos with warm shredded beef, grated cheddar, and cool sour cream."]
   },
   {
     id: "sc5",
     category: "slowcooker",
-    title: "Slowcooker Sweet Honey Garlic Pulled Chicken Breast & Wedges",
+    title: "Slowcooker Italian Tomato & Garlic Chicken Breast Pasta Melt",
     prepTime: "5 mins",
     cookTime: "4 hrs",
-    hack: "Chicken breasts slow-cooked in honey, soy sauce, garlic, and tomato glaze. Shreds into glossy, sweet-savory pulled chicken to pile over oven-crisped wedges with melted cheddar!",
-    macros: "~515 kcal | 47g Protein | 48g Carbs | 12g Fats",
-    ingredients: ["500g Chicken breast", "3 tbsp Honey & 3 tbsp soy sauce", "2 tbsp Tomato ketchup & 1 tsp garlic puree", "1 tsp Sesame oil", "350g Potato wedges or chips", "60g Grated light cheddar"],
-    steps: ["Whisk honey, soy sauce, ketchup, garlic, and sesame oil. Pour over chicken breasts in slowcooker, cook LOW 4 hrs.", "Bake potato wedges at 200°C for 22 mins until crisp.", "Shred chicken in the slowcooker sauce, ladle over hot wedges, scatter cheddar and grill 2 mins to melt."]
+    hack: "Chicken breasts slow-braised in seasoned Italian tomato passata and garlic. Shredded in the pot, tossed with warm pasta, and smothered in a blanket of melted mozzarella.",
+    macros: "~510 kcal | 49g Protein | 48g Carbs | 11g Fats",
+    ingredients: ["500g Chicken breast", "400g Smooth tomato passata", "150ml Chicken stock", "1 tsp Garlic puree & dried basil", "160g Fusilli or penne pasta", "80g Light mozzarella (grated)"],
+    steps: ["Place chicken breasts in slowcooker with passata, chicken stock, garlic puree, and dried basil. Cook on LOW 4 hrs.", "Shred chicken breasts into the sauce with two forks.", "Boil pasta 9 mins, drain, stir into slowcooker, scatter mozzarella over top, and cover 5 mins to melt into strings."]
   },
 
   // --- FAKEAWAYS (5) ---
   {
     id: "fk1",
     category: "fakeaway",
-    title: "Loaded Crispy Salt & Pepper Chicken Breast Rice Boxes",
+    title: "Crispy Sweet & Sour Popcorn Chicken Breast & Egg Fried Rice",
     prepTime: "10 mins",
-    cookTime: "12 mins",
-    hack: "Takeaway style! Panko-dusted chicken breast strips tossed in Chinese five-spice, garlic, and crunchy sea salt over golden egg fried microwave rice with sweet chilli sauce.",
-    macros: "~520 kcal | 47g Protein | 54g Carbs | 11g Fats",
-    ingredients: ["350g Chicken breast (cut into thin strips)", "1 tbsp Cornstarch & 30g panko breadcrumbs", "1 tsp Chinese five-spice & coarse sea salt", "250g Pre-cooked microwave basmati rice", "2 Eggs (beaten)", "2 tbsp Sweet chilli sauce to dip"],
-    steps: ["Coat chicken breast strips in cornstarch, five-spice, and panko. Oven bake or air-fry 14 mins at 200°C until super crispy.", "Scramble eggs in hot skillet 1 min, toss in rice pouch with splash of soy sauce 2 mins.", "Box up egg fried rice, top with hot crispy salt & pepper chicken, serve with sweet chilli dip."]
+    cookTime: "15 mins",
+    hack: "Bite-sized chicken breast nuggets coated in crunchy panko, baked golden, and tossed in sweet & sour glaze over egg fried rice. Restaurant crunch without takeaway grease!",
+    macros: "~525 kcal | 47g Protein | 55g Carbs | 11g Fats",
+    ingredients: ["350g Chicken breast (cut into bite-sized nuggets)", "35g Panko breadcrumbs & 1 egg (beaten)", "3 tbsp Sweet & sour sauce", "250g Pre-cooked microwave basmati rice", "1 Egg (for frying rice) & 1 tbsp soy sauce", "1 Bell pepper (sliced, on side for Dan)"],
+    steps: ["Dip chicken chunks in beaten egg, coat in panko, bake at 200°C for 14 mins until crunchy.", "Scramble 1 egg in skillet 1 min, add microwave rice and soy sauce, toss 2 mins.", "Toss crunchy popcorn chicken in warm sweet & sour sauce and serve over hot egg fried rice."]
   },
   {
     id: "fk2",
     category: "fakeaway",
-    title: "The Double Smash Bacon Cheeseburger & Seasoned Wedges",
+    title: "Cheesy Sourdough Smash Bacon Patty Melts with Seasoned Wedges",
     prepTime: "8 mins",
-    cookTime: "10 mins",
-    hack: "Two thin, crispy-crusted 5% beef patties smashed thin in a smoking hot skillet, layered with melted cheese, back bacon, and burger sauce in a toasted brioche bun!",
+    cookTime: "12 mins",
+    hack: "Thin, crispy-edged 5% beef patties smashed hot, layered with back bacon, melted cheddar, and light burger sauce between golden pan-toasted sourdough slices. Next-level burger night!",
     macros: "~530 kcal | 48g Protein | 46g Carbs | 15g Fats",
-    ingredients: ["350g 5% Fat beef mince", "2 Rashers lean back bacon (cooked)", "2 Soft brioche burger buns", "4 Slices light cheddar or burger cheese", "300g Potato wedges or chips", "2 tbsp Light burger sauce"],
-    steps: ["Bake potato wedges at 200°C for 20 mins until crisp.", "Divide mince into 4 balls, smash super flat into hot dry skillet 2 mins per side, melt cheese on top.", "Assemble double patties into toasted brioche with bacon and burger sauce. Pure burger joint bliss!"]
+    ingredients: ["350g 5% Fat beef mince", "2 Rashers lean back bacon (cooked)", "4 Slices sourdough or thick toast", "4 Slices light cheddar cheese", "300g Potato wedges or chips", "2 tbsp Light burger sauce & 1 tsp butter"],
+    steps: ["Bake potato wedges at 200°C for 20 mins until crisp.", "Divide mince into 4 balls, smash super thin in smoking skillet 2 mins per side, top with cheddar slices to melt.", "Assemble double smash patties, bacon, and burger sauce between toasted sourdough slices with hot wedges."]
   },
   {
     id: "fk3",
     category: "fakeaway",
-    title: "Nando's-Style Peri-Peri Butterfly Chicken Breast & Peri Chips",
-    prepTime: "8 mins",
-    cookTime: "12 mins",
-    hack: "Butterflied chicken breasts marinated in mild lemon & herb peri-peri marinade, griddled with dark char marks, tucked into toasted pittas with garlic perinaise and oven chips.",
-    macros: "~510 kcal | 48g Protein | 48g Carbs | 11g Fats",
-    ingredients: ["2 Chicken breasts (butterflied flat)", "2 tbsp Mild lemon & herb peri-peri sauce", "2 Greek flatbreads or large pitta breads", "2 tbsp Light mayonnaise mixed with 1 tsp peri-peri", "300g Oven chips", "Crispy shredded lettuce"],
-    steps: ["Coat butterflied chicken breasts in peri-peri marinade, grill on hot griddle pan 5 mins per side until charred and juicy.", "Bake chips tossed in smoked paprika at 200°C for 18 mins.", "Stuff warm pittas with grilled chicken, shredded lettuce, and peri-mayo, serve with peri-chips."]
+    title: "Wagamama-Style Crispy Katsu Chicken Breast (Curry-Free Tonkatsu Gravy)",
+    prepTime: "10 mins",
+    cookTime: "15 mins",
+    hack: "Golden panko-crusted chicken breast cutlets sliced over sticky jasmine rice. 100% curry-free! Served with a rich Japanese Tonkatsu savoury BBQ-fruit glaze (ketchup, soy, honey, Worcestershire) that picky partners love.",
+    macros: "~515 kcal | 48g Protein | 52g Carbs | 11g Fats",
+    ingredients: ["2 Chicken breasts (butterflied flat)", "40g Panko breadcrumbs & 1 egg (beaten)", "250g Pre-cooked microwave jasmine or sticky rice", "3 tbsp Tonkatsu sauce (or whisk 2 tbsp ketchup, 1 tbsp soy, 1 tsp honey & 1 tsp Worcestershire)", "150g Sweet garden peas or edamame"],
+    steps: ["Dip butterflied chicken in beaten egg, coat in panko, bake or air-fry at 200°C for 14 mins until golden and super crispy.", "Warm rice pouch in microwave 90 secs with peas.", "Slice crispy katsu chicken into strips, fan over warm rice, and drizzle with sweet savory Tonkatsu glaze."]
   },
   {
     id: "fk4",
     category: "fakeaway",
-    title: "Crispy Firecracker Glazed Popcorn Chicken Breast & Fried Rice",
-    prepTime: "10 mins",
+    title: "Gourmet BBQ Bacon & Crispy Chicken Breast Brioche Burger & Fries",
+    prepTime: "8 mins",
     cookTime: "14 mins",
-    hack: "Bite-sized crispy chicken breast nuggets tossed in sweet, sticky, mild firecracker glaze (honey + soy + ketchup + sweet chilli) over egg fried rice. Restaurant crunch without the grease!",
-    macros: "~520 kcal | 47g Protein | 52g Carbs | 11g Fats",
-    ingredients: ["350g Chicken breast (diced into bite-sized chunks)", "40g Panko breadcrumbs", "1 Egg (beaten)", "2 tbsp Sweet chilli sauce & 1 tbsp honey", "1 tbsp Soy sauce & 1 tbsp tomato ketchup", "250g Pre-cooked microwave basmati rice"],
-    steps: ["Dip chicken breast chunks in beaten egg, roll in panko, bake at 200°C for 14 mins until golden.", "Warm sweet chilli sauce, honey, soy, and ketchup in a pan for 1 min until glossy.", "Toss crunchy chicken in sauce and serve immediately over warm rice with sweetcorn."]
+    hack: "Panko-crumbed chicken breast fillet baked extra crisp, layered with crispy back bacon, smoky sweet BBQ sauce, and melted cheddar inside toasted brioche. Beats fast food every time!",
+    macros: "~525 kcal | 48g Protein | 48g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (lightly flattened)", "30g Panko breadcrumbs", "2 Soft brioche burger buns", "2 Rashers lean back bacon", "2 tbsp Smoky BBQ sauce", "2 Slices light cheddar", "300g Oven chips or skinny fries"],
+    steps: ["Coat chicken breasts in panko, bake at 200°C alongside chips for 15 mins until golden.", "Grill bacon rashers until crisp, toast brioche buns lightly.", "Build burgers: toasted brioche, crispy chicken breast, melted cheddar, bacon, and rich smoky BBQ drizzle."]
   },
   {
     id: "fk5",
     category: "fakeaway",
-    title: "Philly Cheesesteak Loaded Potato Wedges",
-    prepTime: "8 mins",
+    title: "Crispy Beijing-Style Shredded Beef & Sticky Steamed Rice",
+    prepTime: "10 mins",
     cookTime: "12 mins",
-    hack: "Lean steak strips pan-fried with garlic and Worcestershire sauce, piled on top of piping hot crispy potato wedges and smothered with bubbling melted mozzarella and cheddar.",
-    macros: "~525 kcal | 46g Protein | 48g Carbs | 15g Fats",
-    ingredients: ["300g Lean rump steak (sliced thin)", "350g Potato wedges or chips", "1 tbsp Worcestershire sauce & 1 tsp garlic puree", "60g Light mozzarella (grated)", "30g Grated light cheddar", "1 Bell pepper (sliced, on side for Dan)"],
-    steps: ["Bake wedges at 200°C for 22 mins until deeply golden and crispy.", "Flash-fry steak strips in skillet 3 mins with garlic puree and Worcestershire sauce.", "Top hot wedges with steak (and peppers for Dan), cover with cheese, grill 2 mins until bubbly."]
+    hack: "Thin strips of lean rump steak dusted in cornstarch and flash-fried crispy, tossed in a sweet garlic soy glaze. Pure Chinese restaurant crunch without soggy onions or deep frying!",
+    macros: "~520 kcal | 46g Protein | 49g Carbs | 13g Fats",
+    ingredients: ["300g Lean rump steak (cut into thin strips)", "2 tbsp Cornstarch", "3 tbsp Light soy sauce & 2 tbsp honey", "1 tsp Garlic puree & 1 tsp sesame oil", "250g Pre-cooked microwave basmati rice", "100g Sweetcorn or sugar snap peas"],
+    steps: ["Toss steak strips in cornstarch to coat. Pan-fry in hot oil spray 4 mins until deeply browned and crunchy.", "Whisk soy sauce, honey, garlic puree, and sesame oil; pour into pan and toss 1 min until glossy and clinging to beef.", "Serve immediately over hot steamed rice with sweetcorn."]
   },
 
   // --- ONE-PAN (5) ---
   {
     id: "op1",
     category: "onepan",
-    title: "One-Pan Creamy Cajun Chicken Breast & Bacon Penne",
+    title: "One-Pan Creamy Garlic Herb Chicken Breast & Pillowy Gnocchi",
     prepTime: "5 mins",
-    cookTime: "15 mins",
-    hack: "Tender chicken breast cubes and smoked bacon simmered with penne in seasoned chicken stock and milk. Swirl in light cream cheese and mild Cajun spice for a velvety pasta that's pure comfort!",
-    macros: "~525 kcal | 48g Protein | 50g Carbs | 13g Fats",
-    ingredients: ["2 Chicken breasts (diced)", "3 Rashers lean back bacon (chopped)", "140g Penne pasta", "1 tsp Mild Cajun seasoning & 1 tsp garlic puree", "300ml Chicken stock & 150ml semi-skimmed milk", "70g Light cream cheese"],
-    steps: ["Pan-fry chicken breast cubes, bacon, and Cajun seasoning in a deep skillet 4 mins until lightly browned.", "Add dry penne, stock, and milk. Simmer 10 mins until pasta is tender and liquid has reduced.", "Stir in cream cheese until thick, glossy, and creamy. Partner-approved with zero chopped onions!"]
+    cookTime: "12 mins",
+    hack: "Tender chicken breast cubes and soft potato gnocchi simmered together directly in chicken stock, light cream cheese, and parmesan. Gnocchi cooks straight in the creamy sauce in 5 mins!",
+    macros: "~520 kcal | 47g Protein | 48g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "350g Fresh potato gnocchi", "250ml Chicken stock", "70g Light cream cheese", "30g Grated parmesan", "1 tsp Garlic puree & Italian dried herbs"],
+    steps: ["Sear chicken breast cubes in skillet with garlic puree and Italian herbs 4 mins until golden.", "Pour in chicken stock and add fresh gnocchi straight to pan; simmer covered 5 mins until gnocchi is tender.", "Stir in cream cheese and parmesan off the heat until thick, velvety, and luxurious. Zero chopped onions!"]
   },
   {
     id: "op2",
     category: "onepan",
-    title: "One-Pan Cheesy Mexican Beef Taco Rice Skillet",
+    title: "One-Pan Cheesy Mexican Beef Enchilada Rice Skillet",
     prepTime: "5 mins",
-    cookTime: "12 mins",
-    hack: "5% beef mince browned with mild taco spices, pre-cooked rice, and sweetcorn, topped with a thick blanket of melted cheddar straight in the skillet. Scoop straight from pan!",
-    macros: "~520 kcal | 45g Protein | 48g Carbs | 14g Fats",
-    ingredients: ["350g 5% Fat beef mince", "1 tbsp Mild fajita/taco seasoning", "200g Long grain rice (pre-cooked or microwave pouch)", "1 Can (200g) sweetcorn (drained)", "70g Grated light cheddar", "2 tbsp Sour cream & mild salsa to serve"],
-    steps: ["Brown beef mince in skillet with taco seasoning 5 mins.", "Stir in warm rice, sweetcorn, and 2 tbsp water; heat 2 mins.", "Cover with grated cheddar, put lid on pan for 2 mins until cheese is completely melted. Scoop straight into bowls!"]
+    cookTime: "14 mins",
+    hack: "5% lean beef mince browned with mild taco spices, smooth tomato passata, rice, and sweetcorn. Blanketed with cheddar melted under the lid right on the stove!",
+    macros: "~525 kcal | 46g Protein | 48g Carbs | 14g Fats",
+    ingredients: ["350g 5% Fat beef mince", "1 tbsp Mild fajita/taco seasoning", "200g Smooth tomato passata & 100ml beef stock", "200g Pre-cooked microwave basmati rice", "100g Sweetcorn (drained)", "70g Grated light cheddar"],
+    steps: ["Brown beef mince in skillet with taco seasoning 5 mins.", "Stir in smooth passata, stock, warm rice, and sweetcorn; bubble 3 mins until piping hot.", "Scatter grated cheddar over the top, put lid on pan for 2 mins until melted. Scoop straight into bowls with sour cream!"]
   },
   {
     id: "op3",
     category: "onepan",
-    title: "One-Pan Garlic Butter Steak Bites with Crispy Potatoes",
+    title: "One-Pan Lemon Garlic Butter Cod Fillets & Golden Baby Potatoes",
     prepTime: "5 mins",
     cookTime: "15 mins",
-    hack: "Cubed baby potatoes crisped in the pan in olive oil, then juicy steak cubes flash-seared in garlic herb butter for 3 mins. Simple, high protein, and unbelievably satisfying.",
-    macros: "~510 kcal | 46g Protein | 42g Carbs | 15g Fats",
-    ingredients: ["350g Lean rump steak (cut into bite-sized cubes)", "400g Baby potatoes (cubed small)", "1 tbsp Butter & 1 tbsp olive oil", "1 tsp Garlic puree & dried rosemary", "150g Green beans or sweet peas"],
-    steps: ["Fry cubed potatoes in olive oil and butter with rosemary 12 mins until crispy and tender; push to side of pan.", "Crank heat to high, add steak cubes and garlic puree, sear 2-3 mins until browned outside and juicy inside.", "Toss steak and potatoes together in pan garlic butter, serve with steamed green beans."]
+    hack: "Baby potatoes crisped in olive oil and butter, then mild flaky cod fillets nestled alongside in lemon garlic butter. Zero fishy smell, clean protein, pure family crowd-pleaser.",
+    macros: "~495 kcal | 43g Protein | 42g Carbs | 13g Fats",
+    ingredients: ["2 Skinless cod or haddock fillets", "350g Baby potatoes (halved small)", "1 tbsp Butter & 1 tbsp olive oil", "1 tsp Garlic puree & juice of 1/2 lemon", "150g Frozen garden peas"],
+    steps: ["Fry halved baby potatoes in olive oil and butter 10 mins until golden and tender; push to one side.", "Place cod fillets in empty half of pan, season with garlic puree, black pepper, and lemon juice; cook 3 mins per side.", "Toss frozen peas in the buttery pan juices for 2 mins to finish."]
   },
   {
     id: "op4",
     category: "onepan",
-    title: "One-Pan Honey Soy Glazed Salmon & Jasmine Rice",
-    prepTime: "3 mins",
-    cookTime: "12 mins",
-    hack: "Salmon fillets pan-seared with sweet honey, soy sauce, garlic, and tenderstem broccoli. Clean, sweet, rich in omega-3, and done in 12 mins flat.",
-    macros: "~500 kcal | 42g Protein | 44g Carbs | 15g Fats",
-    ingredients: ["2 Salmon fillets", "250g Pre-cooked microwave basmati rice", "2 tbsp Honey & 2 tbsp soy sauce", "1 tsp Garlic puree & 1 tsp sesame oil", "150g Tenderstem broccoli or asparagus"],
-    steps: ["Sear salmon fillets 4 mins skin-down with broccoli spears alongside in the pan.", "Flip salmon, pour in whisked honey, soy, garlic, and sesame oil.", "Baste salmon in bubbling glaze 2 mins. Serve over warm basmati rice."]
+    title: "One-Pan Smoky Spanish Chorizo, Chicken Breast & Rice Skillet",
+    prepTime: "5 mins",
+    cookTime: "15 mins",
+    hack: "Lean diced chicken breast and smoky Spanish chorizo rounds sizzled together, infusing basmati rice with rich paprika flavor. Sweet pepper pieces kept on the side or stirred in for Dan!",
+    macros: "~525 kcal | 48g Protein | 46g Carbs | 14g Fats",
+    ingredients: ["2 Chicken breasts (diced)", "50g Diced Spanish chorizo", "250g Pre-cooked microwave basmati rice", "1 tsp Smoked paprika & 1 tsp garlic puree", "100g Sweet garden peas", "1 Red bell pepper (diced small, optional for Dan)"],
+    steps: ["Fry diced chorizo in dry skillet 2 mins until fragrant oil releases; add chicken breast cubes and brown 4 mins.", "Add garlic puree, smoked paprika, sweet peas (and peppers for Dan); cook 2 mins.", "Stir in microwave basmati rice, toss through the rich chorizo oils 2 mins until steaming."]
   },
   {
     id: "op5",
     category: "onepan",
-    title: "One-Pan Smoky Sausage, Sweet Potato & Cheddar Hash",
+    title: "One-Pan Sweet Honey Mustard Pork Chops & Crispy Potatoes",
     prepTime: "5 mins",
     cookTime: "15 mins",
-    hack: "Sliced lean sausages and cubed sweet potatoes pan-fried with smoked paprika, covered with melted cheddar. Top with a fried egg for ultimate hearty diner comfort.",
-    macros: "~515 kcal | 38g Protein | 46g Carbs | 16g Fats",
-    ingredients: ["6 Lean pork sausages (sliced into rounds)", "350g Sweet potato (diced small)", "1 tsp Smoked paprika & 1 tsp garlic puree", "60g Grated light cheddar", "2 Eggs (fried on top, optional)"],
-    steps: ["Fry sliced sausages 4 mins until lightly browned.", "Add diced sweet potatoes, paprika, garlic, and 3 tbsp water; cover pan 8 mins until tender.", "Uncover, scatter cheddar on top to melt, and slide onto plates."]
+    hack: "Lean boneless pork chops seared golden, basted in sweet honey and mild mustard glaze alongside crispy cubed potatoes and sweet green beans. No sharp mustard bite, just warm sweetness.",
+    macros: "~515 kcal | 45g Protein | 45g Carbs | 13g Fats",
+    ingredients: ["2 Lean boneless pork loin chops", "350g Potatoes (diced small)", "2 tbsp Honey & 1 tbsp mild Dijon or wholegrain mustard", "1 tbsp Soy sauce & 1 tbsp olive oil", "150g Green beans or sweetcorn"],
+    steps: ["Crisp diced potatoes in olive oil in pan 10 mins until golden; push to the side.", "Add pork chops to pan, sear 3 mins per side.", "Whisk honey, mild mustard, and soy sauce; pour over chops and simmer 2 mins into a thick glossy glaze."]
   },
 
   // --- REGULAR MEALS (5) ---
   {
     id: "rg1",
     category: "regular",
-    title: "Crispy BBQ Chicken Breast & Melted Cheddar Quesadilla Wedges",
-    prepTime: "8 mins",
-    cookTime: "12 mins",
-    hack: "Shredded chicken breast tossed in sweet smoky BBQ sauce, sandwiched in large flour tortillas with melted cheddar and baked super crisp in the oven. Cut into triangles!",
-    macros: "~520 kcal | 47g Protein | 48g Carbs | 13g Fats",
-    ingredients: ["300g Cooked chicken breast (shredded)", "4 Large flour tortilla wraps", "3 tbsp Smoky BBQ sauce", "80g Grated light cheddar", "Sour cream to dip"],
-    steps: ["Mix shredded chicken breast with smoky BBQ sauce.", "Fold chicken and grated cheddar inside tortillas, place on baking tray sprayed with oil.", "Bake at 200°C for 10-12 mins until golden and crunchy. Slice into wedges for an easy family dinner."]
+    title: "Crispy Baked Garlic Parmesan Chicken Breast Tenders & Wedges",
+    prepTime: "10 mins",
+    cookTime: "18 mins",
+    hack: "Chicken breast mini fillets rolled in grated parmesan, garlic seasoning, and panko breadcrumbs, baked crunchy with skin-on potato wedges and garlic mayo dip.",
+    macros: "~520 kcal | 49g Protein | 45g Carbs | 12g Fats",
+    ingredients: ["350g Mini chicken breast fillets", "35g Panko breadcrumbs & 25g grated parmesan", "1 tsp Garlic powder & pinch coarse salt", "1 Egg (beaten)", "350g Potato wedges or chips", "2 tbsp Light garlic mayonnaise to dip"],
+    steps: ["Dip chicken breast tenders in beaten egg, roll in parmesan-panko seasoning.", "Arrange on baking tray alongside potato wedges, bake at 200°C for 18 mins until deeply golden and crunchy.", "Serve with light garlic mayo dip and sweetcorn on the side."]
   },
   {
     id: "rg2",
     category: "regular",
-    title: "Baked Cheesy Italian Meatball Pasta Bake",
+    title: "Cheesy Beef Lasagne Stuffed Jacket Potatoes",
     prepTime: "8 mins",
-    cookTime: "18 mins",
-    hack: "Plump beef meatballs simmered in smooth marinara passata, tossed with penne and smothered in a bubbling mozzarella-cheddar crust. Zero visible onion bits, 100% comfort.",
-    macros: "~525 kcal | 46g Protein | 50g Carbs | 14g Fats",
-    ingredients: ["10 Lean cooked beef meatballs (or 300g lean beef mince rolled into balls)", "150g Penne pasta", "300g Smooth tomato passata", "1 tsp Garlic puree & Italian dried herbs", "70g Light mozzarella (grated)"],
-    steps: ["Boil penne pasta 9 mins, drain.", "Simmer meatballs in smooth passata with garlic and Italian herbs 5 mins.", "Toss pasta and saucy meatballs in a baking dish, cover with mozzarella, and bake at 200°C for 12 mins until golden."]
+    cookTime: "20 mins",
+    hack: "Fluffy baked jacket potatoes (microwaved 8 mins first for speed!), scooped and loaded with rich 5% beef bolognese in smooth tomato passata, topped with bubbly mozzarella and grilled.",
+    macros: "~510 kcal | 46g Protein | 48g Carbs | 13g Fats",
+    ingredients: ["2 Large baking potatoes", "350g 5% Fat beef mince", "200g Smooth tomato passata", "1 tsp Garlic puree & Italian dried herbs", "70g Grated light mozzarella", "2 tbsp Sour cream"],
+    steps: ["Prick potatoes with a fork and microwave 8 mins until tender inside.", "Brown beef mince in skillet with garlic, Italian herbs, and smooth passata 6 mins.", "Slice potatoes open, fluff insides with a fork, ladle in hot beef bolognese, cover with mozzarella, and grill 4 mins until melted and bubbling."]
   },
   {
     id: "rg3",
     category: "regular",
-    title: "Crispy Parmesan-Crusted Chicken Breast Cutlets with Wedges",
+    title: "Creamy Nut-Free Pesto Chicken Breast & Bacon Penne Bake",
     prepTime: "8 mins",
-    cookTime: "18 mins",
-    hack: "Chicken breast cutlets pressed into grated parmesan and crunchy panko breadcrumbs, baked extra crisp and served with oven wedges and garlic mayo. Always a crowd-pleaser.",
-    macros: "~510 kcal | 49g Protein | 46g Carbs | 11g Fats",
-    ingredients: ["2 Chicken breasts (sliced into thin cutlets)", "35g Panko breadcrumbs", "25g Grated parmesan", "1 Egg (beaten)", "350g Potato wedges or chips", "2 tbsp Light mayonnaise"],
-    steps: ["Dip chicken breast cutlets in beaten egg, coat firmly in parmesan and panko mixture.", "Place on baking tray with wedges at 200°C for 18 mins until deeply golden and crunchy.", "Serve with light garlic mayo dip and sweetcorn or peas."]
+    cookTime: "16 mins",
+    hack: "Penne pasta and tender chicken breast tossed in nut-free basil pesto, light cream cheese, and crispy bacon pieces, baked under golden cheddar. Strict nut-free recipe (0 walnuts, 0 almonds).",
+    macros: "~525 kcal | 48g Protein | 49g Carbs | 13g Fats",
+    ingredients: ["2 Chicken breasts (diced and cooked)", "3 Rashers lean back bacon (cooked & chopped)", "160g Penne pasta", "3 tbsp Nut-free basil pesto", "60g Light cream cheese", "50g Grated light cheddar"],
+    steps: ["Boil penne pasta 9 mins, drain.", "Stir nut-free pesto and light cream cheese into hot pasta until melted and creamy, fold in diced chicken breast and bacon.", "Transfer to baking dish, top with grated cheddar, and bake at 200°C for 10 mins until golden and bubbling."]
   },
   {
     id: "rg4",
     category: "regular",
-    title: "Classic British Shepherd's Pie with Golden Cheddar Mash",
-    prepTime: "15 mins",
-    cookTime: "25 mins",
-    hack: "5% lean beef mince in a rich, smooth Worcestershire gravy under fluffy mashed potatoes with a browned, bubbly cheddar topping. Blitz gravy smooth for picky partner!",
-    macros: "~510 kcal | 45g Protein | 48g Carbs | 12g Fats",
-    ingredients: ["400g 5% Fat beef mince", "500g Potatoes (mashed with splash of milk)", "1 tbsp Tomato puree & 200ml beef stock", "1 tbsp Worcestershire sauce", "40g Grated light cheddar (for top)", "50g Frozen sweetcorn or peas"],
-    steps: ["Brown beef mince in skillet 5 mins. Stir in tomato puree, Worcestershire sauce, and stock. Simmer 5 mins.", "Transfer beef mixture to an oven baking dish, spread warm mashed potatoes over top.", "Sprinkle cheddar over mash, bake at 200°C for 15 mins until golden and bubbling."]
+    title: "Classic Italian Meatball Sub Rolls with Melted Mozzarella",
+    prepTime: "5 mins",
+    cookTime: "12 mins",
+    hack: "Juicy beef meatballs simmered in smooth marinara passata, packed into crusty sub rolls or hot dog buns, covered with mozzarella and grilled until toasted and melted.",
+    macros: "~520 kcal | 45g Protein | 50g Carbs | 14g Fats",
+    ingredients: ["10 Cooked lean beef meatballs", "2 Sub rolls or brioche hot dog rolls", "200g Smooth tomato passata", "1 tsp Garlic puree & Italian herbs", "60g Grated light mozzarella"],
+    steps: ["Simmer meatballs in smooth passata with garlic puree and Italian herbs for 6 mins.", "Slice sub rolls open, nestle hot meatballs and marinara sauce inside.", "Cover generously with grated mozzarella and grill on high 3 mins until bread is toasted and cheese is bubbling."]
   },
   {
     id: "rg5",
     category: "regular",
-    title: "French Bread Cheesy Bacon & Chicken Breast Pizza Boats",
-    prepTime: "5 mins",
-    cookTime: "10 mins",
-    hack: "Crusty baguette halved lengthwise, loaded with smooth marinara sauce, shredded chicken breast, crispy bacon pieces, and melted mozzarella. Bakes into crunchy pizza boats in 10 mins!",
-    macros: "~525 kcal | 47g Protein | 50g Carbs | 13g Fats",
-    ingredients: ["1 Crusty French baguette (halved lengthwise)", "200g Cooked chicken breast (shredded)", "2 Rashers back bacon (cooked and chopped)", "4 tbsp Smooth tomato passata", "70g Light mozzarella (grated)"],
-    steps: ["Cut baguette in half lengthwise and place crust-side down on an oven tray.", "Spread smooth passata across bread, top with shredded chicken and bacon pieces.", "Cover generously with mozzarella, bake at 200°C for 10 mins until bubbling and crispy. Slice into sections."]
+    title: "Crispy Bacon & Cheddar Smothered Chicken Breast & Roasties",
+    prepTime: "8 mins",
+    cookTime: "20 mins",
+    hack: "Tender chicken breasts seared, wrapped in crispy bacon, topped with a dollop of light cream cheese and melted cheddar, and baked until juicy and bubbly. Served with crispy roasted baby potato cubes.",
+    macros: "~520 kcal | 49g Protein | 42g Carbs | 14g Fats",
+    ingredients: ["2 Chicken breasts", "4 Rashers lean back bacon", "50g Light cream cheese", "60g Grated light cheddar", "350g Baby potatoes (cubed small)", "1 tbsp Olive oil & 1 tsp dried rosemary"],
+    steps: ["Toss cubed potatoes in olive oil and rosemary, roast at 200°C for 20 mins until crisp.", "Sear chicken breasts in pan 2 mins per side; place in baking dish and top each with cream cheese, bacon rashers, and cheddar.", "Bake chicken 12-14 mins until cheese is bubbly and chicken is juicy. Serve alongside hot crispy roasties."]
   }
 ];
 
