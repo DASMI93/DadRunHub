@@ -423,6 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderWorkoutPlan();
   initHydrationTracker();
   renderFamilyRecipes();
+  initKettlebellTracker();
   initModal();
 });
 
@@ -811,4 +812,145 @@ function initModal() {
   const slClose  = document.querySelector('#shopping-modal .close-modal');
   if (slClose) slClose.addEventListener('click',  () => slModal.classList.remove('active'));
   if (slModal) slModal.addEventListener('click', e => { if (e.target === slModal) slModal.classList.remove('active'); });
+}
+
+// ============================================================
+// 12KG KETTLEBELL TRACKER & REST TIMER
+// ============================================================
+let kbSessions = JSON.parse(localStorage.getItem('dadrunner_kb_v1')) || { a: false, b: false };
+let kbTimerDuration = 45;
+let kbTimerSeconds = 45;
+let kbTimerInterval = null;
+let kbTimerRunning = false;
+
+function initKettlebellTracker() {
+  updateKbTrackerUI();
+  updateKbTimerDisplay();
+}
+
+function updateKbTrackerUI() {
+  const btnA = document.getElementById('btn-kb-session-a');
+  const btnB = document.getElementById('btn-kb-session-b');
+  const statusChip = document.getElementById('kb-weekly-status');
+  const homeCardSub = document.getElementById('home-kb-status');
+
+  let completedCount = 0;
+  if (kbSessions.a) completedCount++;
+  if (kbSessions.b) completedCount++;
+
+  if (btnA) {
+    btnA.classList.toggle('done', !!kbSessions.a);
+    btnA.innerHTML = kbSessions.a
+      ? `<i class="fa-solid fa-circle-check"></i> <span>Completed!</span>`
+      : `<i class="fa-regular fa-circle"></i> <span>Mark Done</span>`;
+  }
+
+  if (btnB) {
+    btnB.classList.toggle('done', !!kbSessions.b);
+    btnB.innerHTML = kbSessions.b
+      ? `<i class="fa-solid fa-circle-check"></i> <span>Completed!</span>`
+      : `<i class="fa-regular fa-circle"></i> <span>Mark Done</span>`;
+  }
+
+  if (statusChip) {
+    if (completedCount === 2) {
+      statusChip.className = 'green-chip';
+      statusChip.innerHTML = `<i class="fa-solid fa-trophy"></i> 2/2 Smashed!`;
+    } else {
+      statusChip.className = 'orange-chip';
+      statusChip.innerHTML = `<i class="fa-solid fa-weight-hanging"></i> ${completedCount}/2 Done`;
+    }
+  }
+
+  if (homeCardSub) {
+    homeCardSub.textContent = completedCount === 2
+      ? "2/2 Smashed this week! 🏆 High running economy."
+      : `${completedCount}/2 Done this week · Mon & Fri 17:15 PM →`;
+  }
+}
+
+function toggleKbSession(id) {
+  if (id === 'a') kbSessions.a = !kbSessions.a;
+  if (id === 'b') kbSessions.b = !kbSessions.b;
+  localStorage.setItem('dadrunner_kb_v1', JSON.stringify(kbSessions));
+  updateKbTrackerUI();
+}
+
+function resetKbWeek() {
+  kbSessions = { a: false, b: false };
+  localStorage.setItem('dadrunner_kb_v1', JSON.stringify(kbSessions));
+  updateKbTrackerUI();
+}
+
+function updateKbTimerDisplay() {
+  const display = document.getElementById('kb-timer-display');
+  if (!display) return;
+  const mins = Math.floor(kbTimerSeconds / 60);
+  const secs = kbTimerSeconds % 60;
+  display.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+}
+
+function setKbTimer(seconds) {
+  clearInterval(kbTimerInterval);
+  kbTimerRunning = false;
+  kbTimerDuration = seconds;
+  kbTimerSeconds = seconds;
+  const btn = document.getElementById('kb-timer-toggle-btn');
+  if (btn) btn.innerHTML = `<i class="fa-solid fa-play"></i> Start`;
+  const display = document.getElementById('kb-timer-display');
+  if (display) display.classList.remove('pulse');
+  updateKbTimerDisplay();
+}
+
+function toggleKbTimer() {
+  const btn = document.getElementById('kb-timer-toggle-btn');
+  const display = document.getElementById('kb-timer-display');
+
+  if (kbTimerRunning) {
+    clearInterval(kbTimerInterval);
+    kbTimerRunning = false;
+    if (btn) btn.innerHTML = `<i class="fa-solid fa-play"></i> Resume`;
+  } else {
+    if (kbTimerSeconds <= 0) {
+      kbTimerSeconds = kbTimerDuration;
+      if (display) display.classList.remove('pulse');
+    }
+    kbTimerRunning = true;
+    if (btn) btn.innerHTML = `<i class="fa-solid fa-pause"></i> Pause`;
+
+    kbTimerInterval = setInterval(() => {
+      if (kbTimerSeconds > 0) {
+        kbTimerSeconds--;
+        updateKbTimerDisplay();
+        if (kbTimerSeconds === 0) {
+          clearInterval(kbTimerInterval);
+          kbTimerRunning = false;
+          if (btn) btn.innerHTML = `<i class="fa-solid fa-rotate-left"></i> Done!`;
+          if (display) display.classList.add('pulse');
+          try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.frequency.setValueAtTime(587.33, ctx.currentTime);
+            gain.gain.setValueAtTime(0.2, ctx.currentTime);
+            osc.start();
+            osc.stop(ctx.currentTime + 0.4);
+          } catch(e) {}
+        }
+      }
+    }, 1000);
+  }
+}
+
+function resetKbTimer() {
+  clearInterval(kbTimerInterval);
+  kbTimerRunning = false;
+  kbTimerSeconds = kbTimerDuration;
+  const btn = document.getElementById('kb-timer-toggle-btn');
+  if (btn) btn.innerHTML = `<i class="fa-solid fa-play"></i> Start`;
+  const display = document.getElementById('kb-timer-display');
+  if (display) display.classList.remove('pulse');
+  updateKbTimerDisplay();
 }

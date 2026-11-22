@@ -37,6 +37,10 @@
       <i class="fa-solid fa-person-running"></i>
       <span>Running</span>
     </button>
+    <button class="nav-btn" data-tab="tab-kettlebell">
+      <i class="fa-solid fa-weight-hanging"></i>
+      <span>Kettlebell</span>
+    </button>
     <button class="nav-btn" data-tab="tab-family-meals">
       <i class="fa-solid fa-utensils"></i>
       <span>Meals</span>
@@ -96,6 +100,13 @@
             <div class="info-sub">⚡ Speedy Cook, Slowcooker, Fakeaways, One-Pan & Regular meals →</div>
           </div>
         </div>
+        <div class="info-card clickable" onclick="switchToTab('tab-kettlebell')">
+          <div class="info-icon orange"><i class="fa-solid fa-weight-hanging"></i></div>
+          <div class="info-body">
+            <div class="info-title">12kg Kettlebell Strength <span class="tag">2x / Week</span></div>
+            <div class="info-sub" id="home-kb-status">Mon & Fri 17:15 PM · 18 min runner injury-proofing →</div>
+          </div>
+        </div>
         <div class="info-card">
           <div class="info-icon blue"><i class="fa-solid fa-dog"></i></div>
           <div class="info-body">
@@ -140,6 +151,199 @@
           <span><strong>Tap any run</strong> to tick it off when done. Progress saves automatically!</span>
         </div>
         <div id="workout-list"></div>
+      </div>
+    </section>
+
+    <!-- ========== TAB: KETTLEBELL ========== -->
+    <section id="tab-kettlebell" class="tab-pane">
+      <div class="page-card">
+        <div class="page-card-header">
+          <div>
+            <div class="page-card-title">12kg Kettlebell Strength</div>
+            <div class="page-card-sub">2x Weekly 15–20 min sessions · Bulletproof hips, glutes, core & posture</div>
+          </div>
+          <span class="orange-chip" id="kb-weekly-status"><i class="fa-solid fa-weight-hanging"></i> 0/2 Done</span>
+        </div>
+
+        <div class="tip-box">
+          <i class="fa-solid fa-lightbulb"></i>
+          <span><strong>Why 12kg works:</strong> Heavy enough to recruit fast-twitch glute & core fibers for 5k speed, light enough to maintain crisp posture without fatiguing your legs for run days!</span>
+        </div>
+
+        <!-- Schedule Fit Box -->
+        <div class="section-label">How It Fits Your Weekly Schedule</div>
+        <p style="font-size:13px; color:var(--text-sub); margin-bottom:12px; line-height:1.45;">
+          Designed around your work hours (08:30–17:00), newborn routine, and 07:00 / 19:00 dog walks with <strong>zero run interference</strong>:
+        </p>
+
+        <div class="kb-schedule-grid">
+          <div class="kb-day-card highlight">
+            <span class="kb-day-badge orange"><i class="fa-solid fa-weight-hanging"></i> Kettlebell</span>
+            <div class="kb-day-name">Monday · 17:15 PM</div>
+            <div class="kb-day-desc"><strong>Session A (Glutes & Knees)</strong><br>18 mins right after work before the 19:00 walk. Non-run day! Primes legs for Tuesday.</div>
+          </div>
+
+          <div class="kb-day-card run-day">
+            <span class="kb-day-badge green"><i class="fa-solid fa-person-running"></i> Run Day</span>
+            <div class="kb-day-name">Tuesday · 17:30 PM</div>
+            <div class="kb-day-desc"><strong>Midweek Run 1</strong><br>Fresh legs with activated glutes and hips from Monday.</div>
+          </div>
+
+          <div class="kb-day-card">
+            <span class="kb-day-badge blue"><i class="fa-solid fa-dog"></i> Rest & Walks</span>
+            <div class="kb-day-name">Wednesday</div>
+            <div class="kb-day-desc"><strong>Active Recovery</strong><br>07:00 & 19:00 dog walks, hydration & recovery.</div>
+          </div>
+
+          <div class="kb-day-card run-day">
+            <span class="kb-day-badge green"><i class="fa-solid fa-person-running"></i> Run Day</span>
+            <div class="kb-day-name">Thursday · 17:30 PM</div>
+            <div class="kb-day-desc"><strong>Midweek Run 2</strong><br>Speed intervals / 5k pace surges around work.</div>
+          </div>
+
+          <div class="kb-day-card highlight">
+            <span class="kb-day-badge orange"><i class="fa-solid fa-weight-hanging"></i> Kettlebell</span>
+            <div class="kb-day-name">Friday · 17:15 PM</div>
+            <div class="kb-day-desc"><strong>Session B (Core & Posture)</strong><br>18 mins post-work. Upper body and rotational core. Protects legs for weekend.</div>
+          </div>
+
+          <div class="kb-day-card run-day">
+            <span class="kb-day-badge green"><i class="fa-solid fa-person-running"></i> Run Day</span>
+            <div class="kb-day-name">Saturday / Sunday</div>
+            <div class="kb-day-desc"><strong>Weekend Benchmark Run</strong><br>Endurance over-distance or 5k benchmark trial!</div>
+          </div>
+        </div>
+
+        <!-- Rest / Interval Timer Widget -->
+        <div class="kb-timer-box">
+          <div class="kb-timer-header"><i class="fa-solid fa-stopwatch"></i> Quick Rest Timer</div>
+          <div class="kb-timer-display" id="kb-timer-display">00:45</div>
+          <div class="kb-timer-btns">
+            <button class="kb-btn" onclick="setKbTimer(45)">45s Rest</button>
+            <button class="kb-btn" onclick="setKbTimer(60)">60s Rest</button>
+            <button class="kb-btn primary" id="kb-timer-toggle-btn" onclick="toggleKbTimer()"><i class="fa-solid fa-play"></i> Start</button>
+            <button class="kb-btn" onclick="resetKbTimer()"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+          </div>
+        </div>
+
+        <!-- Weekly Workouts -->
+        <div class="section-label" style="display:flex; justify-content:space-between; align-items:center;">
+          <span>Your 2 Weekly Sessions (12kg Bell)</span>
+          <button class="kb-btn" style="padding:4px 10px; font-size:11px;" onclick="resetKbWeek()"><i class="fa-solid fa-rotate"></i> Reset Week</button>
+        </div>
+
+        <!-- SESSION A -->
+        <div class="kb-session-card">
+          <div class="kb-session-header">
+            <div class="kb-session-info">
+              <h3><i class="fa-solid fa-bolt" style="color:var(--strava)"></i> Session A: Glute Power & Knee Armour</h3>
+              <p>Monday · ~18 mins · 3–4 Rounds (45s rest between movements)</p>
+            </div>
+            <button class="kb-toggle-btn" id="btn-kb-session-a" onclick="toggleKbSession('a')">
+              <i class="fa-regular fa-circle"></i>
+              <span>Mark Done</span>
+            </button>
+          </div>
+
+          <div class="kb-exercise-list">
+            <!-- Ex 1 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">1. Kettlebell Swings</span>
+                <span class="kb-ex-reps">4 sets × 15 reps (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Feet shoulder-width, hike 12kg bell between legs with flat back, pop hips forward explosively, squeeze glutes at the top. Let arms guide the bell to chest height.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Direct hip extension power that drives your forward stride and protects your lower back.</div>
+            </div>
+
+            <!-- Ex 2 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">2. Goblet Squats</span>
+                <span class="kb-ex-reps">3 sets × 10–12 reps (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Hold the 12kg bell by the horns tight against your chest. Sit hips back and down between knees, keeping chest tall and knees tracking over toes.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Strengthens patellar tendon resilience (bulletproofs against runner's knee) and builds uphill quad power.</div>
+            </div>
+
+            <!-- Ex 3 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">3. Single-Leg Romanian Deadlifts</span>
+                <span class="kb-ex-reps">3 sets × 8 reps / leg (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Hold 12kg bell in opposite hand of working leg. Hinge torso forward with flat back while floating back leg up like a pendulum. Soft standing knee.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Fixes left/right leg strength imbalances, strengthens hamstrings under stretch, and trains ankle stabilizer muscles.</div>
+            </div>
+
+            <!-- Ex 4 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">4. Kettlebell Reverse Lunges</span>
+                <span class="kb-ex-reps">3 sets × 8 reps / leg (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Hold bell in goblet position or at side. Step back with control, lower back knee 1 inch off floor, push through front heel to stand tall.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Builds single-leg deceleration control and stabilizes the pelvis on each running footstrike.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SESSION B -->
+        <div class="kb-session-card">
+          <div class="kb-session-header">
+            <div class="kb-session-info">
+              <h3><i class="fa-solid fa-shield-heart" style="color:var(--green)"></i> Session B: Core Posture & Anti-Fatigue</h3>
+              <p>Friday · ~18 mins · 3–4 Rounds (45s rest between movements)</p>
+            </div>
+            <button class="kb-toggle-btn" id="btn-kb-session-b" onclick="toggleKbSession('b')">
+              <i class="fa-regular fa-circle"></i>
+              <span>Mark Done</span>
+            </button>
+          </div>
+
+          <div class="kb-exercise-list">
+            <!-- Ex 1 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">1. Single-Arm Suitcase Carries</span>
+                <span class="kb-ex-reps">3 sets × 35s / side (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Hold 12kg bell in one hand like heavy luggage. Walk tall, shoulders level, ribs locked down. Resist any sideways lean or slouching.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Trains anti-lateral flexion core muscles. Stops hip-drop and slouching when tired at km 4 of a 5k.</div>
+            </div>
+
+            <!-- Ex 2 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">2. Kettlebell Halos</span>
+                <span class="kb-ex-reps">3 sets × 8 reps each direction (30s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Hold 12kg bell bottom-up at chest. Smoothly circle bell tight around your head and neck. Keep core tight and avoid arching lower back.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Decompresses desk shoulders, improves thoracic spine mobility, and opens chest for easy deep breathing.</div>
+            </div>
+
+            <!-- Ex 3 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">3. Clean & Push Press</span>
+                <span class="kb-ex-reps">3 sets × 6 reps / arm (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Swing bell smoothly into front rack at shoulder. Dip knees 2 inches and drive legs up to press the bell overhead with control.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Connects kinetic chain from ground through hips to shoulders for whole-body athletic power.</div>
+            </div>
+
+            <!-- Ex 4 -->
+            <div class="kb-exercise-card">
+              <div class="kb-ex-top">
+                <span class="kb-ex-title">4. Plank Bell Pull-Throughs</span>
+                <span class="kb-ex-reps">3 sets × 10 total reps (45s rest)</span>
+              </div>
+              <div class="kb-ex-cue"><strong>Form:</strong> Push-up plank with feet slightly wider than hips, bell behind left hand. Reach right hand across to drag bell under chest to the right. Alternate sides without shifting hips.</div>
+              <div class="kb-ex-why"><strong>Runner Benefit:</strong> Pure rotational stability. Stops torso twisting and wasted energy during high-cadence running.</div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -316,6 +520,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=28"></script>
+  <script src="app.js?v=29"></script>
 </body>
 </html>
