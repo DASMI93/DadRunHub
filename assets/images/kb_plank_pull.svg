@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlowPlank" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#1b2438"/>
+      <stop offset="60%" stop-color="#0d131f"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </radialGradient>
+
+    <linearGradient id="orangeDrag" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fc5200" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#fc5200" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="1"/>
+    </linearGradient>
+
+    <linearGradient id="bellMetalPlank" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4a5568"/>
+      <stop offset="40%" stop-color="#2d3748"/>
+      <stop offset="100%" stop-color="#1a202c"/>
+    </linearGradient>
+
+    <linearGradient id="skinPlank" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2a77f"/>
+      <stop offset="100%" stop-color="#c5835c"/>
+    </linearGradient>
+
+    <filter id="glowPlank" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="url(#bgGlowPlank)"/>
+
+  <!-- Tech Grid Lines -->
+  <g opacity="0.08" stroke="#38bdf8" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="1000"/>
+    <line x1="300" y1="0" x2="300" y2="1000"/>
+    <line x1="500" y1="0" x2="500" y2="1000"/>
+    <line x1="700" y1="0" x2="700" y2="1000"/>
+    <line x1="900" y1="0" x2="900" y2="1000"/>
+    <line x1="0" y1="200" x2="1000" y2="200"/>
+    <line x1="0" y1="400" x2="1000" y2="400"/>
+    <line x1="0" y1="600" x2="1000" y2="600"/>
+    <line x1="0" y1="800" x2="1000" y2="800"/>
+  </g>
+
+  <!-- Ground Plane Perspective -->
+  <polygon points="50,780 950,780 980,950 20,950" fill="#0b101a" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+  <ellipse cx="500" cy="800" rx="420" ry="28" fill="#000" opacity="0.6"/>
+
+  <!-- Title Header -->
+  <text x="70" y="90" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="42" fill="#ffffff" letter-spacing="2">PLANK BELL PULL-THROUGH</text>
+  <text x="70" y="125" font-family="'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="16" fill="#fc5200" letter-spacing="3">12KG · ROTATIONAL STABILITY</text>
+  <line x1="70" y1="140" x2="220" y2="140" stroke="#fc5200" stroke-width="3"/>
+
+  <!-- Badge Top Right -->
+  <rect x="800" y="60" width="130" height="42" rx="10" fill="#151d2f" stroke="rgba(252,82,0,0.4)" stroke-width="1.5"/>
+  <text x="865" y="86" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" fill="#fc5200" text-anchor="middle" letter-spacing="1">PRO FORM</text>
+
+  <!-- Horizontal Drag Trajectory Arrow -->
+  <path d="M 330 730 L 670 730" stroke="url(#orangeDrag)" stroke-width="8" stroke-dasharray="12 8" filter="url(#glowPlank)"/>
+  <polygon points="695,730 660,715 660,745" fill="#ffaa00" filter="url(#glowPlank)"/>
+
+  <!-- Plank Athletic Figure Side/Perspective View -->
+  <!-- Back Feet (Tucked on Floor) -->
+  <g id="feet">
+    <ellipse cx="180" cy="690" rx="18" ry="12" fill="#fc5200"/>
+    <ellipse cx="195" cy="735" rx="18" ry="12" fill="#fc5200"/>
+  </g>
+
+  <!-- Straight Legs in Plank -->
+  <!-- Far Leg -->
+  <path d="M 180 690 L 360 550 L 380 570 L 195 700 Z" fill="#151b27" stroke="#252f44" stroke-width="2"/>
+  <!-- Near Leg -->
+  <path d="M 195 735 L 380 570 L 400 595 L 210 745 Z" fill="#1c2538" stroke="#323f5b" stroke-width="2"/>
+
+  <!-- Shorts & Hips -->
+  <path d="M 360 540 L 470 510 L 475 585 L 375 605 Z" fill="#101522" stroke="#252f44" stroke-width="2"/>
+
+  <!-- Torso (Rigid Neutral Spine) -->
+  <path d="M 465 510 L 730 460 L 735 530 L 470 580 Z" fill="#20293d" stroke="#2e3b56" stroke-width="2"/>
+
+  <!-- Head & Neck -->
+  <ellipse cx="790" cy="460" rx="36" ry="30" fill="url(#skinPlank)"/>
+  <path d="M 760 440 Q 805 425 825 450 Q 825 470 790 480 Z" fill="#1b1c20"/>
+
+  <!-- Left Support Arm (Planted on Floor) -->
+  <path d="M 720 490 L 715 630 L 710 760" stroke="url(#skinPlank)" stroke-width="32" stroke-linecap="round"/>
+  <!-- Hand planted flat on floor -->
+  <ellipse cx="710" cy="765" rx="20" ry="10" fill="url(#skinPlank)"/>
+
+  <!-- Right Pulling Arm (Reaching across to drag kettlebell) -->
+  <path d="M 700 510 L 610 590 L 520 680" stroke="url(#skinPlank)" stroke-width="30" stroke-linecap="round"/>
+  <!-- Hand gripping bell handle -->
+  <circle cx="510" cy="690" r="16" fill="url(#skinPlank)"/>
+
+  <!-- 12kg Kettlebell Being Dragged -->
+  <g transform="translate(480, 715)">
+    <!-- Bell Glow -->
+    <circle cx="0" cy="0" r="46" fill="url(#orangeDrag)" opacity="0.3" filter="url(#glowPlank)"/>
+    <!-- Body -->
+    <circle cx="0" cy="0" r="42" fill="url(#bellMetalPlank)" stroke="#718096" stroke-width="2"/>
+    <text x="0" y="8" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16" fill="#ffffff" text-anchor="middle">12kg</text>
+    <!-- Handle -->
+    <path d="M -20 -28 L -20 -54 Q 0 -66 20 -54 L 20 -28" fill="none" stroke="#718096" stroke-width="11" stroke-linecap="round"/>
+  </g>
+
+  <!-- FORM CALLOUTS -->
+  <!-- Callout 1: Neutral Spine / Level Hips -->
+  <g>
+    <circle cx="470" cy="510" r="5" fill="#fc5200" filter="url(#glowPlank)"/>
+    <polyline points="470,510 470,360 520,320" fill="none" stroke="#fc5200" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="510" y="300" width="230" height="52" rx="8" fill="#121a2c" stroke="rgba(252,82,0,0.5)" stroke-width="1.5"/>
+    <text x="525" y="322" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" fill="#ffffff">LEVEL HIPS &amp; SPINE</text>
+    <text x="525" y="340" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#94a3b8">Zero hip sway · imagine glass on back</text>
+  </g>
+
+  <!-- Callout 2: Shoulder Support -->
+  <g>
+    <circle cx="715" cy="500" r="5" fill="#38bdf8" filter="url(#glowPlank)"/>
+    <polyline points="715,500 800,500 840,460" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="730" y="440" width="220" height="52" rx="8" fill="#121a2c" stroke="rgba(56,189,248,0.5)" stroke-width="1.5"/>
+    <text x="745" y="462" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" fill="#ffffff">SUPPORT WRIST UNDER</text>
+    <text x="745" y="480" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#94a3b8">Arm vertical · press floor away</text>
+  </g>
+
+  <!-- Callout 3: Wide Foot Base -->
+  <g>
+    <circle cx="190" cy="710" r="5" fill="#38bdf8" filter="url(#glowPlank)"/>
+    <polyline points="190,710 120,710 80,670" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="60" y="650" width="220" height="52" rx="8" fill="#121a2c" stroke="rgba(56,189,248,0.5)" stroke-width="1.5"/>
+    <text x="75" y="672" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" fill="#ffffff">WIDE FEET BASE</text>
+    <text x="75" y="690" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#94a3b8">Wider than hips for stability</text>
+  </g>
+
+  <!-- Callout 4: Smooth Horizontal Drag -->
+  <g>
+    <circle cx="500" cy="750" r="5" fill="#fc5200" filter="url(#glowPlank)"/>
+    <polyline points="500,750 500,850 540,890" fill="none" stroke="#fc5200" stroke-width="2" stroke-dasharray="4 4"/>
+    <rect x="430" y="870" width="230" height="52" rx="8" fill="#121a2c" stroke="rgba(252,82,0,0.5)" stroke-width="1.5"/>
+    <text x="445" y="892" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="13" fill="#ffffff">SMOOTH 12KG DRAG</text>
+    <text x="445" y="910" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#94a3b8">Pull across body · lock obliques</text>
+  </g>
+
+</svg>

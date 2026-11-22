@@ -1250,6 +1250,25 @@ body {
 .kb-exercise-card:hover {
   border-color: rgba(255, 255, 255, 0.15);
 }
+.kb-ex-img-wrap {
+  width: 100%;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0b101a;
+}
+.kb-ex-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease;
+}
+.kb-ex-img:hover {
+  transform: scale(1.02);
+}
 .kb-ex-top {
   display: flex;
   justify-content: space-between;
